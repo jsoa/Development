@@ -1,0 +1,39 @@
+#! /bin/bash
+
+sudo apt-get install git bzr subversion build-essential gitg
+sudo apt-get install python2.6 python3 python-pip python-dev
+
+# Launcher
+sudo apt-get install synapse
+
+LO_SYNAPSE_GTKRC="$HOME/Development/os/ubuntu/synapse_gtkrc"
+SYNAPSE_GTKRC="$HOME/.config/synapse/gtkrc"
+LO_SYNAPSE_CONF="$HOME/Development/os/ubuntu/synapse_conf"
+SYNAPSE_CONF="$HOME/.config/synapse/config.json"
+
+if [[ -f $SYNAPSE_GTKRC && ! -L $SYNAPSE_GTKRC ]]; then
+    echo "Moving $SYNAPSE_GTKRC to $BACKUP_DIR"
+    mv $SYNAPSE_GTKRC $BACKUP_DIR
+fi
+
+echo "Setting up link $SYNAPSE_GTKRC -> $LO_SYNAPSE_GTKRC"
+ln -s $LO_SYNAPSE_GTKRC $SYNAPSE_GTKRC
+
+if [[ -f $SYNAPSE_CONF && ! -L $SYNAPSE_CONF ]]; then
+    echo "Moving $SYNAPSE_CONF to $BACKUP_DIR"
+    mv $SYNAPSE_CONF $BACKUP_DIR
+fi
+
+echo "Setting up link $SYNAPSE_CONF -> $LO_SYNAPSE_CONF"
+ln -s $LO_SYNAPSE_CONF $SYNAPSE_CONF
+
+LO_XMODMAP="$HOME/Development/os/ubuntu/xmodmap"
+XMODMAP="$HOME/.Xmodmap"
+
+if [[ -f $XMODMAP && ! -L $XMODMAP ]]; then
+    echo "Moving $XMODMAP to $BACKUP_DIR"
+    mv $XMODMAP $BACKUP_DIR
+fi
+
+echo "Setting up link $XMODMAP -> $LO_XMODMAP"
+ln -s $LO_XMODMAP $XMODMAP

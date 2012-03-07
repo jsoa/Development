@@ -1,0 +1,16 @@
+case $1 in
+    hibernate)
+        echo "A hook to restore hdparm value on resume"
+        ;;
+    suspend)
+        echo "A hook to restore hdparm settings at resume."
+        ;;
+    thaw)
+        hdparm -B 254 /dev/sda
+        ;;
+    resume)
+        hdparm -B 254 /dev/sda
+        ;;
+    *)  echo "somebody is calling me totally wrong."
+        ;;
+esac<

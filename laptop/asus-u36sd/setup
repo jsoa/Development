@@ -1,0 +1,151 @@
+#! /bin/bash
+
+if [ ! $USER == "root" ]; then
+    echo "This script must be run as root"
+    exit
+fi
+
+BACKUP_EXT=".BACKUP"
+# Since this file needs to be run with super user privileges, we need
+# to specify our dev directory
+echo "Since this file needs to be run as root, you will be prompted
+for the dev directory and the user name"
+echo "----------------------------------------------------------------"
+read -e -p "Dev directory location: " DEV_DIR
+read -e -p "User: " USERNAME
+
+if [ ! -d "$DEV_DIR" ]; then
+    echo "Dev directory does not exist"
+    exit
+fi
+
+if [ ! -d "/home/$USERNAME" ]; then
+    echo "User directory /home/$USERNAME does not exist"
+    exit
+fi
+
+
+echo "Blacklisting NVIDIA"
+
+LO_BL_NVIDIA="$DEV_DIR/laptop/asus-u36sd/blacklist-nvidia.conf"
+BL_NVIDIA="/etc/modprobe.d/blacklist-nvidia.conf"
+
+if [[ -f $BL_NVIDIA && ! -L $BL_NVIDIA ]]; then
+    echo "Making backup of $BL_NVIDIA"
+    mv $BL_NVIDIA $BL_NVIDIA$BACKUP_EXT
+fi
+
+ln -s $LO_BL_NVIDIA $BL_NVIDIA
+
+echo $NEXT_LINE
+
+echo "Installing bumbleeee"
+
+BB=`dpkg-query -l "bumblebee" | grep -r '^ii'`
+
+if [ -z "$BB" ]; then
+    apt-get purge nvidia-current
+
+    add-apt-repository ppa:bumblebee/stable
+    apt-get update
+    apt-get install bumblebee bumblebee-nvidia
+    usermod -a -G bumblebee $USER
+else
+    echo "Bumblee already installed"
+    echo "$BB"
+fi
+
+echo $NEXT_LINE
+
+echo "Fixing Suspend"
+
+LO_SUSPEND="$DEV_DIR/laptop/asus-u36sd/20_custom-asus-u36sd"
+SUSPEND="/etc/pm/sleep.d/20_custom-asus-u36sd"
+
+if [[ -f $SUSPEND && ! -L $SUSPEND ]]; then
+    echo "Making backup of $SUSPEND"
+    mv $SUSPEND $SUSPEND$BACKUP_EXT
+fi
+
+ln -s $LO_SUSPEND $SUSPEND
+chmod +x $LO_SUSPEND
+
+echo $NEXT_LINE
+
+echo "Fixing Power Save"
+
+LO_HDPARM="$DEV_DIR/laptop/asus-u36sd/hdparm.conf"
+HDPARM="/etc/hdparm.conf"
+
+if [[ -f $HDPARM && ! -L $HDPARM ]]; then
+    echo "Making backup of $HDPARM"
+    mv $HDPARM $HDPARM$BACKUP_EXT
+fi
+
+ln -s $LO_HDPARM $HDPARM
+
+LO_SLEEP_HDPARM="$DEV_DIR/laptop/asus-u36sd/51_hdparm-settings"
+SLEEP_HDPARM="/etc/pm/sleep.d/51_hdparm-settings"
+
+if [[ -f $SLEEP_HDPARM && ! -L $SLEEP_HDPARM ]]; then
+    echo "Making backup of $SLEEP_HDPARM"
+    mv $SLEEP_HDPARM $SLEEP_HDPARM$BACKUP_EXT
+fi
+
+ln -s $LO_SLEEP_HDPARM $SLEEP_HDPARM
+chmod +x $LO_SLEEP_HDPARM
+
+echo $NEXT_LINE
+
+echo "Fixing USB 3.0 and Updating Intel integrated graphics card power management"
+
+LO_GRUB="$DEV_DIR/laptop/asus-u36sd/grub"
+GRUB="/etc/default/grub"
+
+if [[ -f $GRUB && ! -L $GRUB ]]; then
+    echo "Making backup of $GRUB"
+    mv $GRUB $GRUB$BACKUP_EXT
+fi
+
+ln -s $LO_GRUB $GRUB
+
+update-grub
+
+echo $NEXT_LINE
+
+echo "Fixing Bluetooth"
+service bluetooth stop
+rmmod btusb
+rmmod ath3k
+modprobe -a ath3k
+echo "13d3 3304" > /sys/bus/usb/drivers/ath3k/new_id
+modprobe btusb
+service bluetooth start
+
+hciconfig hci0 up
+
+echo $NEXT_LINE
+
+echo "Fixing Fn-keys"
+git clone git://git.iksaif.net/acpi4asus-dkms.git
+cd acpi4asus-dkms
+make
+make install
+modprobe asus-nb-wmi
+cd ../
+
+echo $NEXT_LINE
+
+echo "Fixing webcam"
+LIBV4=`dpkg-query -l "libv4l-0" | grep -r '^ii'`
+
+if [ -z "$LIBV4" ]; then
+    add-apt-repository ppa:libv4l
+    apt-get update && sudo apt-get install libv4l-0
+else
+    echo "libv4l-0 already installed"
+    echo $LIBV4
+fi
+
+echo "Done"
+

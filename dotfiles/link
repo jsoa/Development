@@ -1,0 +1,110 @@
+#! /bin/bash
+
+if [ $USER == "root" ]; then
+    echo "This script cannot be run as root"
+    exit
+fi
+
+BACKUP_DIR="$HOME/df_backup"
+
+if [ ! -d $BACKUP_DIR ]; then
+    mkdir $BACKUP_DIR
+fi
+
+LO_EMACS_DIR="$HOME/Development/dotfiles/emacs.d"
+EMACS_DIR="$HOME/.emacs.d"
+LO_EMACS="$HOME/Development/emacs"
+EMACS="$HOME/.emacs"
+
+if [[ -d $EMACS_DIR && ! -L $EMACS_DIR ]]; then
+  echo "Moving $EMACS_DIR to $BACKUP_DIR"
+  mv "$EMACS_DIR" "$BACKUP_DIR"
+fi
+
+if [ ! -L $EMACS_DIR ]; then
+    echo "Setting up link $EMACS_DIR -> $LO_EMACS_DIR"
+    ln -s $LO_EMACS_DIR $EMACS_DIR
+fi
+
+if [[ -f $EMACS && ! -L $EMACS ]]; then
+  echo "Moving $EMACS to $BACKUP_DIR"
+  mv "$EMACS" "$BACKUP_DIR"
+fi
+
+echo "Setting up link $EMACS -> $LO_EMACS"
+ln -s $LO_EMACS $EMACS
+
+
+LO_BASH_PROFILE="$HOME/Development/dotfiles/bash_profile"
+BASH_PROFILE="$HOME/.bash_profile"
+
+if [[ -f $BASH_PROFILE && ! -L $BASH_PROFILE ]]; then
+  echo "Moving $BASH_PROFILE to $BACKUP_DIR"
+  mv "$BASH_PROFILE" "$BACKUP_DIR"
+fi
+
+echo "Setting up link $BASH_PROFILE -> $LO_BASH_PROFILE"
+ln -s $LO_BASH_PROFILE $BASH_PROFILE
+
+
+LO_PYLINTRC="$HOME/Development/dotfiles/pylintrc"
+PYLINTRC="$HOME/.pylintrc"
+
+if [[ -f $PYLINTRC && ! -L $PYLINTRC ]]; then
+    echo "Moving $PYLINTRC to $BACKUP_DIR"
+    mv $PYLINTRC $BACKUP_DIR
+fi
+
+echo "Setting up link $PYLINTRC -> $LO_PYLINTRC"
+ln -s $LO_PYLINTRC $PYLINTRC
+
+LO_GITIGNORE="$HOME/Development/dotfiles/gitignore_global"
+GITIGNORE="$HOME/.gitignore_global"
+
+if [[ -f $GITIGNORE && ! -L $GITIGNORE ]]; then
+    echo "Moving $GITIGNORE to $BACKUP_DIR"
+    mv $GITIGNORE $BACKUP_DIR
+fi
+
+echo "Setting up link $GITIGNORE -> $LO_GITIGNORE"
+ln -s $LO_GITIGNORE $GITIGNORE
+
+read -e -p "Setup git config? (yes/no) " yn
+
+if [ $yn == "yes" ]; then
+
+    echo "Setting up global git config"
+    read -e -p "Git User: " GITUSER
+    read -e -p "Git Email: " GITEMAIL
+
+    git config --global user.name "$GITUSER"
+    git config --global user.email "$GITEMAIL"
+    git config --global core.exlcudesfiles "$HOME/.gitignore_global"
+    git config --global core.pager less
+    git config --global color.ui true
+fi
+
+read -e -p "Setup SSH keys? (yes/no) " yn
+
+if [ $yn == "yes" ]; then
+    if [ -z "$GITEMAIL"]; then
+        read -e -p "Git Email: " GITEMAIL
+    fi
+    
+    if [ ! -d "$HOME/.ssh" ]; then
+        mkdir "$HOME/.ssh"
+    fi
+
+    if [ ! -d "$HOME/.ssh/key_backup" ]; then
+        mkdir "$HOME/.ssh/key_backup"
+    fi
+
+    cp $HOME/.ssh/id_rsa* $HOME/.ssh/key_backup
+    rm id_rsa*
+
+    ssh-keygen -r rsa -C "$GITEMAIL"
+
+    ssh -T git@github.com
+fi
+
+echo "Done"

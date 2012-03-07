@@ -1,0 +1,6 @@
+
+virtualenv
+virtualenvwrapper
+mercurial
+ipython
+pylint

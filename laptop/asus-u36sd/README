@@ -1,0 +1,22 @@
+The contents of this directory are meant to be used on the 
+asus u36sd laptop when installing ubuntu
+
+All these steps are: https://help.ubuntu.com/community/Asus_U36SD, some 
+steps are explictily not run
+
+setup requires super user shell
+
+sudo -s -H
+
+./setup runs the following
+
+* blacklists nvida and nouvea
+* purges nvidia drivers
+* installs bumblebee (if its not already installed)
+* fixes suspend
+* adjusts hard drive power settings
+* fixes usb 3.0
+* fixes bluetooth
+* fixes Fn-keys
+* fixes webcam
+
