@@ -1,9 +1,60 @@
-[submodule "emacs.d/vendor/coffee-mode"]
-	   path = emacs.d/vendor/coffee-mode
-	   url = git://github.com/defunkt/coffee-mode.git
-[submodule "emacs.d/vendor/yasnippet"]
-	   path = emacs.d/vendor/yasnippet
-	   url = git://github.com/capitaomorte/yasnippet.git
-[submodule "emacs.d/vendor/pony-mode"]
-	   path = emacs.d/vendor/pony-mode
-	   url = git://github.com/davidmiller/pony-mode.git
+[submodule "coffee-mode"]
+    path = dotfiles/emacs.d/vendor/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
+[submodule "yasnippet"]
+	path = dotfiles/emacs.d/vendor/yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git
+[submodule "pony-mode"]
+	path = dotfiles/emacs.d/vendor/pony-mode
+	url = git://github.com/davidmiller/pony-mode.git
+
+[submodule "python/apps/django-renderit"]
+	path = python/apps/django-renderit
+	url = git@github.com:jsoa/django-renderit.git
+
+
+[submodule "python/apps/django-genericadmin"]
+	path = python/apps/django-genericadmin
+	url = git@github.com:jsoa/django-genericadmin.git
+[submodule "python/apps/django-formfield"]
+	path = python/apps/django-formfield
+	url = git@github.com:jsoa/django-formfield.git
+[submodule "python/apps/django-podcast"]
+	path = python/apps/django-podcast
+	url = git@github.com:jsoa/django-podcast.git
+[submodule "python/apps/django-categories"]
+	path = python/apps/django-categories
+	url = git@github.com:callowayproject/django-categories.git
+[submodule "python/apps/django-app-skeleton"]
+	path = python/apps/django-app-skeleton
+	url = git@github.com:callowayproject/django-app-skeleton.git
+[submodule "python/apps/django-viewpoint"]
+	path = python/apps/django-viewpoint
+	url = git@github.com:callowayproject/django-viewpoint.git
+[submodule "python/apps/django-pollit"]
+	path = python/apps/django-pollit
+	url = git@github.com:callowayproject/django-pollit.git
+[submodule "python/apps/Calloway"]
+	path = python/apps/Calloway
+	url = git@github.com:callowayproject/Calloway.git
+[submodule "python/apps/django-supertagging"]
+	path = python/apps/django-supertagging
+	url = git@github.com:callowayproject/django-supertagging.git
+[submodule "python/apps/django-staff"]
+	path = python/apps/django-staff
+	url = git@github.com:callowayproject/django-staff.git
+[submodule "python/apps/django-massmedia"]
+	path = python/apps/django-massmedia
+	url = git@github.com:callowayproject/django-massmedia.git
+[submodule "python/apps/django-kamasutra"]
+	path = python/apps/django-kamasutra
+	url = git@github.com:callowayproject/django-kamasutra.git
+[submodule "python/apps/django-hiermenu"]
+	path = python/apps/django-hiermenu
+	url = git@github.com:callowayproject/django-hiermenu.git
+[submodule "python/apps/django-stories"]
+	path = python/apps/django-stories
+	url = git@github.com:callowayproject/django-stories.git
+[submodule "python/apps/dashboardmods"]
+	path = python/apps/dashboardmods
+	url = git@github.com:callowayproject/dashboardmods.git
