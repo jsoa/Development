@@ -127,7 +127,6 @@ hciconfig hci0 up
 echo $NEXT_LINE
 
 echo "Fixing Fn-keys"
-git clone git://git.iksaif.net/acpi4asus-dkms.git
 cd acpi4asus-dkms
 make
 make install
@@ -141,7 +140,7 @@ LIBV4=`dpkg-query -l "libv4l-0" | grep -r '^ii'`
 
 if [ -z "$LIBV4" ]; then
     add-apt-repository ppa:libv4l
-    apt-get update && sudo apt-get install libv4l-0
+    apt-get update && apt-get install libv4l-0
 else
     echo "libv4l-0 already installed"
     echo $LIBV4

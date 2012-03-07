@@ -55,3 +55,6 @@
 [submodule "dotfiles/emacs.d/vendor/pony-mode"]
 	path = dotfiles/emacs.d/vendor/pony-mode
 	url = git://github.com/davidmiller/pony-mode.git
+[submodule "laptop/asus-u36sd/acpi4asus-dkms"]
+	path = laptop/asus-u36sd/acpi4asus-dkms
+	url = git://git.iksaif.net/acpi4asus-dkms.git
