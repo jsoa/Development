@@ -1,18 +1,6 @@
-[submodule "coffee-mode"]
-    path = dotfiles/emacs.d/vendor/coffee-mode
-	url = git://github.com/defunkt/coffee-mode.git
-[submodule "yasnippet"]
-	path = dotfiles/emacs.d/vendor/yasnippet
-	url = git://github.com/capitaomorte/yasnippet.git
-[submodule "pony-mode"]
-	path = dotfiles/emacs.d/vendor/pony-mode
-	url = git://github.com/davidmiller/pony-mode.git
-
 [submodule "python/apps/django-renderit"]
 	path = python/apps/django-renderit
 	url = git@github.com:jsoa/django-renderit.git
-
-
 [submodule "python/apps/django-genericadmin"]
 	path = python/apps/django-genericadmin
 	url = git@github.com:jsoa/django-genericadmin.git
@@ -58,3 +46,12 @@
 [submodule "python/apps/dashboardmods"]
 	path = python/apps/dashboardmods
 	url = git@github.com:callowayproject/dashboardmods.git
+[submodule "dotfiles/emacs.d/vendor/coffee-mode"]
+	path = dotfiles/emacs.d/vendor/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
+[submodule "dotfiles/emacs.d/vendor/yasnippet"]
+	path = dotfiles/emacs.d/vendor/yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git
+[submodule "dotfiles/emacs.d/vendor/pony-mode"]
+	path = dotfiles/emacs.d/vendor/pony-mode
+	url = git://github.com/davidmiller/pony-mode.git
