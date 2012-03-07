@@ -58,3 +58,6 @@
 [submodule "laptop/asus-u36sd/acpi4asus-dkms"]
 	path = laptop/asus-u36sd/acpi4asus-dkms
 	url = git://git.iksaif.net/acpi4asus-dkms.git
+[submodule "dotfiles/emacs.d/vendor/js2-mode"]
+	path = dotfiles/emacs.d/vendor/js2-mode
+	url = git://github.com/mooz/js2-mode.git

@@ -23,7 +23,7 @@ fi
 
 if [ ! -L $EMACS_DIR ]; then
     echo "Setting up link $EMACS_DIR -> $LO_EMACS_DIR"
-    ln -s $LO_EMACS_DIR $EMACS_DIR
+    ln -ns $LO_EMACS_DIR $EMACS_DIR
 fi
 
 if [[ -f $EMACS && ! -L $EMACS ]]; then
@@ -32,7 +32,7 @@ if [[ -f $EMACS && ! -L $EMACS ]]; then
 fi
 
 echo "Setting up link $EMACS -> $LO_EMACS"
-ln -s $LO_EMACS $EMACS
+ln -ns $LO_EMACS $EMACS
 
 
 LO_BASH_PROFILE="$HOME/Development/dotfiles/bash_profile"
@@ -44,7 +44,7 @@ if [[ -f $BASH_PROFILE && ! -L $BASH_PROFILE ]]; then
 fi
 
 echo "Setting up link $BASH_PROFILE -> $LO_BASH_PROFILE"
-ln -s $LO_BASH_PROFILE $BASH_PROFILE
+ln -ns $LO_BASH_PROFILE $BASH_PROFILE
 
 
 LO_PYLINTRC="$HOME/Development/dotfiles/pylintrc"
@@ -56,7 +56,7 @@ if [[ -f $PYLINTRC && ! -L $PYLINTRC ]]; then
 fi
 
 echo "Setting up link $PYLINTRC -> $LO_PYLINTRC"
-ln -s $LO_PYLINTRC $PYLINTRC
+ln -ns $LO_PYLINTRC $PYLINTRC
 
 LO_GITIGNORE="$HOME/Development/dotfiles/gitignore_global"
 GITIGNORE="$HOME/.gitignore_global"
@@ -67,7 +67,7 @@ if [[ -f $GITIGNORE && ! -L $GITIGNORE ]]; then
 fi
 
 echo "Setting up link $GITIGNORE -> $LO_GITIGNORE"
-ln -s $LO_GITIGNORE $GITIGNORE
+ln -ns $LO_GITIGNORE $GITIGNORE
 
 read -e -p "Setup git config? (yes/no) " yn
 
