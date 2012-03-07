@@ -9,5 +9,6 @@
 (load "jsoa/python")
 
 (vendor 'coffee-mode)
+(vendor 'js2-mode)
 (vendor 'pony-mode)
 (vendor 'yasnippet)
