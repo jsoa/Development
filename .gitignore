@@ -1,5 +1,12 @@
+.*
+!.gitignore
 
 *~
-backups/
-auto-save-list/
-sites/
+\#*\#
+.elc
+auto-save-list
+.\#*
+
+backups
+sites
+projects
