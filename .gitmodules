@@ -61,3 +61,18 @@
 [submodule "dotfiles/emacs.d/vendor/js2-mode"]
 	path = dotfiles/emacs.d/vendor/js2-mode
 	url = git://github.com/mooz/js2-mode.git
+[submodule "dotfiles/emacs.d/vendor/json-mode"]
+	path = dotfiles/emacs.d/vendor/json-mode
+	url = https://github.com/joshwnj/json-mode.git
+[submodule "dotfiles/emacs.d/vendor/python-mode"]
+	path = dotfiles/emacs.d/vendor/python-mode
+	url = git://github.com/emacsmirror/python-mode.git
+[submodule "dotfiles/emacs.d/vendor/magit"]
+	path = dotfiles/emacs.d/vendor/magit
+	url = git://github.com/magit/magit.git
+[submodule "dotfiles/emacs.d/vendor/markdown-mode"]
+	path = dotfiles/emacs.d/vendor/markdown-mode
+	url = git://github.com/emacsmirror/markdown-mode.git
+[submodule "dotfiles/emacs.d/vendor/textmate.el"]
+	path = dotfiles/emacs.d/vendor/textmate.el
+	url = git://github.com/defunkt/textmate.el.git
