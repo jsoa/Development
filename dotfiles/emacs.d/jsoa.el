@@ -18,3 +18,4 @@
 (vendor 'magit)
 (vendor 'markdown-mode)
 (vendor 'textmate)
+(vendor 'Pymacs)
