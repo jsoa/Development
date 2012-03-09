@@ -1,11 +1,13 @@
 #! /bin/bash
 
+# Install some essential packages
 sudo apt-get install git bzr subversion build-essential gitg
 sudo apt-get install python2.6 python3 python-pip python-dev
 
 # Launcher
 sudo apt-get install synapse
 
+# Link the synapse conf and gtkrc (dark theme)
 LO_SYNAPSE_GTKRC="$HOME/Development/os/ubuntu/synapse_gtkrc"
 SYNAPSE_GTKRC="$HOME/.config/synapse/gtkrc"
 LO_SYNAPSE_CONF="$HOME/Development/os/ubuntu/synapse_conf"
@@ -27,6 +29,7 @@ fi
 echo "Setting up link $SYNAPSE_CONF -> $LO_SYNAPSE_CONF"
 ln -s $LO_SYNAPSE_CONF $SYNAPSE_CONF
 
+# Link the Xmodmap (natural scolling)
 LO_XMODMAP="$HOME/Development/os/ubuntu/xmodmap"
 XMODMAP="$HOME/.Xmodmap"
 

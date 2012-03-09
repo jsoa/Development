@@ -4,7 +4,7 @@ if [ ! $USER == "root" ]; then
     echo "This script must be run as root"
     exit
 fi
-
+NEXT_LINE="====================================================="
 BACKUP_EXT=".BACKUP"
 # Since this file needs to be run with super user privileges, we need
 # to specify our dev directory
