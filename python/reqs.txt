@@ -4,3 +4,7 @@ virtualenvwrapper
 mercurial
 ipython
 pylint
+
+rope
+ropemode
+
