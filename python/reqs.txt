@@ -8,3 +8,4 @@ pylint
 rope
 ropemode
 
+https://bitbucket.org/agr/ropemacs/get/tip.tar.gz
