@@ -6,9 +6,6 @@
 (load "jsoa/defuns")
 (load "jsoa/bindings")
 
-(load "jsoa/python")
-(load "jsoa/json")
-
 (vendor 'python-mode)
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
@@ -20,3 +17,4 @@
 (vendor 'textmate)
 (vendor 'pymacs)
 (vendor 'auto-complete)
+(vendor 'pylookup)

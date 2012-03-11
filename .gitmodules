@@ -76,10 +76,12 @@
 [submodule "dotfiles/emacs.d/vendor/textmate.el"]
 	path = dotfiles/emacs.d/vendor/textmate.el
 	url = git://github.com/defunkt/textmate.el.git
-
 [submodule "dotfiles/emacs.d/vendor/pymacs"]
 	path = dotfiles/emacs.d/vendor/pymacs
 	url = git://github.com/pinard/Pymacs.git
 [submodule "dotfiles/emacs.d/vendor/auto-complete"]
 	path = dotfiles/emacs.d/vendor/auto-complete
 	url = git://github.com/m2ym/auto-complete.git
+[submodule "dotfiles/emacs.d/vendor/pylookup"]
+	path = dotfiles/emacs.d/vendor/pylookup
+	url = git://github.com/tsgates/pylookup.git
