@@ -3,6 +3,7 @@
 # Install some essential packages
 sudo apt-get install git bzr subversion build-essential gitg
 sudo apt-get install python2.6 python3 python-pip python-dev
+sudo apt-get install python2.7-doc
 
 # Launcher
 sudo apt-get install synapse
