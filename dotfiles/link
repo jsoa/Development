@@ -46,6 +46,16 @@ fi
 echo "Setting up link $BASH_PROFILE -> $LO_BASH_PROFILE"
 ln -ns $LO_BASH_PROFILE $BASH_PROFILE
 
+LO_BASH_ALIASES="$HOME/Development/dotfiles/bash_aliases"
+BASH_ALIASES="$HOME/.bash_aliases"
+
+if [[ -f $BASH_ALIASES && ! -L $BASH_ALIASES ]]; then
+  echo "Moving $BASH_ALIASES to $BACKUP_DIR"
+  mv "$BASH_ALIASES" "$BACKUP_DIR"
+fi
+
+echo "Setting up link $BASH_ALIASES -> $LO_BASH_ALIASES"
+ln -ns $LO_BASH_ALIASES $BASH_ALIASES
 
 LO_PYLINTRC="$HOME/Development/dotfiles/pylintrc"
 PYLINTRC="$HOME/.pylintrc"

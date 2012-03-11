@@ -1,0 +1,15 @@
+
+alias emacs="emacs -nw"
+alias ls='ls -aF --color=always'
+
+alias ..='cd ..'
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias df='df -h'
+
+# Load server aliases; alias server="ssh user@server"
+if [ -f "~/.server_aliases" ]; then
+  . ~/.server_aliases
+fi
