@@ -85,3 +85,6 @@
 [submodule "dotfiles/emacs.d/vendor/pylookup"]
 	path = dotfiles/emacs.d/vendor/pylookup
 	url = git://github.com/tsgates/pylookup.git
+[submodule "scripts/git-scripts"]
+	path = scripts/git-scripts
+	url = git@github.com:coordt/git-scripts.git

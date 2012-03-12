@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f "$HOME/Development/scripts/git-scripts/linkscripts" ]; then
+  cd ~/Development/scripts/git-scripts
+  . linkscripts
+fi
+
+
