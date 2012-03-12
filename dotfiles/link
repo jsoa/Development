@@ -5,7 +5,7 @@ if [ $USER == "root" ]; then
     exit
 fi
 
-BACKUP_DIR="$HOME/df_backup"
+BACKUP_DIR="$HOME/.df_backup"
 
 if [ ! -d $BACKUP_DIR ]; then
     mkdir $BACKUP_DIR
@@ -13,7 +13,7 @@ fi
 
 LO_EMACS_DIR="$HOME/Development/dotfiles/emacs.d"
 EMACS_DIR="$HOME/.emacs.d"
-LO_EMACS="$HOME/Development/emacs"
+LO_EMACS="$HOME/Development/dotfiles/emacs"
 EMACS="$HOME/.emacs"
 
 if [[ -d $EMACS_DIR && ! -L $EMACS_DIR ]]; then

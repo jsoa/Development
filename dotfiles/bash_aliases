@@ -1,3 +1,4 @@
+#!/bin/bash
 
 alias emacs="emacs -nw"
 alias ls='ls -aF --color=always'
@@ -13,3 +14,7 @@ alias df='df -h'
 if [ -f "~/.server_aliases" ]; then
   . ~/.server_aliases
 fi
+
+alias mkve="mkvirtualenv"
+alias mkve26="mkvirtualenv -p /usr/bin/python2.6"
+alias mkve3="mkvirtualenv -p /usr/bin/python3"
