@@ -4,6 +4,7 @@
 sudo apt-get install git bzr subversion build-essential gitg
 sudo apt-get install python2.6 python3 python-pip python-dev
 sudo apt-get install python2.7-doc
+sudo apt-get install openssh-server
 
 # Launcher
 sudo apt-get install synapse
