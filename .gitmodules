@@ -88,3 +88,6 @@
 [submodule "scripts/git-scripts"]
 	path = scripts/git-scripts
 	url = git@github.com:coordt/git-scripts.git
+[submodule "coffee/apps/jquery.isotope.coffee"]
+	path = coffee/apps/jquery.isotope.coffee
+	url = git@github.com:jsoa/jquery.isotope.coffee.git
