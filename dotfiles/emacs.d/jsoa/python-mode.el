@@ -31,3 +31,6 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq-default py-indent-offset 4)
+
+;; Delete trailing whilespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
