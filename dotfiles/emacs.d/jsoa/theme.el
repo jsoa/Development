@@ -13,9 +13,10 @@
       (border-color . "#323232")
       (cursor-color . "#FFFFFF")
       (mouse-color . "#323232"))
-     (mode-line ((t (:foreground "#00000070" :background "#323232"))))
+     (mode-line ((t (:foreground "#B9BDB6" :background "#323232"))))
      (region ((t (:background "#323232"))))
 
+     (minibuffer-prompt ((t (:foreground "#5BA1CF" :bold t))))
      (font-lock-comment-face ((t (:foreground "#646763"))))
      (font-lock-constant-face ((t (:foreground "#6E9360"))))
      (font-lock-builtin-face ((t (:foreground "#5CE638"))))
