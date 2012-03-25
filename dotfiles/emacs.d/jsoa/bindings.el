@@ -7,4 +7,11 @@
 
 (global-set-key (kbd "M-O") 'rotate-windows)
 
+;; ibuffer > list-buffers
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;; Easier buffer killing
+(global-unset-key (kbd "M-k"))
+(global-set-key (kbd "M-K") 'kill-this-buffer)
+
 ;; Note: need to disable menu access keys and shortcuts in terminal
