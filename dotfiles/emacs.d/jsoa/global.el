@@ -17,6 +17,9 @@
 (setq line-number-mode    t)
 (setq column-number-mode  t)
 
+;; Turn off tool-bar-mode
+(tool-bar-mode -1)
+
 ;; Modeline info
 (display-time-mode 1)
 ;; (display-battery-mode 1)
