@@ -14,8 +14,8 @@
 (global-unset-key (kbd "M-k"))
 (global-set-key (kbd "M-K") 'kill-this-buffer)
 
-(global-set-key "\M-g" 'goto-line)
+(global-set-key (kbd "M-g") 'goto-line)
 ;;(global-set-key "\C-w" 'bookmark-jump)
-(global-set-key "\C-e" 'bookmark-set)
+(global-set-key (kbd "C-e") 'bookmark-set)
 
 ;; Note: need to disable menu access keys and shortcuts in terminal
