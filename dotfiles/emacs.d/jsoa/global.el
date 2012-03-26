@@ -1,24 +1,29 @@
 ;;; Global emacs settings
 
-;; Use command as the meta key
-;; (setq ns-command-modifier (quote meta))
-
 ;; Don't show the startup screen
 (setq inhibit-startup-message t)
 
 ;; "y or n" instead of "yes or no"
-;; (fset 'yes-or-no-p 'y-or-n-p)
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Highlight regions and add special behaviors to regions.
 ;; "C-h d transient" for more info
 (setq transient-mark-mode t)
+
+;; save position in files
+(setq-default save-place t)
 
 ;; Display line and column numbers
 (setq line-number-mode    t)
 (setq column-number-mode  t)
 
 ;; Turn off tool-bar-mode
-(tool-bar-mode -1)
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
+;; overwrite selection with typing
+(delete-selection-mode t)
 
 ;; Modeline info
 (display-time-mode 1)
@@ -63,4 +68,3 @@
 ;; (setq-default ispell-program-name "aspell")
 ;; (setq ispell-list-command "list")
 ;; (setq ispell-extra-args '("--sug-mode=ultra"))
-
