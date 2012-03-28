@@ -16,6 +16,6 @@
 
 (global-set-key (kbd "M-g") 'goto-line)
 ;;(global-set-key "\C-w" 'bookmark-jump)
-(global-set-key (kbd "C-e") 'bookmark-set)
+;;(global-set-key (kbd "C-e") 'bookmark-set)
 
 ;; Note: need to disable menu access keys and shortcuts in terminal

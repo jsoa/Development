@@ -7,7 +7,7 @@
   (interactive)
   (color-theme-install
    '(color-theme-lowlevel
-     ((background-color . "#000000")
+     ((background-color . "#131313")
       (foreground-color . "#B9BDB6")
       (background-mode . dark)
       (border-color . "#323232")
