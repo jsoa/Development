@@ -1,84 +1,76 @@
 #! /bin/bash
 
+
 if [ $USER == "root" ]; then
     echo "This script cannot be run as root"
     exit
 fi
 
+# The backup directory
 BACKUP_DIR="$HOME/.df_backup"
 
 if [ ! -d $BACKUP_DIR ]; then
     mkdir $BACKUP_DIR
 fi
 
+# Utility functions
+function link_file {
+  if [[ -f $1 && ! -L $1 ]]; then
+    echo "Moving $1 to $BACKUP_DIR"
+    mv $1 $BACKUP_DIR
+  fi
+  echo "Setting up link $1 -> $2"
+  ln -ns $2 $1
+}
+
+function link_dir {
+  if [[ -d $1 && ! -L $1 ]]; then
+    echo "Moving $1 to $BACKUP_DIR"
+    mv $1 $BACKUP_DIR
+  fi
+  echo "Setting up link $1 -> $2"
+  ln -ns $2 $1
+}
+
+######################################################################
+
+# EMACS
 LO_EMACS_DIR="$HOME/Development/dotfiles/emacs.d"
 EMACS_DIR="$HOME/.emacs.d"
 LO_EMACS="$HOME/Development/dotfiles/emacs"
 EMACS="$HOME/.emacs"
 
-if [[ -d $EMACS_DIR && ! -L $EMACS_DIR ]]; then
-  echo "Moving $EMACS_DIR to $BACKUP_DIR"
-  mv "$EMACS_DIR" "$BACKUP_DIR"
-fi
-
-if [ ! -L $EMACS_DIR ]; then
-    echo "Setting up link $EMACS_DIR -> $LO_EMACS_DIR"
-    ln -ns $LO_EMACS_DIR $EMACS_DIR
-fi
-
-if [[ -f $EMACS && ! -L $EMACS ]]; then
-  echo "Moving $EMACS to $BACKUP_DIR"
-  mv "$EMACS" "$BACKUP_DIR"
-fi
-
-echo "Setting up link $EMACS -> $LO_EMACS"
-ln -ns $LO_EMACS $EMACS
-
-
+# BASH PROFILE AND ALIASES
 LO_BASH_PROFILE="$HOME/Development/dotfiles/bash_profile"
 BASH_PROFILE="$HOME/.bash_profile"
-
-if [[ -f $BASH_PROFILE && ! -L $BASH_PROFILE ]]; then
-  echo "Moving $BASH_PROFILE to $BACKUP_DIR"
-  mv "$BASH_PROFILE" "$BACKUP_DIR"
-fi
-
-echo "Setting up link $BASH_PROFILE -> $LO_BASH_PROFILE"
-ln -ns $LO_BASH_PROFILE $BASH_PROFILE
-
 LO_BASH_ALIASES="$HOME/Development/dotfiles/bash_aliases"
 BASH_ALIASES="$HOME/.bash_aliases"
 
-if [[ -f $BASH_ALIASES && ! -L $BASH_ALIASES ]]; then
-  echo "Moving $BASH_ALIASES to $BACKUP_DIR"
-  mv "$BASH_ALIASES" "$BACKUP_DIR"
-fi
+# GCONF
+LO_TERM_PROFILE="$HOME/Development/dotfiles/gconf/terminal/profile.xml"
+TERM_PROFILE="$HOME/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml"
+LO_TERM_BINDINGS="$HOME/Development/dotfiles/gconf/terminal/bindings.xml"
+TERM_BINDINGS="$HOME/.gconf/apps/gnome-terminal/keybindings/%gconf.xml"
 
-echo "Setting up link $BASH_ALIASES -> $LO_BASH_ALIASES"
-ln -ns $LO_BASH_ALIASES $BASH_ALIASES
-
+# PYLINT
 LO_PYLINTRC="$HOME/Development/dotfiles/pylintrc"
 PYLINTRC="$HOME/.pylintrc"
 
-if [[ -f $PYLINTRC && ! -L $PYLINTRC ]]; then
-    echo "Moving $PYLINTRC to $BACKUP_DIR"
-    mv $PYLINTRC $BACKUP_DIR
-fi
-
-echo "Setting up link $PYLINTRC -> $LO_PYLINTRC"
-ln -ns $LO_PYLINTRC $PYLINTRC
-
+# GITIGNORE
 LO_GITIGNORE="$HOME/Development/dotfiles/gitignore_global"
 GITIGNORE="$HOME/.gitignore_global"
 
-if [[ -f $GITIGNORE && ! -L $GITIGNORE ]]; then
-    echo "Moving $GITIGNORE to $BACKUP_DIR"
-    mv $GITIGNORE $BACKUP_DIR
-fi
+# LINK
+link_file $EMACS_DIR $LO_EMACS_DIR
+link_dir $EMACS $LO_EMACS
+link_file $BASH_PROFILE $LO_BASH_PROFILE
+link_file $BASH_ALIASES $LO_BASH_ALIASES
+link_file $TERM_PROFILE $LO_TERM_PROFILE
+link_file $TERM_BINDINGS $LO_TERM_BINDINGS
+link_file $PYLINTRC $LO_PYLINTRC
+link_file $GITIGNORE $LO_GITIGNORE
 
-echo "Setting up link $GITIGNORE -> $LO_GITIGNORE"
-ln -ns $LO_GITIGNORE $GITIGNORE
-
+# GIT CONFIGURATION
 read -e -p "Setup git config? (yes/no) " yn
 
 if [ $yn == "yes" ]; then
@@ -94,13 +86,14 @@ if [ $yn == "yes" ]; then
     git config --global color.ui true
 fi
 
+# SSH KEYS
 read -e -p "Setup SSH keys? (yes/no) " yn
 
 if [ $yn == "yes" ]; then
     if [ -z "$GITEMAIL"]; then
         read -e -p "Git Email: " GITEMAIL
     fi
-    
+
     if [ ! -d "$HOME/.ssh" ]; then
         mkdir "$HOME/.ssh"
     fi

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="switch_to_tab_4" mtime="1331426230" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="switch_to_tab_3" mtime="1331426226" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="switch_to_tab_2" mtime="1331426224" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="switch_to_tab_1" mtime="1331426221" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="next_tab" mtime="1330817782" type="string">
+		<stringvalue>&lt;Shift&gt;&lt;Alt&gt;Right</stringvalue>
+	</entry>
+	<entry name="prev_tab" mtime="1330817779" type="string">
+		<stringvalue>&lt;Shift&gt;&lt;Alt&gt;Left</stringvalue>
+	</entry>
+</gconf>
