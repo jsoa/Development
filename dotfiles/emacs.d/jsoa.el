@@ -6,6 +6,8 @@
 (load "jsoa/defuns")
 (load "jsoa/bindings")
 
+(load "jsoa/grep")
+
 (vendor 'python-mode)
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
