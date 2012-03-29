@@ -20,3 +20,4 @@
 (vendor 'pymacs)
 (vendor 'auto-complete)
 (vendor 'pylookup)
+(vendor 'smooth-scroll)
