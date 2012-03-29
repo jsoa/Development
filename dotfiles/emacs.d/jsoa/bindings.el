@@ -15,4 +15,7 @@
 
 (global-set-key (kbd "M-g") 'goto-line)
 
+(global-set-key (kbd "M->") 'comment-region) ; was end-of-buffer
+(global-set-key (kbd "M-<") 'uncomment-region) ; was begining-of-buffer
+
 ;; Note: need to disable menu access keys and shortcuts in terminal

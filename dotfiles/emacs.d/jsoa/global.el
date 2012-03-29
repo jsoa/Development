@@ -45,8 +45,22 @@
 ;; Prevent the annoying beep on errors
 ;; (setq visible-bell t)
 
-;; Make sure all backup files only live in one place
+;; Make sure all backup and autosave files only live in one place
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
+;; From https://github.com/antonj/.emacs.d/blob/master/aj-generic.el
+(defvar autosave-dir "~/.emacs.d/autosave")
+(make-directory autosave-dir t)
+
+(defun auto-save-file-name-p (filename)
+  (string-match "^#.*#$" (file-name-nondirectory filename)))
+
+(defun make-auto-save-file-name ()
+  (concat autosave-dir
+          (if buffer-file-name
+              (concat "/#" (file-name-nondirectory buffer-file-name) "#")
+            (expand-file-name
+             (concat "#%" (buffer-name) "#")))))
 
 ;; Gotta see matching parens
 (show-paren-mode t)
