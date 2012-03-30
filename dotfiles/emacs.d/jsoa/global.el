@@ -72,6 +72,9 @@
 ;; For emacsclient
 (server-start)
 
+;; Desktop mode
+(desktop-save-mode 1)
+
 ;; Trailing whitespace is unnecessary
 ;; (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
 

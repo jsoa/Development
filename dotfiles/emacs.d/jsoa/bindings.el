@@ -9,13 +9,13 @@
 ;; ibuffer > list-buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;; Easier buffer killing
+;; easier buffer killing
 (global-unset-key (kbd "M-k"))
 (global-set-key (kbd "M-K") 'kill-this-buffer)
 
+;; easier go to line
 (global-set-key (kbd "M-g") 'goto-line)
 
-(global-set-key (kbd "M->") 'comment-region) ; was end-of-buffer
-(global-set-key (kbd "M-<") 'uncomment-region) ; was begining-of-buffer
-
+;; comment or uncomment region or line;
+(global-set-key (kbd "M-/") 'comment-or-uncomment-region-or-line)
 ;; Note: need to disable menu access keys and shortcuts in terminal
