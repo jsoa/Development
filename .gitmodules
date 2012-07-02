@@ -91,3 +91,6 @@
 [submodule "coffee/apps/jquery.isotope.coffee"]
 	path = coffee/apps/jquery.isotope.coffee
 	url = git@github.com:jsoa/jquery.isotope.coffee.git
+[submodule "python/apps/pkgbin"]
+	path = python/apps/pkgbin
+	url = git@github.com:coordt/pkgbin.git
