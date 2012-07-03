@@ -19,3 +19,7 @@
 ;; comment or uncomment region or line;
 (global-set-key (kbd "M-/") 'comment-or-uncomment-region-or-line)
 ;; Note: need to disable menu access keys and shortcuts in terminal
+
+;; magit bindings
+(global-set-key [(control f9)] (lambda () (interactive) (magit-status default-directory)))
+(global-set-key [(f9)]         (lambda () (interactive) (magit-status default-directory)))
