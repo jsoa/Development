@@ -91,3 +91,6 @@
 [submodule "coffee/apps/jquery.isotope.coffee"]
 	path = coffee/apps/jquery.isotope.coffee
 	url = git@github.com:jsoa/jquery.isotope.coffee.git
+[submodule "python/apps/django-critic"]
+	path = python/apps/django-critic
+	url = git@github.com:callowayproject/django-critic.git

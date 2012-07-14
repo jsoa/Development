@@ -27,3 +27,26 @@
             (setq beg (region-beginning) end (region-end))
             (setq beg (line-beginning-position) end (line-end-position)))
         (comment-or-uncomment-region beg end)))
+
+;; http://www.stringify.com/2006/apr/24/rename/
+(defun rename-current-file-or-buffer ()
+  (interactive)
+  (if (not (buffer-file-name))
+      (call-interactively 'rename-buffer)
+    (let ((file (buffer-file-name)))
+      (with-temp-buffer
+        (set-buffer (dired-noselect file))
+        (dired-do-rename)
+        (kill-buffer nil))))
+  nil)
+
+
+(defun auto-save-file-name-p (filename)
+  (string-match "^#.*#$" (file-name-nondirectory filename)))
+
+(defun make-auto-save-file-name ()
+  (concat autosave-dir
+          (if buffer-file-name
+              (concat "/#" (file-name-nondirectory buffer-file-name) "#")
+            (expand-file-name
+             (concat "#%" (buffer-name) "#")))))

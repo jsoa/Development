@@ -27,7 +27,7 @@
 
 ;; Modeline info
 (display-time-mode 1)
-;; (display-battery-mode 1)
+(display-battery-mode 1)
 
 ;; Small fringes
 ;; (set-fringe-mode '(1 . 1))
@@ -43,7 +43,7 @@
 (set-default 'fill-column 80)
 
 ;; Prevent the annoying beep on errors
-;; (setq visible-bell t)
+(setq visible-bell t)
 
 ;; Make sure all backup and autosave files only live in one place
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
@@ -51,16 +51,6 @@
 ;; From https://github.com/antonj/.emacs.d/blob/master/aj-generic.el
 (defvar autosave-dir "~/.emacs.d/autosave")
 (make-directory autosave-dir t)
-
-(defun auto-save-file-name-p (filename)
-  (string-match "^#.*#$" (file-name-nondirectory filename)))
-
-(defun make-auto-save-file-name ()
-  (concat autosave-dir
-          (if buffer-file-name
-              (concat "/#" (file-name-nondirectory buffer-file-name) "#")
-            (expand-file-name
-             (concat "#%" (buffer-name) "#")))))
 
 ;; Gotta see matching parens
 (show-paren-mode t)
@@ -80,8 +70,3 @@
 
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
-
-;; `brew install aspell --lang=en` (instead of ispell)
-;; (setq-default ispell-program-name "aspell")
-;; (setq ispell-list-command "list")
-;; (setq ispell-extra-args '("--sug-mode=ultra"))

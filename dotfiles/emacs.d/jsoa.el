@@ -1,9 +1,9 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
+(load "jsoa/defuns")
 (load "jsoa/theme")
 (load "jsoa/env")
 (load "jsoa/global")
-(load "jsoa/defuns")
 (load "jsoa/bindings")
 
 (load "jsoa/grep")
