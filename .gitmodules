@@ -94,3 +94,6 @@
 [submodule "python/apps/django-critic"]
 	path = python/apps/django-critic
 	url = git@github.com:callowayproject/django-critic.git
+[submodule "python/apps/pkgbin"]
+	path = python/apps/pkgbin
+	url = git@github.com:coordt/pkgbin.git

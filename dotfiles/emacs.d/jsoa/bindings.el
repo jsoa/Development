@@ -23,4 +23,8 @@
 ;; rename file or buffer
 (global-set-key (kbd "C-c R") 'rename-current-file-or-buffer)
 
+;; magit bindings
+(global-set-key [(control f9)] (lambda () (interactive) (magit-status default-directory)))
+(global-set-key [(f9)]         (lambda () (interactive) (magit-status default-directory)))
+
 ;; Note: need to disable menu access keys and shortcuts in terminal
