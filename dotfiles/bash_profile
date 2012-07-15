@@ -14,3 +14,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PROJECT_HOME=$HOME/Development/python
 source /usr/local/bin/virtualenvwrapper.sh
+
+source ~/.bash_aliases
