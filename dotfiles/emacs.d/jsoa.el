@@ -9,6 +9,7 @@
 (load "jsoa/grep")
 
 (vendor 'python-mode)
+(vendor 'virtualenv)
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
 (vendor 'pony-mode)

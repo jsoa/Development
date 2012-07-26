@@ -97,3 +97,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
+[submodule "dotfiles/emacs.d/vendor/virtualenv"]
+	path = dotfiles/emacs.d/vendor/virtualenv
+	url = git://github.com/aculich/virtualenv.el.git
