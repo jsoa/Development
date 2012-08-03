@@ -63,10 +63,16 @@
 (server-start)
 
 ;; Desktop mode
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 
 ;; Trailing whitespace is unnecessary
 ;; (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
 
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
+
+
+
+
+
+
