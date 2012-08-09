@@ -100,3 +100,6 @@
 [submodule "dotfiles/emacs.d/vendor/virtualenv"]
 	path = dotfiles/emacs.d/vendor/virtualenv
 	url = git://github.com/aculich/virtualenv.el.git
+[submodule "dotfiles/emacs.d/vendor/nxhtml"]
+	path = dotfiles/emacs.d/vendor/nxhtml
+	url = git://github.com/emacsmirror/nxhtml.git
