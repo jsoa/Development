@@ -5,8 +5,10 @@
 (load "jsoa/env")
 (load "jsoa/global")
 (load "jsoa/bindings")
-
 (load "jsoa/grep")
+
+(load "jsoa/rst-mode")
+(load "jsoa/nxhtml")
 
 (vendor 'python-mode)
 (vendor 'virtualenv)
