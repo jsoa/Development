@@ -7,7 +7,6 @@
 (load "jsoa/bindings")
 (load "jsoa/grep")
 
-(load "jsoa/rst-mode")
 (load "jsoa/nxhtml")
 
 (vendor 'python-mode)
