@@ -1,5 +1,11 @@
 ;;; Global emacs settings
 
+;; Set highlight line on
+(global-hl-line-mode 1)
+
+;; Change the color of the default highlight line
+(set-face-background 'hl-line "#222")
+
 ;; Don't show the startup screen
 (setq inhibit-startup-message t)
 
