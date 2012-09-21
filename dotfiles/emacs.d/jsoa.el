@@ -11,6 +11,7 @@
 
 (vendor 'python-mode)
 (vendor 'virtualenv)
+(vendor 'fill-column-indicator)
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
 (vendor 'pony-mode)
