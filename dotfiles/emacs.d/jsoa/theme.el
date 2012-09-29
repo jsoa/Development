@@ -27,6 +27,14 @@
      (font-lock-integer-face ((t (:foreground "#5CE638"))))
      (font-lock-doc-string-face ((t (:foreground "#68DC0C"))))
      (font-lock-type-face ((t (:foreground "#FFFFFF"))))
+
+     ;; Mode Specific colors
+     (rst-level-1-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
+     (rst-level-2-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
+     (rst-level-3-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
+     (rst-level-4-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
+     (rst-level-5-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
+
      )))
 
 (provide 'color-theme-lowlevel)
