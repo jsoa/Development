@@ -6,6 +6,7 @@
 (load "jsoa/global")
 (load "jsoa/bindings")
 (load "jsoa/grep")
+(load "jsoa/diff")
 
 (load "jsoa/nxhtml")
 
@@ -14,6 +15,7 @@
 (vendor 'fill-column-indicator)
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
+(vendor 'scss-mode)
 (vendor 'pony-mode)
 (vendor 'yasnippet)
 (vendor 'json-mode)
