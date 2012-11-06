@@ -103,3 +103,6 @@
 [submodule "dotfiles/emacs.d/vendor/fill-column-indicator"]
 	path = dotfiles/emacs.d/vendor/fill-column-indicator
 	url = git://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "dotfiles/emacs.d/vendor/scss-mode"]
+	path = dotfiles/emacs.d/vendor/scss-mode
+	url = git://github.com/adeandrade/scss-mode.git
