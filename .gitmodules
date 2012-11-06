@@ -52,9 +52,6 @@
 [submodule "dotfiles/emacs.d/vendor/yasnippet"]
 	path = dotfiles/emacs.d/vendor/yasnippet
 	url = git://github.com/capitaomorte/yasnippet.git
-[submodule "dotfiles/emacs.d/vendor/pony-mode"]
-	path = dotfiles/emacs.d/vendor/pony-mode
-	url = git://github.com/davidmiller/pony-mode.git
 [submodule "laptop/asus-u36sd/acpi4asus-dkms"]
 	path = laptop/asus-u36sd/acpi4asus-dkms
 	url = git://git.iksaif.net/acpi4asus-dkms.git
@@ -106,6 +103,3 @@
 [submodule "dotfiles/emacs.d/vendor/fill-column-indicator"]
 	path = dotfiles/emacs.d/vendor/fill-column-indicator
 	url = git://github.com/alpaker/Fill-Column-Indicator.git
-[submodule "dotfiles/emacs.d/vendor/django-mode"]
-	path = dotfiles/emacs.d/vendor/django-mode
-	url = git://github.com/myfreeweb/django-mode.git
