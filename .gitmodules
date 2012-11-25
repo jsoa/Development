@@ -106,3 +106,6 @@
 [submodule "dotfiles/emacs.d/vendor/scss-mode"]
 	path = dotfiles/emacs.d/vendor/scss-mode
 	url = git://github.com/adeandrade/scss-mode.git
+[submodule "dotfiles/emacs.d/vendor/jade-mode"]
+	path = dotfiles/emacs.d/vendor/jade-mode
+	url = git://github.com/brianc/jade-mode.git
