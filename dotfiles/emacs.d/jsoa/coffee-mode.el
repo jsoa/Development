@@ -1,5 +1,6 @@
 (defun coffee-custom ()
   "coffee-mode-hook"
+ (coffee-cos-mode t)
  (set (make-local-variable 'tab-width) 2)
  (setq coffee-args-compile '("-c" "-o" "../")))
 
