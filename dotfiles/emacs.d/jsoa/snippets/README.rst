@@ -6,10 +6,8 @@ SNIPPETS
 python
 ======
 
-shebang
--------
+shebang::
 
-::
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
 
