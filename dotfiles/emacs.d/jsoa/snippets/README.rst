@@ -18,15 +18,15 @@ django snippets are grouped into a couple different folders and some use the
 same key for expansion. Depending on the prompt you are using (im using
 ``yas/ido-prompt``) you will get something like the following..
 
-.. image:: snip01.png
+.. image:: https://raw.github.com/jsoa/Development/master/dotfiles/emacs.d/jsoa/snippets/snip01.png
 
-.. image:: snip02.png
+.. image:: https://raw.github.com/jsoa/Development/master/dotfiles/emacs.d/jsoa/snippets/snip02.png
 
 Same as above using the drowndown prompt
 
-.. image:: snip03.png
+.. image:: https://raw.github.com/jsoa/Development/master/dotfiles/emacs.d/jsoa/snippets/snip03.png
 
-.. image:: snip04.png
+.. image:: https://raw.github.com/jsoa/Development/master/dotfiles/emacs.d/jsoa/snippets/snip04.png
 
 model fields
 ------------
