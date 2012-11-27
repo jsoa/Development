@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.ComboField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.ComboField(fields=${[CharField(max_length=20), EmailField()]})

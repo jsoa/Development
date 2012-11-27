@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.SmallIntegerField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.SmallIntegerField(_('${FIELDNAME}'))

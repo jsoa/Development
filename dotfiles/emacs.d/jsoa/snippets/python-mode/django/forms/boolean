@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.BooleanField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.BooleanField()

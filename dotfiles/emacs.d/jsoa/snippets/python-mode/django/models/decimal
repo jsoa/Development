@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.DecimalField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.DecimalField(_('${FIELDNAME}'))

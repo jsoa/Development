@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.ModelChoiceField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.ModelChoiceField(queryset=${QUERYSET})

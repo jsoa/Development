@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.utils.translation.ugettext
+# key: django
+# group: django
+# contributor: Jose Soares
+# --
+django.utils.translation import ugettext as _

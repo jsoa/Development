@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.CharField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.CharField()

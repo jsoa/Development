@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.IPAddressField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.IPAddressField(_('${FIELDNAME}'))

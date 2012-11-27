@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.ChoiceField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.ChoiceField(choices=${CHOICES})

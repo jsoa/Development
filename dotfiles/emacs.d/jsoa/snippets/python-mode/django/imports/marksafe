@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.utils.safestring.mark_safe
+# key: django
+# group: django
+# contributor: Jose Soares
+# --
+django.utils.safestring import mark_safe

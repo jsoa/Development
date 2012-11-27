@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.FloatField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.FloatField(_('${FIELDNAME}'))

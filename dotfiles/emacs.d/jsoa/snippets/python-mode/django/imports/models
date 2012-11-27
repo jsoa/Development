@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.db.models
+# key: django
+# group: django
+# contributor: Jose Soares
+# --
+django.db import models

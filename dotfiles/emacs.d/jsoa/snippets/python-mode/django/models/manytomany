@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.ManyToManyField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.ManyToManyField(${MODEL}, verbose_name=_('${FIELDNAME}')${, limit_choices_to=${LIMITCHOICES}}${, related_name=${RELATEDNAME}}${, through=${THROUGH}})

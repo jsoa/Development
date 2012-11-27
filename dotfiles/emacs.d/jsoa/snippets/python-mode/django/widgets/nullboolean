@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: widgets.NullBooleanSelect
+# key: forms
+# group: django.forms.widgets
+# contributor: Jose Soares
+# --
+forms.NullBooleanSelect()

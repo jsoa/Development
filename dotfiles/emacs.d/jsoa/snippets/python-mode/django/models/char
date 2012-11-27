@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.CharField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.CharField(_('${FIELDNAME}'), max_length=${100})

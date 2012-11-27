@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.ImageField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.ImageField(_('${FIELDNAME}'), uplaod_to=${UPLOAD_TO})

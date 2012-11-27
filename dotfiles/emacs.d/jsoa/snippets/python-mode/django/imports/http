@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.http
+# key: django
+# group: django
+# contributor: Jose Soares
+# --
+django.http import ${HttpResponse}${, HttpResponseRedirect}${, Http404}

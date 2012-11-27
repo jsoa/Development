@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.PositiveSmallIntegerField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.PositiveSmallIntegerField(_('${FIELDNAME}'))

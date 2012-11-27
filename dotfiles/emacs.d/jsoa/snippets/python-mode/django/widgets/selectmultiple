@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: widgets.SelectMultiple
+# key: forms
+# group: django.forms.widgets
+# contributor: Jose Soares
+# --
+forms.SelectMultiple(${choices=${CHOICES}})

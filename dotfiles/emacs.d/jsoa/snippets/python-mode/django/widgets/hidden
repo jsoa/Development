@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: widgets.HiddenInput
+# key: forms
+# group: django.forms.widgets
+# contributor: Jose Soares
+# --
+forms.HiddenInput()

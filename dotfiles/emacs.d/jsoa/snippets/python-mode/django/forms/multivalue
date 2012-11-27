@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.MultiValueField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.MultiValueField(fields=${[CharField(max_length=20), EmailField()]})

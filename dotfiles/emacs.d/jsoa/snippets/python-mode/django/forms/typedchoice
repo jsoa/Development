@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: forms.TypedChoiceField
+# key: forms
+# group: django.forms.fields
+# contributor: Jose Soares
+# --
+forms.TypedChoiceField(choices=${CHOICES})

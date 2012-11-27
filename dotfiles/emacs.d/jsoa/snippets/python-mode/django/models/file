@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.FileField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.FileField(_('${FIELDNAME}'), upload_to=${UPLOAD_TO})

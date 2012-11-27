@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.TextField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.TextField(_('${FIELDNAME}'))

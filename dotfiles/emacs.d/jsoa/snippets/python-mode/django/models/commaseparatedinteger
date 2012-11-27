@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.CommaSeparatedIntegerField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.CommaSeparatedIntegerField(_('${FIELDNAME}'), max_length=${100})

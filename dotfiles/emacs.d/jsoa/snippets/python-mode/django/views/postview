@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: Basic post view
+# key: django.views
+# group: django
+# contributor: Jose Soares
+# --
+@require_http_methods(['POST'])
+def ${1:VIEWNAME}(request):
+    """${3:DOCSTRING}"""
+    context = {}
+    return render(request, template_name, context)

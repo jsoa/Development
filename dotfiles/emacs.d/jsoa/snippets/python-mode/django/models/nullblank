@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+# name: nullblank
+# key: nullblank
+# contributor: Jose Soares
+# --
+${null=True}${, blank=True}

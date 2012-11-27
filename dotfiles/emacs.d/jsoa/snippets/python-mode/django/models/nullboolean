@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: models.NullBooleanField
+# key: models
+# group: django.db.models
+# contributor: Jose Soares
+# --
+models.NullBooleanField(_('${FIELDNAME}'))
