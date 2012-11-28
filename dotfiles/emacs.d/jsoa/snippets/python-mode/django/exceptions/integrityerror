@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.db.IntegrityError
+# key: exceptions
+# group: django.db
+# contributor: Jose Soares
+# --
+${django.db import }IntegrityError

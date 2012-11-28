@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.template.InvalidTemplateLibrary
+# key: exceptions
+# group: django.template
+# contributor: Jose Soares
+# --
+${django.template import }InvalidTemplateLibrary

@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.core.management.CommandError
+# key: exceptions
+# group: django.core.management
+# contributor: Jose Soares
+# --
+${django.core.management import }CommandError

@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.contrib.admin.sites.AlreadyRegistered
+# key: exceptions
+# group: django.contrib.admin
+# contributor: Jose Soares
+# --
+${django.contrib.admin.sites import }AlreadyRegistered

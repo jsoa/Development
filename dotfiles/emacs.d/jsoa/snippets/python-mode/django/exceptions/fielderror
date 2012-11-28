@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.core.exceptions.FieldError
+# key: exceptions
+# group: django.core.exceptions
+# contributor: Jose Soares
+# --
+${django.core.exceptions import }FieldError

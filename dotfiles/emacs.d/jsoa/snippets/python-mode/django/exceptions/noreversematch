@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.core.urlresolvers.NoReverseMatch
+# key: exceptions
+# group: django.core.exceptions
+# contributor: Jose Soares
+# --
+${django.core.urlresolvers import }NoReverseMatch

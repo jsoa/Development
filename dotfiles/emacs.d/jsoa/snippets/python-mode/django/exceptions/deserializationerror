@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: django.core.serializers.DeserializationError
+# key: exceptions
+# group: django.core.serializers
+# contributor: Jose Soares
+# --
+${django.core.serializers import }DeserializationError
