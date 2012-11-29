@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: RuntimeError
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+RuntimeError

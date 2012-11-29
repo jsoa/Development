@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: UnicodeEncodeError
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+UnicodeEncodeError

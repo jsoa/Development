@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: IOError
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+IOError

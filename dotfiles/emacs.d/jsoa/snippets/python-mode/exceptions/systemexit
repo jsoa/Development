@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: SystemExit
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+SystemExit

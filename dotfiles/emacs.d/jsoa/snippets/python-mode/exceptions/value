@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: ValueError
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+ValueError

@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: TabError
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+TabError

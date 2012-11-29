@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: KeyError
+# key: exceptions
+# group: builtins.exceptions
+# contributor: Jose Soares
+# --
+KeyError
