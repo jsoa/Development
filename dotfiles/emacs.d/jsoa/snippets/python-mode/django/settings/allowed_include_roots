@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# name: ALLOWED_INCLUDE_ROOTS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of strings representing allowed prefixes for the {% ssi %} template
+# tag. This is a security measure, so that template authors can't access
+# files that they shouldn't be accessing.
+#
+# For example, if ALLOWED_INCLUDE_ROOTS is ('/home/html', '/var/www'), then
+# {% ssi /home/html/foo.txt %} would work, but {% ssi /etc/passwd %} wouldn't.
+ALLOWED_INCLUDE_ROOTS = ()

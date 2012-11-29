@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: INTERNAL_IPS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of IP addresses, as strings, that:
+#    - See debug comments, when DEBUG is True
+#    - Receive X headers if the XViewMiddleware is installed
+INTERNAL_IPS = ()

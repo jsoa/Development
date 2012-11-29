@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: DEFAULT_FROM_EMAIL
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Default email address to use for various automated correspondence from
+# the site manager(s).
+DEFAULT_FROM_EMAIL = 'webmaster@localhost'

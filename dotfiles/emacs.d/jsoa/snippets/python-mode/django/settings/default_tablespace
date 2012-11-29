@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: DEFAULT_TABLESPACE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Default tablespace to use for models that don't specify one, if the
+# backend supports it
+DEFAULT_TABLESPACE = ''

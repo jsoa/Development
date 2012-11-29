@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# name: APPEND_SLASH
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# When set to True, if the request URL does not match any of the patterns in
+# the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the
+# same URL with a slash appended. Note that the redirect may cause any data
+# submitted in a POST request to be lost.
+#
+# The APPEND_SLASH setting is only used if CommonMiddleware is installed
+APPEND_SLASH = ${ $(yas/choose-value '("True" "False"))}

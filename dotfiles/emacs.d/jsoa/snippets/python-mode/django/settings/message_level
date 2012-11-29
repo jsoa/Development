@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: MESSAGE_LEVEL
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Sets the minimum message level that will be recorded by the
+# messages framework.
+MESSAGE_LEVEL = messages.INFO

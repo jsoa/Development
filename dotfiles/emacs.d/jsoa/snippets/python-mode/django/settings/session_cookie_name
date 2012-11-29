@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: SESSION_COOKIE_NAME
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The name of the cookie to use for sessions. This can be whatever you want
+# (but should be different from LANGUAGE_COOKIE_NAME).
+SESSION_COOKIE_NAME = 'sessionid'

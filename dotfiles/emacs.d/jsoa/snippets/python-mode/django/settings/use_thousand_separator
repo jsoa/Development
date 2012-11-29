@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: USE_THOUSAND_SEPARATOR
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A boolean that specifies whether to display numbers using a thousand
+# separator. When USE_L10N is set to True and if this is also set to True,
+# Django will use the values of THOUSAND_SEPARATOR and NUMBER_GROUPING to
+# format numbers.
+USE_THOUSAND_SEPARATOR = False

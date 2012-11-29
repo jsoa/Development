@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: LANGUAGE_COOKIE_NAME
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The name of the cookie to use for the language cookie. This can be whatever
+# you want (but should be different from SESSION_COOKIE_NAME)
+LANGUAGE_COOKIE_NAME = 'django_language'

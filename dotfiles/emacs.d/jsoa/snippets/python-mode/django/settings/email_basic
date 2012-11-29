@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: EMAIL_BASIC
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+EMAIL_HOST = '${HOST}'
+EMAIL_PORT = ${PORT}
+EMAIL_HOST_USER = '${USER}'
+EMAIL_HOST_PASSWORD = '${PASSWORD}'

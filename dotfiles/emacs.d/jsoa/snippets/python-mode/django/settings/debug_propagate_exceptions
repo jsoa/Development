@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: DEBUG_PROPAGATE_EXCEPTIONS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# If set to True, Django's normal exception handling of view functions will
+# be suppressed, and exceptions will propagate upwards. This can be useful
+# for some test setups, and should never be used on a live site.
+DEBUG_PROPAGATE_EXCEPTIONS = False

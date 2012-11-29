@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: TIME_INPUT_FORMATS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of formats that will be accepted when inputting data on a time
+# field. Formats will be tried in order, using the first valid one. Note
+# that these format strings use Python's datetime module syntax, not the
+# format strings from the date Django template tag.
+TIME_INPUT_FORMATS = ('%H:%M:%S', '%H:%M')

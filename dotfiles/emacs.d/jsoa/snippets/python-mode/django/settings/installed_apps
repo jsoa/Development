@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: INSTALLED_APPS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of strings designating all applications that are enabled in this
+# Django installation. Each string should be a full Python path to a Python
+# package that contains a Django application, as created by django-admin.py
+# startapp.
+INSTALLED_APPS = ()

@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: SESSION_COOKIE_DOMAIN
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The domain to use for session cookies. Set this to a string such as
+# ".lawrence.com" for cross-domain cookies, or use None for a standard
+# domain cookie.
+SESSION_COOKIE_DOMAIN = None

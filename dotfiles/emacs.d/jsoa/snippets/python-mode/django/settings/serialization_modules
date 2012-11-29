@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: SERIALIZATION_MODULES
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A dictionary of modules containing serializer definitions (provided as
+# strings), keyed by a string identifier for that serialization type.
+# For example, to define a YAML serializer, use:
+#
+# { 'yaml' : 'path.to.yaml_serializer' }
+SERIALIZATION_MODULES = {}

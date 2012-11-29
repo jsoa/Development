@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: LANGUAGES
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of all available languages. This list is continually growing and
+# including a copy here would inevitably become rapidly out of date. You can
+# see the current list of translated languages by looking in
+# django/conf/global_settings.py
+LANGUAGES = ()

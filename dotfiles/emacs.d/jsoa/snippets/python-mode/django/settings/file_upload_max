@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: FILE_UPLOAD_MAX_MEMORY_SIZE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The maximum size (in bytes) that an upload will be before it gets
+# streamed to the file system.
+FILE_UPLOAD_MAX_MEMORY_SIZE = 2621440

@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: DISALLOWED_USER_AGENTS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# List of compiled regular expression objects representing User-Agent strings
+# that are not allowed to visit any page, systemwide. Use this for bad
+# robots/crawlers. This is only used if CommonMiddleware is installed
+DISALLOWED_USER_AGENTS = ()

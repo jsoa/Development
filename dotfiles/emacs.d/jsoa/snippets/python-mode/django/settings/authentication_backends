@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: AUTHENTICATION_BACKENDS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of authentication backend classes (as strings) to use when
+# attempting to authenticate a user
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)

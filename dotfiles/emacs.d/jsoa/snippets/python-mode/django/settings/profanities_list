@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: PROFANITIES_LIST
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of profanities, as strings, that will be forbidden in comments
+# when COMMENTS_ALLOW_PROFANITIES is False.
+PROFANITIES_LIST = ()

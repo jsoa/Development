@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: PREPEND_WWW
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Whether to prepend the "www." subdomain to URLs that don't have it. This is
+# only used if CommonMiddleware is installed
+PREPEND_WWW = False

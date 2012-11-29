@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: MEDIA_URL
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# URL that handles the media served from MEDIA_ROOT, used for managing
+# stored files.
+MEDIA_URL = ''

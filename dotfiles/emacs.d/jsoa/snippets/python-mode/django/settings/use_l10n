@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: USE_L10N
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A boolean that specifies if localized formatting of data will be enabled by
+# default or not. If this is set to True, e.g. Django will display numbers and
+# dates using the format of the current locale.
+USE_L10N = False

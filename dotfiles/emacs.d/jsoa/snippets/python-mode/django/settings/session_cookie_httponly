@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: SESSION_COOKIE_HTTPONLY
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Whether to use HTTPOnly flag on the session cookie. If this is set to True,
+# client-side JavaScript will not to be able to access the session cookie.
+SESSION_COOKIE_HTTPONLY = True

@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: TEMPLATE_STRING_IF_INVALID
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Output, as a string, that the template system should use for invalid
+# (e.g. misspelled) variables. See How invalid variables are handled.
+TEMPLATE_STRING_IF_INVALID = ''

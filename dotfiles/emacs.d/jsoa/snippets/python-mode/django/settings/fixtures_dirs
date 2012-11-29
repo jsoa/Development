@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: FIXTURE_DIRS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# List of directories searched for fixture files, in addition to the fixtures
+# directory of each application, in search order.
+FIXTURE_DIRS = ()

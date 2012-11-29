@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: FORCE_SCRIPT_NAME
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# If not None, this will be used as the value of the SCRIPT_NAME environment
+# variable in any HTTP request. This setting can be used to override the
+# server-provided value of SCRIPT_NAME, which may be a rewritten version of
+# the preferred value or not supplied at all.
+FORCE_SCRIPT_NAME = None

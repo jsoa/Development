@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+# name: MESSAGE_TAGS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Sets the mapping of message levels to message tags.
+MESSAGE_TAGS = {
+    messages.DEBUG: 'debug',
+    messages.INFO: 'info',
+    messages.SUCCESS: 'success',
+    messages.WARNING: 'warning',
+    messages.ERROR: 'error',
+}

@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: MANAGERS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple in the same format as ADMINS that specifies who should get
+# broken-link notifications when SEND_BROKEN_LINK_EMAILS=True.
+MANAGERS = ()

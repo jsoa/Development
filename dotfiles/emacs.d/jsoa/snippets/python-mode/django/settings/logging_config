@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# name: LOGGING_CONFIG
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A path to a callable that will be used to configure logging in the Django
+# project. Points at a instance of Python's dictConfig configuration method
+# by default.
+#
+# If you set LOGGING_CONFIG to None, the logging configuration process
+# will be skipped.
+LOGGING_CONFIG = 'django.utils.log.dictConfig'

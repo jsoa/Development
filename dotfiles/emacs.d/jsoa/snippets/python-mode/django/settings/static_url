@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# name: STATIC_URL
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# URL to use when referring to static files located in STATIC_ROOT.
+#
+# Example: "/site_media/static/" or "http://static.example.com/"
+#
+# If not None, this will be used as the base path for media definitions and
+# the staticfiles app. It must end in a slash if set to a non-empty value.
+STATIC_URL = None

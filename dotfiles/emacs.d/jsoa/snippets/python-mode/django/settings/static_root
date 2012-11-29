@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+# name: STATIC_ROOT
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The absolute path to the directory where collectstatic will collect static
+# files for deployment.
+#
+# Example: "/home/example.com/static/"
+#
+# If the staticfiles contrib app is enabled (default) the collectstatic
+# management command will collect static files into this directory. See the
+# howto on managing static files for more details about usage.
+STATIC_ROOT = ''

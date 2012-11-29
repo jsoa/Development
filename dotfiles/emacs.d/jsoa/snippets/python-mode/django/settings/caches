@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+# name: CACHES
+# key: settings
+# group: django.settings
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# contributor: Jose Soares
+# --
+# A dictionary containing the settings for all caches to be used with Django.
+# It is a nested dictionary whose contents maps cache aliases to a dictionary
+# containing the options for an individual cache.
+#
+# The CACHES setting must configure a default cache; any number of additional
+# caches may also be specified. If you are using a cache backend other than
+# the local memory cache, or you need to define multiple caches, other options
+# will be required. The following cache options are available.
+CACHES = {
+    'default': {
+        'BACKEND': '${1: $(yas/choose-value '("django.core.cache.backends.db.DatabaseCache" "django.core.cache.backends.dummy.DummyCache" "django.core.cache.backends.filebased.FileBasedCache" "django.core.cache.backends.locmem.LocMemCache" "django.core.cache.backends.memcached.MemcachedCache" "django.core.cache.backends.memcached.PyLibMCCache"))}',
+        ${2:'KEY_FUNCTION': ${3:''},}
+        ${4:'KEY_PREFIX': ${5:'prefix'},}
+        ${6:'LOCATION': ${7:'/var/tmp/django_cache'},}
+        ${8:'OPTIONS': ${9:'options'},}
+        ${10:'TIMEOUT': ${11:300},}
+        ${12:'VERSION': ${13:1},}
+    }
+}

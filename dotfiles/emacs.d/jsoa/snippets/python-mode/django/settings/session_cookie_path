@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: SESSION_COOKIE_PATH
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The path set on the session cookie. This should either match the URL path
+# of your Django installation or be parent of that path.
+SESSION_COOKIE_PATH = '/'

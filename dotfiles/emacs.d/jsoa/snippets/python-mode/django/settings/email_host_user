@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: EMAIL_HOST_USER
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Username to use for the SMTP server defined in EMAIL_HOST. If empty,
+# Django won't attempt authentication.
+EMAIL_HOST_USER = ''

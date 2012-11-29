@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: USE_ETAGS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A boolean that specifies whether to output the "Etag" header. This saves
+# bandwidth but slows down performance. This is used by the CommonMiddleware
+# (see Middleware) and in the``Cache Framework`` (see Django's cache framework).
+USE_ETAGS = False

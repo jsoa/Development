@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: SECURE_PROXY_SSL_HEADER
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple representing a HTTP header/value combination that signifies a
+# request is secure. This controls the behavior of the request object's
+# is_secure() method.
+SECURE_PROXY_SSL_HEADER = None

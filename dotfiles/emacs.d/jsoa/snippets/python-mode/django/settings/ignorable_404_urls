@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: IGNORABLE_404_URLS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# List of compiled regular expression objects describing URLs that should
+# be ignored when reporting HTTP 404 errors via email (see Error reporting).
+# Use this if your site does not provide a commonly requested file such as
+# favicon.ico or robots.txt, or if it gets hammered by script kiddies.
+IGNORABLE_404_URLS = ()

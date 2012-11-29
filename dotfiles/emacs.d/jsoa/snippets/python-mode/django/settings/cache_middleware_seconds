@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: CACHE_MIDDLEWARE_SECONDS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The default number of seconds to cache a page when the caching middleware
+# or cache_page() decorator is used.
+CACHE_MIDDLEWARE_SECONDS = 600

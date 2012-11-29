@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+# name: MIDDLEWARE_CLASSES
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of middleware classes to use.
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+)

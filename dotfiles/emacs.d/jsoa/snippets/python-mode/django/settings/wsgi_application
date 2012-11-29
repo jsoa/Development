@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: WSGI_APPLICATION
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The full Python path of the WSGI application object that Django's built-in
+# servers (e.g. runserver) will use. The django-admin.py startproject
+# management command will create a simple wsgi.py file with an application
+# callable in it, and point this setting to that application.
+WSGI_APPLICATION = None

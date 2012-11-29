@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: ADMINS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple that lists people who get code error notifications. When DEBUG=False
+# and a view raises an exception, Django will email these people with the
+# full exception information. Each member of the tuple should be a tuple of
+# (Full name, email address). Example:
+# (('John', 'john@example.com'), ('Mary', 'mary@example.com'))
+ADMINS = ()

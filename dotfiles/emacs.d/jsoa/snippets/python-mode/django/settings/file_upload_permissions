@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: FILE_UPLOAD_PERMISSIONS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The numeric mode (i.e. 0644) to set newly uploaded files to. For
+# more information about what these modes mean, see the documentation
+# for os.chmod().
+FILE_UPLOAD_PERMISSIONS = None

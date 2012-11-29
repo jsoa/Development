@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: RESTRUCTUREDTEXT_FILTER_SETTINGS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A dictionary containing settings for the restructuredtext markup filter
+# from the django.contrib.markup application. They override the default
+# writer settings.
+RESTRUCTUREDTEXT_FILTER_SETTINGS = {}

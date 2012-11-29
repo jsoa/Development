@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: USE_X_FORWARDED_HOST
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A boolean that specifies whether to use the X-Forwarded-Host header in
+# preference to the Host header. This should only be enabled if a proxy which
+# sets this header is in use.
+USE_X_FORWARDED_HOST = False

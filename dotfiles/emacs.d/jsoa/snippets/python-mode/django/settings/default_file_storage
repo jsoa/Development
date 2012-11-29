@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: DEFAULT_FILE_STORAGE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Default file storage class to be used for any file-related operations that
+# don't specify a particular storage system
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'

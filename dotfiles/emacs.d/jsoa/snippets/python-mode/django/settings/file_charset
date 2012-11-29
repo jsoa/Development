@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: FILE_CHARSET
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+FILE_CHARSET = 'utf-8'

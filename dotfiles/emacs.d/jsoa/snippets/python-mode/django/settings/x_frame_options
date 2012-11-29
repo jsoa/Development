@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: X_FRAME_OPTIONS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The default value for the X-Frame-Options header used by
+# XFrameOptionsMiddleware. See the clickjacking protection documentation.
+X_FRAME_OPTIONS = 'SAMEORIGIN'

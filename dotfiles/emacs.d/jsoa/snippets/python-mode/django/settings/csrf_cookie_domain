@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: CSRF_COOKIE_DOMAIN
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The domain to be used when setting the CSRF cookie. This can be useful for
+# easily allowing cross-subdomain requests to be excluded from the normal
+# cross site request forgery protection. It should be set to a string such
+# as ".lawrence.com" to allow a POST request from a form on one subdomain
+# to be accepted by accepted by a view served from another subdomain.
+CSRF_COOKIE_DOMAIN = None

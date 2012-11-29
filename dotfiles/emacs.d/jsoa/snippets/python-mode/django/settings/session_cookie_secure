@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: SESSION_COOKIE_SECURE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Whether to use a secure cookie for the session cookie. If this is set to
+# True, the cookie will be marked as "secure," which means browsers may ensure
+# that the cookie is only sent under an HTTPS connection.
+SESSION_COOKIE_SECURE = False

@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: CSRF_COOKIE_NAME
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The name of the cookie to use for the CSRF authentication token. This
+# can be whatever you want.
+CSRF_COOKIE_NAME = 'csrftoken'

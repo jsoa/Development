@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: SEND_BROKEN_LINK_EMAILS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Whether to send an email to the MANAGERS each time somebody visits a
+# Django-powered page that is 404ed with a non-empty referer
+# (i.e., a broken link). This is only used if CommonMiddleware is installed.
+SEND_BROKEN_LINK_EMAILS = False

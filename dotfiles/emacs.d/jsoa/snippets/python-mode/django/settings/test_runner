@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: TEST_RUNNER
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The name of the class to use for starting the test suite. See Testing Django
+# applications.
+TEST_RUNNER = 'django.test.simple.DjangoTestSuiteRunner'

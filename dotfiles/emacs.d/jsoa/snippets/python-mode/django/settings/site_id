@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: SITE_ID
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The ID, as an integer, of the current site in the django_site database
+# table. This is used so that application data can hook into specific
+# site(s) and a single database can manage content for multiple sites.
+SITE_ID = 1

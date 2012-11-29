@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: TIME_FORMAT
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The default formatting to use for displaying time fields in any part of
+# the system. Note that if USE_L10N is set to True, then the locale-dictated
+# format has higher precedence and will be applied instead.
+TIME_FORMAT = 'P' # (e.g. 4 p.m.)

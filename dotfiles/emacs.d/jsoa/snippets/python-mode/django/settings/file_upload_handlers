@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: FILE_UPLOAD_HANDLERS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+FILE_UPLOAD_HANDLERS = (
+    'django.core.files.uploadhandler.MemoryFileUploadHandler',
+    'django.core.files.uploadhandler.TemporaryFileUploadHandler',
+)

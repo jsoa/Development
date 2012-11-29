@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+# name: DATABASES
+# key: settings
+# group: django.settings
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# contributor: Jose Soares
+# --
+# A dictionary containing the settings for all databases to be used with
+# Django. It is a nested dictionary whose contents maps database aliases to
+# a dictionary containing the options for an individual database.
+#
+# The DATABASES setting must configure a default database; any number of
+# additional databases may also be specified.
+DATABASES = {
+    'default':
+        'ENGINE': '${1: $(yas/choose-value '("django.db.backends.postgresql_psycopg2" "django.db.backends.mysql" "django.db.backends.sqlite3" "django.db.backends.oracle"))}',
+        ${2:'HOST': ${3:''},}
+        ${4:'NAME': ${5:''},}
+        ${6:'OPTIONS': ${7:{}},}
+        ${8:'PASSWORD': ${9:''},}
+        ${10:'PORT': ${11:''},}
+        ${12:'USER': ${13:''},}
+        ${14:${15:'TEST_CHARSET': ${16:None},}
+        ${17:'TEST_COLLATION': ${18:None},}
+        ${19:'TEST_DEPENDENCIES': ${20:['default']},}
+        ${21:'TEST_MIRROR': ${22:None},}
+        ${23:'TEST_CREATE': ${24:True},}
+        ${25:'TEST_USER': ${26:None},}
+        ${27:'TEST_USER_CREATE': ${28:True},}
+        ${29:'TEST_PASSWD': ${30:None},}
+        ${31:'TEST_TBLSPACE': ${32:None},}
+        ${33:'TEST_TBLSPACE_TMP': ${34:None},}}
+    }
+}

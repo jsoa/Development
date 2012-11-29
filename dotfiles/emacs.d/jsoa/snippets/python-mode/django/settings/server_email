@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: SERVER_EMAIL
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The email address that error messages come from, such as those sent to
+# ADMINS and MANAGERS.
+SERVER_EMAIL = 'root@localhost'

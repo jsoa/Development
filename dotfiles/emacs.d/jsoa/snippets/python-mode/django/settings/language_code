@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: LANGUAGE_CODE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A string representing the language code for this installation. This should
+# be in standard language format. For example, U.S. English is "en-us"
+LANGUAGE_CODE = 'en-us'

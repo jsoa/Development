@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: LOGIN_URL
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The URL where requests are redirected for login, especially when using the
+# login_required() decorator.
+LOGIN_URL = '/accounts/login/'

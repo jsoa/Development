@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: EMAIL_SUBJECT_PREFIX
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Subject-line prefix for email messages sent with
+# django.core.mail.mail_admins or django.core.mail.mail_managers. You'll
+# probably want to include the trailing space.
+EMAIL_SUBJECT_PREFIX = '[Django]'

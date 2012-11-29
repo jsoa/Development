@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+# name: TEMPLATE_LOADERS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A tuple of template loader classes, specified as strings. Each Loader class
+# knows how to import templates from a particular source. Optionally, a tuple
+# can be used instead of a string. The first item in the tuple should be the
+# Loader's module, subsequent items are passed to the Loader during
+# initialization. See The Django template language: For Python programmers.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader'
+)

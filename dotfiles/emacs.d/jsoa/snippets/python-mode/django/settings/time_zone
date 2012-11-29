@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: TIME_ZONE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A string representing the time zone for this installation.
+# See http://www.postgresql.org/docs/8.1/static/datetime-keywords.html for
+# available choices.
+TIME_ZONE = 'America/Chicago'

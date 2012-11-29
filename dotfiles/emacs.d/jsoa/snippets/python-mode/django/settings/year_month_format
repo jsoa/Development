@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: YEAR_MONTH_FORMAT
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The default formatting to use for date fields on Django admin change-list
+# pages -- and, possibly, by other parts of the system -- in cases when
+# only the year and month are displayed.
+YEAR_MONTH_FORMAT = 'F Y'

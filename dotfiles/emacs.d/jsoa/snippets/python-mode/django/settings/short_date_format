@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: SHORT_DATE_FORMAT
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# An available formatting that can be used for displaying date fields on
+# templates. Note that if USE_L10N is set to True, then the corresponding
+# locale-dictated format has higher precedence and will be applied.
+SHORT_DATE_FORMAT = 'm/d/Y'

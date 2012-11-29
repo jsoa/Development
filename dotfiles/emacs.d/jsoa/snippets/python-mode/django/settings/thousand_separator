@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: THOUSAND_SEPARATOR
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Default thousand separator used when formatting numbers. This setting is
+# used only when USE_THOUSAND_SEPARATOR is True and NUMBER_GROUPING is
+# greater than 0.
+THOUSAND_SEPARATOR = ','

@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: NUMBER_GROUPING
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Number of digits grouped together on the integer part of a number.
+#
+# Common use is to display a thousand separator. If this setting is 0, then
+# no grouping will be applied to the number. If this setting is greater than
+# 0, then THOUSAND_SEPARATOR will be used as the separator between those groups.
+NUMBER_GROUPING = 0

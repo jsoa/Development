@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: DEFAULT_EXCEPTION_REPORTER_FILTER
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Default exception reporter filter class to be used if none has been
+# assigned to the HttpRequest instance yet
+DEFAULT_EXCEPTION_REPORTER_FILTER = 'django.views.debug.SafeExceptionReporterFilter'

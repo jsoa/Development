@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: CSRF_FAILURE_VIEW
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A dotted path to the view function to be used when an incoming request is
+# rejected by the CSRF protection. The function should have this signature:
+# ----
+# def csrf_failure(request, reason="")
+# ----
+CSRF_FAILURE_VIEW = 'django.views.csrf.csrf_failure'

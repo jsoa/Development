@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+# name: FORMAT_MODULE_PATH
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A full Python path to a Python package that contains format definitions
+# for project locales. If not None, Django will check for a formats.py file,
+# under the directory named as the current locale, and will use the formats
+# defined on this file.
+#
+# For example, if FORMAT_MODULE_PATH is set to mysite.formats, and current
+# language is en (English), Django will expect a directory tree like:
+#
+# mysite/
+#     formats/
+#         __init__.py
+#         en/
+#             __init__.py
+#             formats.py
+FORMAT_MODULE_PATH = None

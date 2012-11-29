@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# name: DEFAULT_CONTENT_TYPE
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# Default charset to use for all HttpResponse objects, if a MIME type isn't
+# manually specified. Used with DEFAULT_CONTENT_TYPE to construct the
+# Content-Type header.
+DEFAULT_CONTENT_TYPE = 'text/html'

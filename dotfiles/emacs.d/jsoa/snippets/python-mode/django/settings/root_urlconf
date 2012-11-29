@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# name: ROOT_URLCONF
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# A string representing the full Python import path to your root URLconf.
+# For example: "mydjangoapps.urls". Can be overridden on a per-request
+# basis by setting the attribute urlconf on the incoming HttpRequest
+# object. See How Django processes a request for details.
+ROOT_URLCONF = None

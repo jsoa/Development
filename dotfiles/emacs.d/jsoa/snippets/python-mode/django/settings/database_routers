@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: DATABASE_ROUTERS
+# key: settings
+# group: django.settings
+# contributor: Jose Soares
+# --
+# The list of routers that will be used to determine which database to use
+# when performing a database queries.
+DATABASE_ROUTERS = []
