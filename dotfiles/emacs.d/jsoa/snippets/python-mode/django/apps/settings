@@ -17,7 +17,7 @@ DEFAULT_SETTINGS = {
 
 USER_SETTINGS = getattr(settings, '${3:APP NAME}_SETTINGS', {})
 
-${4:error_str = "settings.%s is deprecated; use settings.STORY_SETTINGS instead."
+${4:error_str = "settings.%s is deprecated; use settings.$3_SETTINGS instead."
 if hasattr(settings, '${5:OLD SETTING NAME}'):
     warnings.warn(error_str % '$5', DeprecationWarning)
     DEFAULT_SETTINGS['$1'] = getattr(settings, '$5') or []
