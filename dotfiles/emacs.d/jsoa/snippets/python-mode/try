@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: try .. except .. else
+# key: try
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# contributor: Jose Soares
+# --
+try:
+
+except (${$$(yas/choose-value '("Exception" "ValueError" "KeyError" "IOError" "IndexError"))}, )${, exc}:
+    pass
+${else:
+    pass}
