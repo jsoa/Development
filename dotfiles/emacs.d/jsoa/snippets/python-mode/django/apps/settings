@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+# name: django app settings
+# key: django.apps
+# group: django
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# contributor: Jose Soares
+# --
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import warnings
+
+from django.conf import settings
+
+DEFAULT_SETTINGS = {
+    '${1:SETTING NAME}': ${2:SETTING VALUE}
+}
+
+USER_SETTINGS = getattr(settings, '${3:APP NAME}_SETTINGS', {})
+
+${4:error_str = "settings.%s is deprecated; use settings.STORY_SETTINGS instead."
+if hasattr(settings, '${5:OLD SETTING NAME}'):
+    warnings.warn(error_str % '$5', DeprecationWarning)
+    DEFAULT_SETTINGS['$1'] = getattr(settings, '$5') or []
+}
+
+DEFAULT_SETTINGS.update(USER_SETTINGS)
+
+globals().update(DEFAULT_SETTINGS)

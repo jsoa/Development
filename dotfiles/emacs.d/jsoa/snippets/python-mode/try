@@ -5,8 +5,8 @@
 # contributor: Jose Soares
 # --
 try:
-
-except (${$$(yas/choose-value '("Exception" "ValueError" "KeyError" "IOError" "IndexError"))}, )${, exc}:
+    $0
+except (${ $(yas/choose-value '("Exception" "ValueError" "KeyError" "IOError" "IndexError"))}, )${, exc}:
     pass
 ${else:
     pass}
