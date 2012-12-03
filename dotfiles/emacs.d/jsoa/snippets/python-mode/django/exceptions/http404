@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.http.Http404
-# key: exceptions
+# key: exc
 # group: django.http
 # contributor: Jose Soares
 # --

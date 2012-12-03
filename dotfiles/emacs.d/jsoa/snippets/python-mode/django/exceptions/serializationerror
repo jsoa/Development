@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.core.serializers.SerializationError
-# key: exceptions
+# key: exc
 # group: django.core.serializers
 # contributor: Jose Soares
 # --

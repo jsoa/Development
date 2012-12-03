@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.core.paginator.InvalidPage
-# key: exceptions
+# key: exc
 # group: django.core.paginator
 # contributor: Jose Soares
 # --

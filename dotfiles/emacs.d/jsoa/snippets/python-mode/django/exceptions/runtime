@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.core.exceptions.DjangoRuntimeWarning
-# key: exceptions
+# key: exc
 # group: django.core.exceptions
 # contributor: Jose Soares
 # --

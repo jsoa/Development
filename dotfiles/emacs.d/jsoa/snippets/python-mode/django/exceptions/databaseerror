@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.db.DatabaseError
-# key: exceptions
+# key: exc
 # group: django.db
 # contributor: Jose Soares
 # --

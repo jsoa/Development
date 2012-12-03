@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.db.transaction.TransactionManagmentError
-# key: exceptions
+# key: exc
 # group: django.db.transaction
 # contributor: Jose Soares
 # --

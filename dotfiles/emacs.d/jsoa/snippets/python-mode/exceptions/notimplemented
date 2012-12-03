@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: NotImplementedError
-# key: exceptions
+# key: exc
 # group: builtins.exceptions
 # contributor: Jose Soares
 # --

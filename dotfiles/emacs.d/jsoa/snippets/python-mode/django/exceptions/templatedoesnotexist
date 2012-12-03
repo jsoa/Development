@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.template.TemplateDoesNotExist
-# key: exceptions
+# key: exc
 # group: django.template
 # contributor: Jose Soares
 # --

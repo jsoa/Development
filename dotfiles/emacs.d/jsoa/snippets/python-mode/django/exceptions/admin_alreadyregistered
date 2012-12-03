@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # name: django.contrib.admin.sites.AlreadyRegistered
-# key: exceptions
+# key: exc
 # group: django.contrib.admin
 # contributor: Jose Soares
 # --
