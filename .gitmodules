@@ -109,3 +109,6 @@
 [submodule "dotfiles/emacs.d/vendor/jade-mode"]
 	path = dotfiles/emacs.d/vendor/jade-mode
 	url = git://github.com/brianc/jade-mode.git
+[submodule "dotfiles/emacs.d/vendor/smart-tab"]
+	path = dotfiles/emacs.d/vendor/smart-tab
+	url = https://github.com/genehack/smart-tab.git

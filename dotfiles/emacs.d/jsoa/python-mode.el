@@ -24,8 +24,12 @@
 ;;    (insert-pair)))
 
 ;;; bind RET to py-newline-and-indent
-(add-hook 'python-mode-hook '(lambda () 
+(add-hook 'python-mode-hook '(lambda ()
      (define-key python-mode-map "\C-m" 'newline-and-indent)))
+
+(add-hook 'python-mode-hook
+  (lambda ()
+         (auto-complete-mode 1)))
 
 ;;; Set the tabs correctly
 (setq-default indent-tabs-mode nil)
