@@ -75,9 +75,9 @@ settings (settings<TAB>)
 Includes all django settings including a segment of the docs in comments, here
 is an example output for `TEMPLATE_STRING_IF_INVALID`::
 
-# Output, as a string, that the template system should use for invalid
-# (e.g. misspelled) variables. See How invalid variables are handled.
-TEMPLATE_STRING_IF_INVALID = ''
+    # Output, as a string, that the template system should use for invalid
+    # (e.g. misspelled) variables. See How invalid variables are handled.
+    TEMPLATE_STRING_IF_INVALID = ''
 
 model fields (models<TAB>)
 --------------------------
