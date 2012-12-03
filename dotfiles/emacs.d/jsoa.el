@@ -11,20 +11,24 @@
 (load "jsoa/nxhtml")
 
 (vendor 'python-mode)
+(vendor 'pymacs)
+(vendor 'python-pep8)
+(vendor 'python-pylint)
+(vendor 'pylookup)
 (vendor 'virtualenv)
-(vendor 'fill-column-indicator)
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
 (vendor 'jade-mode)
-;; (vendor 'scss-mode)
 (vendor 'yasnippet)
 (vendor 'json-mode)
 (vendor 'magit)
 (vendor 'markdown-mode)
 (vendor 'textmate)
-(vendor 'pymacs)
 (vendor 'auto-complete)
-(vendor 'pylookup)
 (vendor 'smooth-scroll)
+(vendor 'fill-column-indicator)
 (vendor 'smart-tab)
 (vendor 'findr)
+
+
+
