@@ -77,8 +77,5 @@
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
 
-
-
-
-
-
+;; Enable ido mode
+(ido-mode t)
