@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: email
+# key: regex
+# contributor: Jose Soares
+# ref: http://net.tutsplus.com/tutorials/other/8-regular-expressions-you-should-know/
+# --
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/

@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# name: ip
+# key: regex
+# contributor: Jose Soares
+# ref: http://net.tutsplus.com/tutorials/other/8-regular-expressions-you-should-know/
+# --
+/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/
