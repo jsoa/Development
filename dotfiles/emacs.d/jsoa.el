@@ -29,6 +29,8 @@
 (vendor 'fill-column-indicator)
 (vendor 'smart-tab)
 (vendor 'findr)
+(vendor 'multiple-cursors)
+(vendor 'expand-region)
 
 
 

@@ -112,3 +112,9 @@
 [submodule "dotfiles/emacs.d/vendor/smart-tab"]
 	path = dotfiles/emacs.d/vendor/smart-tab
 	url = https://github.com/genehack/smart-tab.git
+[submodule "dotfiles/emacs.d/vendor/multiple-cursors"]
+	path = dotfiles/emacs.d/vendor/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "dotfiles/emacs.d/vendor/expand-region"]
+	path = dotfiles/emacs.d/vendor/expand-region
+	url = https://github.com/magnars/expand-region.el.git
