@@ -30,16 +30,16 @@
 ;; Note: need to disable menu access keys and shortcuts in terminal
 
 ;; ref: https://github.com/magnars/.emacs.d/blob/master/key-bindings.el
-(global-set-key (kbd "C-c C-M-c") 'mc/edit-lines)
-(global-set-key (kbd "C-c C-M-e") 'mc/edit-ends-of-lines)
-(global-set-key (kbd "C-c C-M-a") 'mc/edit-beginnings-of-lines)
+(global-set-key (kbd "C-c c") 'mc/edit-lines)
+(global-set-key (kbd "C-c e") 'mc/edit-ends-of-lines)
+(global-set-key (kbd "C-c a") 'mc/edit-beginnings-of-lines)
 
 ;; Mark additional regions matching current region
-(global-set-key (kbd "C-c C-M-b") 'mc/mark-all-like-this-dwim)
-(global-set-key (kbd "C-c C-M-p") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-M-n") 'mc/mark-next-like-this)
-;; (global-set-key (kbd "C-Æ") 'mc/mark-more-like-this-extended)
-(global-set-key (kbd "C-c C-M-N") 'mc/mark-all-in-region)
+(global-set-key (kbd "C-c b") 'mc/mark-all-like-this-dwim)
+(global-set-key (kbd "C-c p") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c n") 'mc/mark-next-like-this)
+;; (global-set-key (kbd "C-c C-M-m") 'mc/mark-more-like-this-extended)
+(global-set-key (kbd "C-c r") 'mc/mark-all-in-region)
 
 ;; Expand region (increases selected region by semantic units)
-(global-set-key (kbd "C-c C-@") 'er/expand-region)
+;; (global-set-key (kbd "C-c C-@") 'er/expand-region)
