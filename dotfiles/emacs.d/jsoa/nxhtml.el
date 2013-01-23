@@ -1,3 +1,7 @@
+(if (boundp 'image-types)
+    nil
+    (defvar image-types nil))
+
 (load "../vendor/nxhtml/autostart")
 
 (setq auto-mode-alist
