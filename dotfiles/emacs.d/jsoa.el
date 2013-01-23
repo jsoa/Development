@@ -11,7 +11,6 @@
 (load "jsoa/nxhtml")
 
 (vendor 'python-mode)
-(vendor 'pymacs)
 (vendor 'python-pep8)
 (vendor 'python-pylint)
 (vendor 'pylookup)
@@ -31,6 +30,3 @@
 (vendor 'findr)
 (vendor 'multiple-cursors)
 (vendor 'expand-region)
-
-
-
