@@ -50,3 +50,6 @@
       browse-url-generic-program "open")
 ;; Set a keybind
 (global-set-key (kbd "C-c C-o") 'browse-url)
+
+;; Edit file with sudo
+(global-set-key (kbd "M-s e") 'sudo-edit)
