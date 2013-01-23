@@ -1,3 +1,16 @@
+;; emacs 24 compatiablity
+;; http://stackoverflow.com/a/14183331/1209871
+(defun plist-to-alist (the-plist)
+  (defun get-tuple-from-plist (the-plist)
+    (when the-plist
+      (cons (car the-plist) (cadr the-plist))))
+
+  (let ((alist '()))
+    (while the-plist
+      (add-to-list 'alist (get-tuple-from-plist the-plist))
+      (setq the-plist (cddr the-plist)))
+  alist))
+
 (require 'color-theme)
 
 (setq color-theme-is-global t)
