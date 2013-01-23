@@ -44,6 +44,7 @@
 ;; Expand region (increases selected region by semantic units)
 ;; (global-set-key (kbd "C-c C-@") 'er/expand-region)
 
+;; ref: http://francesco-cek.com/open-an-url-in-safari-from-emacs/
 ;; Set the default browser command
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "open")
