@@ -1,4 +1,5 @@
 [MASTER]
+ignore=migrations,tests
 
 # Specify a configuration file.
 #rcfile=
