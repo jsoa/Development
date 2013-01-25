@@ -79,3 +79,11 @@
 
 ;; Enable ido mode
 (ido-mode t)
+
+;; Show keystrokes
+(setq echo-keystrokes 0.1)
+
+;; Never insert tabs
+(set-default 'indent-tabs-mode nil)
+
+
