@@ -23,6 +23,9 @@
 ;; rename file or buffer
 (global-set-key (kbd "C-c R") 'rename-current-file-or-buffer)
 
+;; ispell region
+(global-set-key (kbd "C-c s") 'ispell-region)
+
 ;; magit bindings
 (global-set-key [(control f9)] (lambda () (interactive) (magit-status default-directory)))
 (global-set-key [(f9)]         (lambda () (interactive) (magit-status default-directory)))
