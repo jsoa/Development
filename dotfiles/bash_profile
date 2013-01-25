@@ -15,4 +15,12 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PROJECT_HOME=$HOME/Development/python
 source /usr/local/bin/virtualenvwrapper.sh
 
+### history
+export HISTCONTROL=ignoredups
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000
+
 source ~/.bash_aliases
+
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/heroku/bin:$PATH
