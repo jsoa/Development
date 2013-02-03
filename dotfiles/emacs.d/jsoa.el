@@ -18,6 +18,7 @@
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
 (vendor 'jade-mode)
+(vendor 'scss-mode)
 (vendor 'yasnippet)
 (vendor 'json-mode)
 (vendor 'magit)
