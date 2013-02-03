@@ -30,3 +30,5 @@
 (vendor 'findr)
 (vendor 'multiple-cursors)
 (vendor 'expand-region)
+
+(vendor 'erc)
