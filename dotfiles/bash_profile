@@ -7,7 +7,6 @@ echo -ne "Uptime: "; uptime
 echo -ne "Server time is: "; date
 
 export TERM=xterm-256color
-
 export EDITOR='emacs -nw -q'
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -21,6 +20,7 @@ export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
 
 source ~/.bash_aliases
+source ~/.bash_prompt
 
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH

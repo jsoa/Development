@@ -45,6 +45,8 @@ LO_BASH_PROFILE="$HOME/Development/dotfiles/bash_profile"
 BASH_PROFILE="$HOME/.bash_profile"
 LO_BASH_ALIASES="$HOME/Development/dotfiles/bash_aliases"
 BASH_ALIASES="$HOME/.bash_aliases"
+LO_BASH_PROMPT="$HOME/Development/dotfiles/bash_prompt"
+BASH_PROMPT="$HOME/.bash_prompt"
 
 # GCONF
 LO_TERM_PROFILE="$HOME/Development/dotfiles/gconf/terminal/profile.xml"
@@ -64,6 +66,7 @@ GITIGNORE="$HOME/.gitignore_global"
 link_file $EMACS_DIR $LO_EMACS_DIR
 link_dir $EMACS $LO_EMACS
 link_file $BASH_PROFILE $LO_BASH_PROFILE
+link_file $BASH_PROMPT $LO_BASH_PROMPT
 link_file $BASH_ALIASES $LO_BASH_ALIASES
 link_file $TERM_PROFILE $LO_TERM_PROFILE
 link_file $TERM_BINDINGS $LO_TERM_BINDINGS
