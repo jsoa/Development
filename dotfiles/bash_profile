@@ -18,6 +18,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
 source ~/.bash_aliases
 source ~/.bash_prompt
