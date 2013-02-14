@@ -10,6 +10,7 @@
 
 (load "jsoa/nxhtml")
 
+(vendor 'powerline)
 (vendor 'python-mode)
 (vendor 'python-pep8)
 (vendor 'python-pylint)
