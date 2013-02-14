@@ -7,8 +7,11 @@
 auto-save-list
 .\#*
 
+elpa*
 backups
 sites
 projects
 ext_apps
 clients
+
+private*
