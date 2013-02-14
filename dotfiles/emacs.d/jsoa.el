@@ -5,10 +5,12 @@
 (load "jsoa/env")
 (load "jsoa/global")
 (load "jsoa/bindings")
+(load "jsoa/packages")
 (load "jsoa/grep")
 (load "jsoa/diff")
 
 (load "jsoa/nxhtml")
+(load "jsoa/jabber")
 
 (vendor 'powerline)
 (vendor 'python-mode)
@@ -34,3 +36,5 @@
 (vendor 'expand-region)
 
 (vendor 'erc)
+
+(load "jsoa/private.el")
