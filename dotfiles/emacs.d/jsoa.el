@@ -12,7 +12,8 @@
 (load "jsoa/nxhtml")
 (load "jsoa/jabber")
 
-(vendor 'powerline)
+(vendor 'twittering-mode)
+;; (vendor 'powerline)
 (vendor 'python-mode)
 (vendor 'python-pep8)
 (vendor 'python-pylint)
