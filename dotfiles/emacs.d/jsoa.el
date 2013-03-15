@@ -13,29 +13,36 @@
 (load "jsoa/jabber")
 
 (vendor 'twittering-mode)
+(vendor 'erc)
+
 ;; (vendor 'powerline)
-(vendor 'python-mode)
-(vendor 'python-pep8)
-(vendor 'python-pylint)
-(vendor 'pylookup)
-(vendor 'virtualenv)
-(vendor 'coffee-mode)
-(vendor 'js2-mode)
-(vendor 'jade-mode)
-(vendor 'scss-mode)
-(vendor 'yasnippet)
-(vendor 'json-mode)
-(vendor 'magit)
-(vendor 'markdown-mode)
-(vendor 'textmate)
-(vendor 'auto-complete)
+(vendor 'flycheck)
 (vendor 'smooth-scroll)
 (vendor 'fill-column-indicator)
 (vendor 'smart-tab)
 (vendor 'findr)
 (vendor 'multiple-cursors)
 (vendor 'expand-region)
+(vendor 'auto-complete)
+(vendor 'magit)
+(vendor 'yasnippet)
 
-(vendor 'erc)
+;; Python mode related
+(vendor 'python-mode)
+(vendor 'python-pep8)
+(vendor 'python-pylint)
+(vendor 'pylookup)
+(vendor 'virtualenv)
+
+;; Other Modes
+(vendor 'coffee-mode)
+(vendor 'js2-mode)
+(vendor 'jade-mode)
+(vendor 'scss-mode)
+(vendor 'json-mode)
+(vendor 'markdown-mode)
+
+;; Other
+;; (vendor 'textmate)
 
 (load "jsoa/private.el")
