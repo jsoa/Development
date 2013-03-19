@@ -42,9 +42,10 @@ load-plugins=
 # W0232 - Class has no __init__ method
 # W0212 - Access to a protected member ... of a client class
 # W0613 - Unused argument
+# W0703 - Cathing too general exception
 # E1101 - Has no member (countless false-positive
 # F0401 - Unable to import
-disable=R0903,W0142,W0105,W0212,W0613,E1101,F0401
+disable=R0903,W0142,W0105,W0212,W0613,E1101,F0401,W0703
 
 
 [REPORTS]
