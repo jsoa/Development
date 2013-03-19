@@ -130,3 +130,6 @@
 [submodule "dotfiles/emacs.d/vendor/flycheck"]
 	path = dotfiles/emacs.d/vendor/flycheck
 	url = git@github.com:lunaryorn/flycheck.git
+[submodule "dotfiles/emacs.d/vendor/web-mode"]
+	path = dotfiles/emacs.d/vendor/web-mode
+	url = git@github.com:fxbois/web-mode.git

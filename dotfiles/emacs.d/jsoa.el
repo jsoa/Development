@@ -41,6 +41,7 @@
 (vendor 'scss-mode)
 (vendor 'json-mode)
 (vendor 'markdown-mode)
+(vendor 'web-mode)
 
 ;; Other
 ;; (vendor 'textmate)
