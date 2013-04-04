@@ -51,6 +51,9 @@
 ;; Prevent the annoying beep on errors
 (setq visible-bell t)
 
+;; Add proper word wrapping
+(global-visual-line-mode t)
+
 ;; Make sure all backup and autosave files only live in one place
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
@@ -79,11 +82,12 @@
 
 ;; Enable ido mode
 (ido-mode t)
+(setq ido-enable-flex-matching t)
+
+(global-font-lock-mode 1)
 
 ;; Show keystrokes
 (setq echo-keystrokes 0.1)
 
 ;; Never insert tabs
 (set-default 'indent-tabs-mode nil)
-
-
