@@ -34,6 +34,7 @@
 
 (defun jsoa/jabber-connect-hook (jc)
   (jabber-send-presence "" "Online" 10)
+  (setq visual-line-mode t)
   ;; Disable the minibuffer getting jabber messages when active
   ;; See http://www.emacswiki.org/JabberEl
   (define-jabber-alert echo "Show a message in the echo area"
