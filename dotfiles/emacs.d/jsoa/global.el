@@ -52,7 +52,7 @@
 (setq visible-bell t)
 
 ;; Add proper word wrapping
-(global-visual-line-mode t)
+;; (global-visual-line-mode t)
 
 ;; Make sure all backup and autosave files only live in one place
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
