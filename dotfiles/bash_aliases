@@ -9,6 +9,8 @@ else # OS X `ls`
 fi
 
 alias emacs="emacs -nw"
+alias ec='emacsclient -nw -a "" $*'
+
 alias ls='ls -aF ${colorflag}'
 
 alias ..='cd ..'

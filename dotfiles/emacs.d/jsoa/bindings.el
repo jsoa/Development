@@ -7,6 +7,10 @@
 (global-set-key (kbd "M-0") 'delete-window) ; was digit-argument
 (global-set-key (kbd "M-o") 'other-window) ; was facemenu-keymap
 
+;; Enable some disabled commands
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+
 ;; easier buffer killing
 (global-unset-key (kbd "M-k"))
 (global-set-key (kbd "M-K") 'kill-this-buffer)
