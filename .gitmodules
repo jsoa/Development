@@ -52,9 +52,6 @@
 [submodule "dotfiles/emacs.d/vendor/yasnippet"]
 	path = dotfiles/emacs.d/vendor/yasnippet
 	url = git://github.com/capitaomorte/yasnippet.git
-[submodule "laptop/asus-u36sd/acpi4asus-dkms"]
-	path = laptop/asus-u36sd/acpi4asus-dkms
-	url = git://git.iksaif.net/acpi4asus-dkms.git
 [submodule "dotfiles/emacs.d/vendor/js2-mode"]
 	path = dotfiles/emacs.d/vendor/js2-mode
 	url = git://github.com/mooz/js2-mode.git
@@ -76,9 +73,6 @@
 [submodule "dotfiles/emacs.d/vendor/pymacs"]
 	path = dotfiles/emacs.d/vendor/pymacs
 	url = git://github.com/pinard/Pymacs.git
-[submodule "dotfiles/emacs.d/vendor/auto-complete"]
-	path = dotfiles/emacs.d/vendor/auto-complete
-	url = git://github.com/m2ym/auto-complete.git
 [submodule "dotfiles/emacs.d/vendor/pylookup"]
 	path = dotfiles/emacs.d/vendor/pylookup
 	url = git://github.com/tsgates/pylookup.git
@@ -103,9 +97,6 @@
 [submodule "dotfiles/emacs.d/vendor/fill-column-indicator"]
 	path = dotfiles/emacs.d/vendor/fill-column-indicator
 	url = git://github.com/alpaker/Fill-Column-Indicator.git
-[submodule "dotfiles/emacs.d/vendor/scss-mode"]
-	path = dotfiles/emacs.d/vendor/scss-mode
-	url = git://github.com/adeandrade/scss-mode.git
 [submodule "dotfiles/emacs.d/vendor/jade-mode"]
 	path = dotfiles/emacs.d/vendor/jade-mode
 	url = git://github.com/brianc/jade-mode.git
@@ -133,3 +124,9 @@
 [submodule "dotfiles/emacs.d/vendor/web-mode"]
 	path = dotfiles/emacs.d/vendor/web-mode
 	url = git@github.com:fxbois/web-mode.git
+[submodule "dotfiles/emacs.d/vendor/scss-mode"]
+	path = dotfiles/emacs.d/vendor/scss-mode
+	url = git://github.com/antonj/scss-mode.git
+[submodule "dotfiles/emacs.d/vendor/auto-complete"]
+	path = dotfiles/emacs.d/vendor/auto-complete
+	url = git://github.com/auto-complete/auto-complete.git
