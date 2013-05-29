@@ -41,6 +41,8 @@ LO_EMACS="$HOME/Development/dotfiles/emacs"
 EMACS="$HOME/.emacs"
 
 # BASH PROFILE AND ALIASES
+LO_BASH_RC="$HOME/Development/dotfiles/bashrc"
+BASH_RC="$HOME/.bashrc"
 LO_BASH_PROFILE="$HOME/Development/dotfiles/bash_profile"
 BASH_PROFILE="$HOME/.bash_profile"
 LO_BASH_ALIASES="$HOME/Development/dotfiles/bash_aliases"
@@ -65,6 +67,7 @@ GITIGNORE="$HOME/.gitignore_global"
 # LINK
 link_file $EMACS_DIR $LO_EMACS_DIR
 link_dir $EMACS $LO_EMACS
+link_file $BASH_RC $LO_BASH_RC
 link_file $BASH_PROFILE $LO_BASH_PROFILE
 link_file $BASH_PROMPT $LO_BASH_PROMPT
 link_file $BASH_ALIASES $LO_BASH_ALIASES
