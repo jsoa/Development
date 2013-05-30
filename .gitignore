@@ -15,3 +15,6 @@ ext_apps
 clients
 
 private*
+
+dotfiles/emacs.d/eshell
+dotfiles/emacs.d/bookmarks
