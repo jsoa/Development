@@ -8,8 +8,8 @@
 (global-set-key (kbd "M-o") 'other-window) ; was facemenu-keymap
 
 ;; Enable some disabled commands
-(put 'downcase-region 'disabled nil)
-(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil) ;; C-x C-l
+(put 'upcase-region 'disabled nil) ;; C-x C-u
 
 ;; easier buffer killing
 (global-unset-key (kbd "M-k"))
@@ -51,12 +51,17 @@
 ;; Expand region (increases selected region by semantic units)
 ;; (global-set-key (kbd "C-c C-@") 'er/expand-region)
 
-;; ref: http://francesco-cek.com/open-an-url-in-safari-from-emacs/
-;; Set the default browser command
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "open")
-;; Set a keybind
-(global-set-key (kbd "C-c C-o") 'browse-url)
-
 ;; Edit file with sudo
 (global-set-key (kbd "M-s e") 'sudo-edit)
+
+;; set browse-url function depending on os
+(if (eq system-type 'gnu/linux)
+     (setq browse-url-browser-function 'browse-url-chromium)
+)
+(if (eq system-type 'darwin)
+    ;; ref: http://francesco-cek.com/open-an-url-in-safari-from-emacs/
+     (setq browse-url-browser-function 'browse-url-generic
+          browse-url-generic-program "open")
+)
+
+(global-set-key (kbd "C-c C-o") 'browse-url)
