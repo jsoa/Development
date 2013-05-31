@@ -5,11 +5,11 @@
 
 (setq jabber-history-enabled t)
 (setq jabber-use-global-history nil)
-(setq jabber-backlog-number 40)
-(setq jabber-backlog-days 30)
+(setq jabber-backlog-number 100)
+(setq jabber-backlog-days 60)
+(setq jabber-chat-fill-long-lines t)
 (setq fsm-debug nil)
 
-(add-hook 'jabber-chat-mode-hook 'goto-address)
 
 ;; Ref: https://github.com/alexott/emacs-configs/blob/master/rc/emacs-rc-jabber.el
 (custom-set-variables
@@ -32,9 +32,9 @@
  '(jabber-roster-user-online ((t (:foreground "color-26" :slant normal :weight bold)))))
 
 
+;; Mode hook functions
 (defun jsoa/jabber-connect-hook (jc)
   (jabber-send-presence "" "Online" 10)
-  (setq visual-line-mode t)
   ;; Disable the minibuffer getting jabber messages when active
   ;; See http://www.emacswiki.org/JabberEl
   (define-jabber-alert echo "Show a message in the echo area"
@@ -42,4 +42,8 @@
       (unless (minibuffer-prompt)
         (message "%s" msg))))
 )
+(defun jsoa/jabber-chat-mode-hook ()
+  (goto-address)
+)
 (add-hook 'jabber-post-connect-hooks 'jsoa/jabber-connect-hook)
+(add-hook 'jabber-chat-mode-hook 'jsoa/jabber-chat-mode-hook)
