@@ -15,7 +15,7 @@
 (vendor 'twittering-mode)
 (vendor 'erc)
 
-;; (vendor 'powerline)
+(vendor 'powerline)
 (vendor 'flycheck)
 (vendor 'smooth-scroll)
 (vendor 'fill-column-indicator)
