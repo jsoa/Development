@@ -15,6 +15,8 @@
 (vendor 'twittering-mode)
 (vendor 'erc)
 
+;; General
+(vendor 'goto-last-change)
 (vendor 'powerline)
 (vendor 'flycheck)
 (vendor 'smooth-scroll)
