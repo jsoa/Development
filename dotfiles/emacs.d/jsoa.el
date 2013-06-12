@@ -27,6 +27,7 @@
 (vendor 'expand-region)
 (vendor 'auto-complete)
 (vendor 'magit)
+(vendor 'git-gutter)
 (vendor 'yasnippet)
 
 ;; Python mode related
