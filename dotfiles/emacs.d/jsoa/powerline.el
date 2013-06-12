@@ -1,7 +1,7 @@
 (powerline-default-theme)
 
 (custom-set-faces
-  '(mode-line ((t (:background "#5c5cff" :foreground "grey5" :box nil))))
+  '(mode-line ((t (:background "#5BA1CF" :foreground "grey5" :box nil))))
   ;; '(mode-line-inactive ((t (:background "#5c5cff" :foreground "grey30" :box nil))))
 
   ;; Keep the colors for inactive and active the same, just change the primary
