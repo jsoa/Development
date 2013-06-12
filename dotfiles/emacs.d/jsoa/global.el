@@ -38,6 +38,12 @@
 ;; Small fringes
 ;; (set-fringe-mode '(1 . 1))
 
+;; global linum-mode
+;; (global-linum-mode 1)
+;; (setq linum-format "%4d \u2502")
+;; (custom-set-faces
+;;  '(linum ((t (:inherit (shadow default) :background "color-234" :foreground "brightblack")))))
+
 ;; Emacs gurus don't need no stinking scroll bars
 (when (fboundp 'toggle-scroll-bar)
   (toggle-scroll-bar -1))
