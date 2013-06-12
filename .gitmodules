@@ -130,3 +130,6 @@
 [submodule "dotfiles/emacs.d/vendor/auto-complete"]
 	path = dotfiles/emacs.d/vendor/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
+[submodule "dotfiles/emacs.d/vendor/git-gutter"]
+	path = dotfiles/emacs.d/vendor/git-gutter
+	url = git://github.com/syohex/emacs-git-gutter.git
