@@ -14,6 +14,7 @@
 
 ;; Highlight regions and add special behaviors to regions.
 ;; "C-h d transient" for more info
+
 (setq transient-mark-mode t)
 
 ;; save position in files
@@ -36,7 +37,7 @@
 ;; (display-battery-mode 1)
 
 ;; Small fringes
-;; (set-fringe-mode '(1 . 1))
+(set-fringe-mode '(0 . 0))
 
 ;; global linum-mode
 ;; (global-linum-mode 1)
@@ -55,7 +56,7 @@
 (set-default 'fill-column 80)
 
 ;; Prevent the annoying beep on errors
-(setq visible-bell t)
+(setq visible-bell nil)
 
 ;; Add proper word wrapping
 ;; (global-visual-line-mode t)
