@@ -48,6 +48,9 @@
      (rst-level-4-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
      (rst-level-5-face ((t (:background "grey85" :foreground "#000000" :weight bold))))
 
+     (vertical-border-face ((t (:background "#131313" :foreground "#696969"))))
+     (fringe-face ((t (:background "gray16"))))
+
      )))
 
 (provide 'color-theme-lowlevel)
