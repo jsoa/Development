@@ -4,6 +4,7 @@
 
 (load "jsoa/env")
 (load "jsoa/global")
+(load "jsoa/theme")
 (load "jsoa/bindings")
 (load "jsoa/packages")
 (load "jsoa/grep")
@@ -49,6 +50,6 @@
 ;; Other
 ;; (vendor 'textmate)
 
-;; (load "jsoa/theme")
+
 
 (load "jsoa/private.el")
