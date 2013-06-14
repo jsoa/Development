@@ -12,24 +12,15 @@
 
 
 ;; Ref: https://github.com/alexott/emacs-configs/blob/master/rc/emacs-rc-jabber.el
-(custom-set-variables
- '(jabber-auto-reconnect t)
- '(jabber-groupchat-buffer-format "*-jg-%n-*")
- '(jabber-roster-buffer "*-jroster-*")
- '(jabber-roster-line-format " %c %-25n %u %-8s  %S")
- '(jabber-chat-buffer-format "*-jc-%n-*")
- '(jabber-muc-private-buffer-format "*-jmuc-priv-%g-%n-*")
- '(jabber-rare-time-format "%e %b %Y %H:00")
-)
+(setq jabber-auto-reconnect t)
+(setq jabber-groupchat-buffer-format "*-jg-%n-*")
+(setq jabber-roster-buffer "*-jroster-*")
+(setq jabber-roster-line-format " %c %-25n %u %-8s  %S")
+(setq jabber-chat-buffer-format "*-jc-%n-*")
+(setq jabber-muc-private-buffer-format "*-jmuc-priv-%g-%n-*")
+(setq jabber-rare-time-format "%e %b %Y %H:00")
 
-;; Different colors for the roster and chat buffers
-(custom-set-faces
- '(jabber-chat-prompt-foreign ((t (:foreground "color-184" :weight bold))))
- '(jabber-chat-prompt-local ((t (:foreground "color-94" :weight bold))))
- '(jabber-roster-user-away ((t (:foreground "color-242" :slant italic :weight normal))))
- '(jabber-roster-user-dnd ((t (:foreground "color-235" :slant italic :weight normal))))
- '(jabber-roster-user-offline ((t (:foreground "color-52" :slant italic :weight light))))
- '(jabber-roster-user-online ((t (:foreground "color-26" :slant normal :weight bold)))))
+(setq jabber-chat-buffer-show-avatar nil)
 
 
 ;; Mode hook functions
