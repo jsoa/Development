@@ -1,14 +1,13 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
 (load "jsoa/defuns")
-(load "jsoa/theme")
+
 (load "jsoa/env")
 (load "jsoa/global")
 (load "jsoa/bindings")
 (load "jsoa/packages")
 (load "jsoa/grep")
 (load "jsoa/diff")
-
 (load "jsoa/nxhtml")
 (load "jsoa/jabber")
 
@@ -45,8 +44,11 @@
 (vendor 'json-mode)
 (vendor 'markdown-mode)
 (vendor 'web-mode)
+(vendor 'rainbow-mode)
 
 ;; Other
 ;; (vendor 'textmate)
+
+;; (load "jsoa/theme")
 
 (load "jsoa/private.el")

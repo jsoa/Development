@@ -133,3 +133,6 @@
 [submodule "dotfiles/emacs.d/vendor/git-gutter"]
 	path = dotfiles/emacs.d/vendor/git-gutter
 	url = git://github.com/syohex/emacs-git-gutter.git
+[submodule "dotfiles/emacs.d/vendor/rainbow-mode"]
+	path = dotfiles/emacs.d/vendor/rainbow-mode
+	url = https://github.com/emacsmirror/rainbow-mode
