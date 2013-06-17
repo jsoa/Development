@@ -98,3 +98,6 @@
 
 ;; Never insert tabs
 (set-default 'indent-tabs-mode nil)
+
+;; The custom themes path
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
