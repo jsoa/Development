@@ -16,6 +16,7 @@
 (vendor 'erc)
 
 ;; General
+(vendor 'bookmark+)
 (vendor 'goto-last-change)
 (vendor 'powerline)
 (vendor 'flycheck)
