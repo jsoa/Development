@@ -41,6 +41,7 @@
 (vendor 'coffee-mode)
 (vendor 'js2-mode)
 (vendor 'jade-mode)
+(vendor 'css-mode)
 (vendor 'scss-mode)
 (vendor 'json-mode)
 (vendor 'markdown-mode)
