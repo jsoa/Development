@@ -10,6 +10,7 @@ fi
 
 alias emacs="emacs -nw"
 alias ec='emacsclient -nw -a "" $*'
+alias ecn='emacsclient -t'
 
 alias ls='ls -aF ${colorflag}'
 
