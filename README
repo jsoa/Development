@@ -1,6 +1,16 @@
-My development repo 
+My development repo
 
 **References**
 
 - Emacs setup https://github.com/rmm5t/dotfiles/tree/master/emacs.d
- 
+
+**rebuild from sctach notes**
+
+05/22/2013
+- Missing installed packages in emacs (install via `M-x package-install`)
+    - `s`
+    - `dash`
+    - `cl-lib`
+    - `popup`
+- Changed the python setup to use easy_install to install pip
+- Added missing link to `bashrc`
