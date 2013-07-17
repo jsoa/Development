@@ -7,9 +7,9 @@ echo -e "`bash --version`"
 # echo -ne "Server time is: "; date
 
 export TERM=xterm-256color
-# export EDITOR='emacs -nw -q'
+export EDITOR='emacs -nw -q'
 
-export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
+# export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
