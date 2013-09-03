@@ -65,3 +65,6 @@
 )
 
 (global-set-key (kbd "C-c C-o") 'browse-url)
+
+;;
+(global-unset-key [C-down-mouse-1])
