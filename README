@@ -6,11 +6,10 @@ My development repo
 
 **rebuild from sctach notes**
 
+09/26/2013
+- emacs.d changes see `dotfiles/emacs.d/README.md`
+
 05/22/2013
-- Missing installed packages in emacs (install via `M-x package-install`)
-    - `s`
-    - `dash`
-    - `cl-lib`
-    - `popup`
+- emacs.d changes see `dotfiles/emacs.d/README.md`
 - Changed the python setup to use easy_install to install pip
 - Added missing link to `bashrc`
