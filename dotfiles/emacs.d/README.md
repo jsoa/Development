@@ -13,6 +13,7 @@ Emacs
 - web-mode
 - mardown-mode
 - git-gutter
+- powerline
 
 **Added packages**
 
