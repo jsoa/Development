@@ -7,6 +7,7 @@
 (load "jsoa/theme")
 (load "jsoa/bindings")
 (load "jsoa/packages")
+(load "jsoa/git.el")
 (load "jsoa/grep")
 (load "jsoa/diff")
 (load "jsoa/nxhtml")
