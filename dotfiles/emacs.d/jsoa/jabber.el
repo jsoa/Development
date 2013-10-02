@@ -37,6 +37,7 @@
 )
 (defun jsoa/jabber-chat-mode-hook ()
   (goto-address)
+  (visual-line-mode t)
 )
 (add-hook 'jabber-post-connect-hooks 'jsoa/jabber-connect-hook)
 (add-hook 'jabber-chat-mode-hook 'jsoa/jabber-chat-mode-hook)
