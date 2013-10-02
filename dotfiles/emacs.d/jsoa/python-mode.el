@@ -28,6 +28,7 @@
 ;;; enabled flycheck mode for python
 (add-hook 'python-mode-hook '(lambda ()
      (flycheck-mode)
+     (fci-mode)
      (define-key python-mode-map [(f7)] 'python-pylint)
      (define-key python-mode-map [(f8)] 'python-pep8)
      (define-key python-mode-map "\C-m" 'newline-and-indent)))
