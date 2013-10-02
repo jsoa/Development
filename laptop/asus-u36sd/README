@@ -1,7 +1,7 @@
-The contents of this directory are meant to be used on the 
+The contents of this directory are meant to be used on the
 asus u36sd laptop when installing ubuntu
 
-All these steps are: https://help.ubuntu.com/community/Asus_U36SD, some 
+All these steps are: https://help.ubuntu.com/community/Asus_U36SD, some
 steps are explictily not run
 
 setup requires super user shell
@@ -20,3 +20,17 @@ sudo -s -H
 * fixes Fn-keys
 * fixes webcam
 
+Updates
+-------
+
+05/22/2013
+
+- Using ubuntu 13.04
+- [*] purging/blacklisting nvidia drives works
+- [*] bumblebee installs
+- [*] suspen works
+- [*] power save works
+- [*] usb3.0 works
+- [!] fixing webcam, bluetooth and fn-keys current fails with this script
+    - most fn-keys work out of the box
+    - the acpi4asus package used to fix fn-keys is missing
