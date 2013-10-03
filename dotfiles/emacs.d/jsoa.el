@@ -30,6 +30,7 @@
 (vendor 'magit)
 (vendor 'git-gutter)
 (vendor 'yasnippet)
+(vendor 'ag)
 
 ;; Python mode related
 (vendor 'python-mode)

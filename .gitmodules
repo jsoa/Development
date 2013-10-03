@@ -139,3 +139,6 @@
 [submodule "dotfiles/emacs.d/vendor/git-modes"]
 	path = dotfiles/emacs.d/vendor/git-modes
 	url = https://github.com/magit/git-modes.git
+[submodule "dotfiles/emacs.d/vendor/ag"]
+	path = dotfiles/emacs.d/vendor/ag
+	url = https://github.com/Wilfred/ag.el.git
