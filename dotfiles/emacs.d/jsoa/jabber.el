@@ -24,10 +24,11 @@
 
 
 (defvar libnotify-program "/usr/bin/notify-send")
+(defvar libnotify-program-args "--expire-time=2000 --icon=/usr/share/icons/hicolor/128x128/apps/emacs24.png")
 
 (defun notify-send (title message)
   (start-process "notify" " notify"
-		 libnotify-program "--expire-time=4000" title message))
+		 libnotify-program libnotify-program-args title message))
 
 (defun libnotify-jabber-notify (from buf text proposed-alert)
   "(jabber.el hook) Notify of new Jabber chat messages via libnotify"
