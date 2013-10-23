@@ -88,9 +88,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/virtualenv"]
-	path = dotfiles/emacs.d/vendor/virtualenv
-	url = git://github.com/aculich/virtualenv.el.git
 [submodule "dotfiles/emacs.d/vendor/fill-column-indicator"]
 	path = dotfiles/emacs.d/vendor/fill-column-indicator
 	url = git://github.com/alpaker/Fill-Column-Indicator.git
