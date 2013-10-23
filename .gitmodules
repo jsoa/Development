@@ -49,9 +49,6 @@
 [submodule "dotfiles/emacs.d/vendor/python-mode"]
 	path = dotfiles/emacs.d/vendor/python-mode
 	url = git://github.com/emacsmirror/python-mode.git
-[submodule "dotfiles/emacs.d/vendor/textmate.el"]
-	path = dotfiles/emacs.d/vendor/textmate.el
-	url = git://github.com/defunkt/textmate.el.git
 [submodule "dotfiles/emacs.d/vendor/pymacs"]
 	path = dotfiles/emacs.d/vendor/pymacs
 	url = git://github.com/pinard/Pymacs.git
