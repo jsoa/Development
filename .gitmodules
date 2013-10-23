@@ -88,9 +88,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/twittering-mode"]
-	path = dotfiles/emacs.d/vendor/twittering-mode
-	url = git@github.com:hayamiz/twittering-mode.git
 [submodule "dotfiles/emacs.d/vendor/flycheck"]
 	path = dotfiles/emacs.d/vendor/flycheck
 	url = git@github.com:lunaryorn/flycheck.git
