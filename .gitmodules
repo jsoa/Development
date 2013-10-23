@@ -88,9 +88,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/auto-complete"]
-	path = dotfiles/emacs.d/vendor/auto-complete
-	url = git://github.com/auto-complete/auto-complete.git
 [submodule "dotfiles/emacs.d/vendor/git-gutter"]
 	path = dotfiles/emacs.d/vendor/git-gutter
 	url = git://github.com/syohex/emacs-git-gutter.git
