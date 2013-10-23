@@ -46,9 +46,6 @@
 [submodule "python/apps/dashboardmods"]
 	path = python/apps/dashboardmods
 	url = git@github.com:callowayproject/dashboardmods.git
-[submodule "dotfiles/emacs.d/vendor/js2-mode"]
-	path = dotfiles/emacs.d/vendor/js2-mode
-	url = git://github.com/mooz/js2-mode.git
 [submodule "dotfiles/emacs.d/vendor/json-mode"]
 	path = dotfiles/emacs.d/vendor/json-mode
 	url = https://github.com/joshwnj/json-mode.git
