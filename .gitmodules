@@ -67,9 +67,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/rainbow-mode"]
-	path = dotfiles/emacs.d/vendor/rainbow-mode
-	url = https://github.com/emacsmirror/rainbow-mode
 [submodule "dotfiles/emacs.d/vendor/git-modes"]
 	path = dotfiles/emacs.d/vendor/git-modes
 	url = https://github.com/magit/git-modes.git
