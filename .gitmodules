@@ -88,9 +88,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/scss-mode"]
-	path = dotfiles/emacs.d/vendor/scss-mode
-	url = git://github.com/antonj/scss-mode.git
 [submodule "dotfiles/emacs.d/vendor/auto-complete"]
 	path = dotfiles/emacs.d/vendor/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
