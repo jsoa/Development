@@ -1,15 +1,16 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-;; TODO: Added cask
+
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
 
 (load "jsoa/defuns")
-
 (load "jsoa/env")
 (load "jsoa/global")
 (load "jsoa/theme")
 (load "jsoa/bindings")
 (load "jsoa/packages")
-(load "jsoa/git.el")
+;; (load "jsoa/git.el")
 (load "jsoa/grep")
 (load "jsoa/jabber")
 
