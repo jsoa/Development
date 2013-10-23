@@ -46,9 +46,6 @@
 [submodule "python/apps/dashboardmods"]
 	path = python/apps/dashboardmods
 	url = git@github.com:callowayproject/dashboardmods.git
-[submodule "dotfiles/emacs.d/vendor/yasnippet"]
-	path = dotfiles/emacs.d/vendor/yasnippet
-	url = git://github.com/capitaomorte/yasnippet.git
 [submodule "dotfiles/emacs.d/vendor/js2-mode"]
 	path = dotfiles/emacs.d/vendor/js2-mode
 	url = git://github.com/mooz/js2-mode.git
