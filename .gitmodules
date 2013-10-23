@@ -49,9 +49,6 @@
 [submodule "dotfiles/emacs.d/vendor/python-mode"]
 	path = dotfiles/emacs.d/vendor/python-mode
 	url = git://github.com/emacsmirror/python-mode.git
-[submodule "dotfiles/emacs.d/vendor/magit"]
-	path = dotfiles/emacs.d/vendor/magit
-	url = git://github.com/magit/magit.git
 [submodule "dotfiles/emacs.d/vendor/markdown-mode"]
 	path = dotfiles/emacs.d/vendor/markdown-mode
 	url = git://github.com/emacsmirror/markdown-mode.git
