@@ -1,5 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
+;; TODO: Added cask
+
 (load "jsoa/defuns")
 
 (load "jsoa/env")
@@ -9,23 +11,17 @@
 (load "jsoa/packages")
 (load "jsoa/git.el")
 (load "jsoa/grep")
-(load "jsoa/diff")
-(load "jsoa/nxhtml")
 (load "jsoa/jabber")
 
 (vendor 'twittering-mode)
 (vendor 'erc)
 
 ;; General
-(vendor 'goto-last-change)
 (vendor 'powerline)
 (vendor 'flycheck)
 (vendor 'smooth-scroll)
 (vendor 'fill-column-indicator)
 (vendor 'smart-tab)
-(vendor 'findr)
-(vendor 'multiple-cursors)
-(vendor 'expand-region)
 (vendor 'auto-complete)
 (vendor 'magit)
 (vendor 'git-gutter)
@@ -36,7 +32,6 @@
 (vendor 'python-mode)
 (vendor 'python-pep8)
 (vendor 'python-pylint)
-(vendor 'pylookup)
 (vendor 'virtualenv)
 
 ;; Other Modes
@@ -50,9 +45,5 @@
 (vendor 'web-mode)
 (vendor 'rainbow-mode)
 
-;; Other
-;; (vendor 'textmate)
-
-
-
+;; Anything private goes in this file, which is not in the repo
 (load "jsoa/private.el")
