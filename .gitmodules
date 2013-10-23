@@ -88,9 +88,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/expand-region"]
-	path = dotfiles/emacs.d/vendor/expand-region
-	url = https://github.com/magnars/expand-region.el.git
 [submodule "dotfiles/emacs.d/vendor/erc"]
 	path = dotfiles/emacs.d/vendor/erc
 	url = git://git.sv.gnu.org/erc.git
