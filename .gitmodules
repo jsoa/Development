@@ -88,9 +88,6 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/erc"]
-	path = dotfiles/emacs.d/vendor/erc
-	url = git://git.sv.gnu.org/erc.git
 [submodule "dotfiles/emacs.d/vendor/powerline"]
 	path = dotfiles/emacs.d/vendor/powerline
 	url = git@github.com:milkypostman/powerline.git
