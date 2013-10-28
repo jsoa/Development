@@ -105,6 +105,10 @@
    ;; bookmark
    `(bookmark-menu-heading ((t (:foreground ,lowlevel-orange :weight bold))))
 
+   ;; flycheck
+   `(flycheck-warning ((t (:foreground ,lowlevel-orange :weight bold :underline nil))))
+   `(flycheck-error ((t (:foreground ,lowlevel-red :weight bold :underline nil))))
+
    ;; css-mode
    `(css-property ((t (:foreground ,lowlevel-orange))))
    `(css-selector ((t (:foreground ,lowlevel-fg+1))))
