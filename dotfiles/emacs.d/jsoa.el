@@ -39,6 +39,7 @@
 (load "jsoa/coffee-mode")
 (load "jsoa/css-mode")
 (load "jsoa/jade-mode")
+(load "jsoa/stylus-mode")
 (load "jsoa/js")
 (load "jsoa/js2-mode")
 (load "jsoa/json-mode")
