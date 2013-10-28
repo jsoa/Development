@@ -13,6 +13,7 @@
       (lowlevel-fg             "#B9BDB6")
       (lowlevel-fg+1           "#FFFFFF")
       (lowlevel-yellow         "#D7D700")
+      (lowlevel-orange-1       "#8b5a00")
       (lowlevel-orange         "#FFAA3E")
       (lowlevel-blue           "#5BA1CF")
       (lowlevel-blue-1         "#27408b")
@@ -106,7 +107,7 @@
    `(bookmark-menu-heading ((t (:foreground ,lowlevel-orange :weight bold))))
 
    ;; flycheck
-   `(flycheck-warning ((t (:foreground ,lowlevel-orange :weight bold :underline nil))))
+   `(flycheck-warning ((t (:weight bold :underline ,lowlevel-orange-1))))
    `(flycheck-error ((t (:foreground ,lowlevel-red :weight bold :underline nil))))
 
    ;; css-mode
