@@ -17,6 +17,7 @@
 (depends-on "yasnippet")
 (depends-on "ag")
 
+(depends-on "python-mode")
 (depends-on "python-pep8")
 (depends-on "python-pylint")
 (depends-on "virtualenv")
