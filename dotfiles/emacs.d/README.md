@@ -1,6 +1,13 @@
 Emacs
 =====
 
+10/29/2013
+----------
+
+- Removed most submodules in favor of Cask
+- Removed un-used packages
+- Cleaned up most custom config files
+
 09/26/2013
 ----------
 
