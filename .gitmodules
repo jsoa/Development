@@ -46,36 +46,6 @@
 [submodule "python/apps/dashboardmods"]
 	path = python/apps/dashboardmods
 	url = git@github.com:callowayproject/dashboardmods.git
-[submodule "dotfiles/emacs.d/vendor/coffee-mode"]
-	path = dotfiles/emacs.d/vendor/coffee-mode
-	url = git://github.com/defunkt/coffee-mode.git
-[submodule "dotfiles/emacs.d/vendor/yasnippet"]
-	path = dotfiles/emacs.d/vendor/yasnippet
-	url = git://github.com/capitaomorte/yasnippet.git
-[submodule "dotfiles/emacs.d/vendor/js2-mode"]
-	path = dotfiles/emacs.d/vendor/js2-mode
-	url = git://github.com/mooz/js2-mode.git
-[submodule "dotfiles/emacs.d/vendor/json-mode"]
-	path = dotfiles/emacs.d/vendor/json-mode
-	url = https://github.com/joshwnj/json-mode.git
-[submodule "dotfiles/emacs.d/vendor/python-mode"]
-	path = dotfiles/emacs.d/vendor/python-mode
-	url = git://github.com/emacsmirror/python-mode.git
-[submodule "dotfiles/emacs.d/vendor/magit"]
-	path = dotfiles/emacs.d/vendor/magit
-	url = git://github.com/magit/magit.git
-[submodule "dotfiles/emacs.d/vendor/markdown-mode"]
-	path = dotfiles/emacs.d/vendor/markdown-mode
-	url = git://github.com/emacsmirror/markdown-mode.git
-[submodule "dotfiles/emacs.d/vendor/textmate.el"]
-	path = dotfiles/emacs.d/vendor/textmate.el
-	url = git://github.com/defunkt/textmate.el.git
-[submodule "dotfiles/emacs.d/vendor/pymacs"]
-	path = dotfiles/emacs.d/vendor/pymacs
-	url = git://github.com/pinard/Pymacs.git
-[submodule "dotfiles/emacs.d/vendor/pylookup"]
-	path = dotfiles/emacs.d/vendor/pylookup
-	url = git://github.com/tsgates/pylookup.git
 [submodule "scripts/git-scripts"]
 	path = scripts/git-scripts
 	url = git@github.com:coordt/git-scripts.git
@@ -88,57 +58,3 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
-[submodule "dotfiles/emacs.d/vendor/virtualenv"]
-	path = dotfiles/emacs.d/vendor/virtualenv
-	url = git://github.com/aculich/virtualenv.el.git
-[submodule "dotfiles/emacs.d/vendor/nxhtml"]
-	path = dotfiles/emacs.d/vendor/nxhtml
-	url = git://github.com/emacsmirror/nxhtml.git
-[submodule "dotfiles/emacs.d/vendor/fill-column-indicator"]
-	path = dotfiles/emacs.d/vendor/fill-column-indicator
-	url = git://github.com/alpaker/Fill-Column-Indicator.git
-[submodule "dotfiles/emacs.d/vendor/jade-mode"]
-	path = dotfiles/emacs.d/vendor/jade-mode
-	url = git://github.com/brianc/jade-mode.git
-[submodule "dotfiles/emacs.d/vendor/smart-tab"]
-	path = dotfiles/emacs.d/vendor/smart-tab
-	url = https://github.com/genehack/smart-tab.git
-[submodule "dotfiles/emacs.d/vendor/multiple-cursors"]
-	path = dotfiles/emacs.d/vendor/multiple-cursors
-	url = https://github.com/magnars/multiple-cursors.el.git
-[submodule "dotfiles/emacs.d/vendor/expand-region"]
-	path = dotfiles/emacs.d/vendor/expand-region
-	url = https://github.com/magnars/expand-region.el.git
-[submodule "dotfiles/emacs.d/vendor/erc"]
-	path = dotfiles/emacs.d/vendor/erc
-	url = git://git.sv.gnu.org/erc.git
-[submodule "dotfiles/emacs.d/vendor/powerline"]
-	path = dotfiles/emacs.d/vendor/powerline
-	url = git@github.com:milkypostman/powerline.git
-[submodule "dotfiles/emacs.d/vendor/twittering-mode"]
-	path = dotfiles/emacs.d/vendor/twittering-mode
-	url = git@github.com:hayamiz/twittering-mode.git
-[submodule "dotfiles/emacs.d/vendor/flycheck"]
-	path = dotfiles/emacs.d/vendor/flycheck
-	url = git@github.com:lunaryorn/flycheck.git
-[submodule "dotfiles/emacs.d/vendor/web-mode"]
-	path = dotfiles/emacs.d/vendor/web-mode
-	url = git@github.com:fxbois/web-mode.git
-[submodule "dotfiles/emacs.d/vendor/scss-mode"]
-	path = dotfiles/emacs.d/vendor/scss-mode
-	url = git://github.com/antonj/scss-mode.git
-[submodule "dotfiles/emacs.d/vendor/auto-complete"]
-	path = dotfiles/emacs.d/vendor/auto-complete
-	url = git://github.com/auto-complete/auto-complete.git
-[submodule "dotfiles/emacs.d/vendor/git-gutter"]
-	path = dotfiles/emacs.d/vendor/git-gutter
-	url = git://github.com/syohex/emacs-git-gutter.git
-[submodule "dotfiles/emacs.d/vendor/rainbow-mode"]
-	path = dotfiles/emacs.d/vendor/rainbow-mode
-	url = https://github.com/emacsmirror/rainbow-mode
-[submodule "dotfiles/emacs.d/vendor/git-modes"]
-	path = dotfiles/emacs.d/vendor/git-modes
-	url = https://github.com/magit/git-modes.git
-[submodule "dotfiles/emacs.d/vendor/ag"]
-	path = dotfiles/emacs.d/vendor/ag
-	url = https://github.com/Wilfred/ag.el.git

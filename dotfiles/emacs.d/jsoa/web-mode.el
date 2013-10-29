@@ -2,7 +2,10 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
-
+;; Default engine is django
+(setq web-mode-engines-alist
+      '(("django"    . "\\.html\\'"))
+)
 
 (add-hook 'web-mode-hook '(lambda ()
 

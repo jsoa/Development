@@ -82,7 +82,7 @@
 (desktop-save-mode 1)
 
 ;; Trailing whitespace is unnecessary
-;; (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
@@ -98,6 +98,7 @@
 
 ;; Never insert tabs
 (set-default 'indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 ;; The custom themes path
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")

@@ -1,5 +1,0 @@
-(load "../vendor/git-modes/git-commit-mode")
-(load "../vendor/git-modes/git-rebase-mode")
-(load "../vendor/git-modes/gitconfig-mode")
-(load "../vendor/git-modes/gitignore-mode")
-(load "../vendor/git-modes/gitattributes-mode")
