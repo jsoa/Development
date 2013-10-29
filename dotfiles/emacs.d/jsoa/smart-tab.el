@@ -1,4 +1,7 @@
 
+(require 'smart-tab)
+(setq global-smart-tab-mode t)
+
 ;; ref: https://github.com/haxney/smart-tab/issues/1#issuecomment-2046965
 (add-to-list 'hippie-expand-try-functions-list
              'yas/hippie-try-expand) ;put yasnippet in hippie-expansion list
