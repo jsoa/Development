@@ -19,3 +19,4 @@ private*
 dotfiles/emacs.d/eshell
 dotfiles/emacs.d/bookmarks
 dotfiles/emacs.d/session.*
+dotfiles/emacs.d/jabber-*
