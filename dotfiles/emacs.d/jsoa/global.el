@@ -93,6 +93,8 @@
 
 (global-font-lock-mode 1)
 
+(set-face-attribute 'default nil :height 100)
+
 ;; Show keystrokes
 (setq echo-keystrokes 0.1)
 

@@ -30,7 +30,7 @@
 (load "jsoa/twittering-mode")
 
 ;; Python mode related
-(load "jsoa/python-mode")
+;; (load "jsoa/python-mode")
 (load "jsoa/python-pep8")
 (load "jsoa/python-pylint")
 (load "jsoa/virtualenv")
