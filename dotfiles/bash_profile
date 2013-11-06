@@ -14,7 +14,7 @@ export EDITOR='emacs -nw -q'
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PROJECT_HOME=$HOME/Development/python
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 ### history
 export HISTCONTROL=ignoredups
