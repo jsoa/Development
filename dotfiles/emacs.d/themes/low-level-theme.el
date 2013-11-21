@@ -107,9 +107,9 @@
    `(bookmark-menu-heading ((t (:foreground ,lowlevel-orange :weight bold))))
 
    ;; flycheck
-   `(flycheck-warning ((t (:weight bold :underline ,lowlevel-orange-1))))
+   `(flycheck-warning ((t (:weight bold :underline nil))))
    `(flycheck-error ((t (:foreground ,lowlevel-red :weight bold :underline nil))))
-   `(flycheck-info ((t (:slant oblique :weight bold :underline nil))))
+   `(flycheck-info ((t (:weight bold :underline nil))))
 
    ;; css-mode
    `(css-property ((t (:foreground ,lowlevel-orange))))
