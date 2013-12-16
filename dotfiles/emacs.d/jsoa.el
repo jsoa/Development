@@ -50,3 +50,5 @@
 
 ;; Anything private goes in this file, which is not in the repo
 (load "jsoa/private.el")
+
+(totd)
