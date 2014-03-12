@@ -36,6 +36,7 @@
 (load "jsoa/virtualenv")
 
 ;; Other Modes
+(load "jsoa/lua-mode")
 (load "jsoa/coffee-mode")
 (load "jsoa/css-mode")
 (load "jsoa/jade-mode")

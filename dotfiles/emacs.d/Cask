@@ -21,6 +21,7 @@
 (depends-on "python-pep8")
 (depends-on "python-pylint")
 (depends-on "virtualenv")
+(depends-on "lua-mode")
 
 (depends-on "coffee-mode")
 (depends-on "js2-mode")
