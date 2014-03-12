@@ -122,6 +122,7 @@
 
    ;; python-mode
    `(py-decorators-face ((t (:foreground ,lowlevel-blue :weight bold))))
+   ;; `(py-exception-name-face ((t (:foreground ,lowlevel-blue))))
 
    ;; javascript-mode TODO
    ;; js2-mode
