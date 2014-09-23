@@ -80,6 +80,9 @@
 
 ;; Desktop mode
 (desktop-save-mode 1)
+(setq desktop-dirname  "~/.emacs.d/desktop/"
+      desktop-path (list desktop-dirname))
+
 
 ;; Trailing whitespace is unnecessary
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
