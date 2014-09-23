@@ -35,6 +35,9 @@
 (load "jsoa/python-pylint")
 (load "jsoa/virtualenv")
 
+;; Go mode related
+(load "jsoa/go-mode")
+
 ;; Other Modes
 (load "jsoa/lua-mode")
 (load "jsoa/coffee-mode")
