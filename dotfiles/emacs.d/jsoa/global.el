@@ -80,7 +80,7 @@
 
 ;; Desktop mode
 (desktop-save-mode 1)
-(setq desktop-dirname  "~/.emacs.d/desktop/"
+(setq desktop-dirname  "~/.emacs.d/desktops/"
       desktop-path (list desktop-dirname))
 
 
