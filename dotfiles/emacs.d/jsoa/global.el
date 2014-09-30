@@ -81,7 +81,8 @@
 ;; Desktop mode
 (desktop-save-mode 1)
 (setq desktop-dirname  "~/.emacs.d/desktops/"
-      desktop-path (list desktop-dirname))
+      desktop-path (list desktop-dirname)
+      desktop-base-file-name "emacs-desktop")
 
 
 ;; Trailing whitespace is unnecessary
