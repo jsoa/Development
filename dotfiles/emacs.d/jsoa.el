@@ -49,6 +49,7 @@
 (load "jsoa/json-mode")
 (load "jsoa/markdown-mode")
 (load "jsoa/scss-mode")
+(load "jsoa/sass-mode")
 (load "jsoa/shell-mode")
 (load "jsoa/web-mode")
 

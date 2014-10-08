@@ -80,10 +80,15 @@
 
 ;; Desktop mode
 (desktop-save-mode 1)
-(setq desktop-dirname  "~/.emacs.d/desktops/"
-      desktop-path (list desktop-dirname)
-      desktop-base-file-name "emacs-desktop")
+(setq desktop-path '("~/.emacs.d/desktops/"))
+(setq desktop-dirname "~/.emacs.d/desktops/")
+(setq desktop-base-file-name "emacs-desktop")
 
+;; uniqify buffer names
+(require 'uniquify)
+(setq
+  uniquify-buffer-name-style 'post-forward
+  uniquify-separator ":")
 
 ;; Trailing whitespace is unnecessary
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

@@ -25,10 +25,14 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 source ~/.bash_aliases
 source ~/.bash_prompt
 
+# NPM
 export PATH=/usr/local/share/npm/bin:$PATH
+# HEROKU
 export PATH=/usr/local/heroku/bin:$PATH
-
+# CASK
 export PATH=$HOME/.cask/bin:$PATH
-
+# GO
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
+# RUBY
+export PATH=/home/jsoa/.gem/ruby/2.1.0/bin:$PATH
