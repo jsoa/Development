@@ -1,0 +1,6 @@
+#! /bin/bash
+
+LO_AWESOME_DIR="$HOME/Development/os/awesome"
+AWESOME_DIR="$HOME/.config/awesome"
+
+ln -ns $LO_AWESOME_DIR $AWESOME_DIR

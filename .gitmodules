@@ -58,3 +58,9 @@
 [submodule "python/apps/pkgbin"]
 	path = python/apps/pkgbin
 	url = git@github.com:coordt/pkgbin.git
+[submodule "os/awesome/lain"]
+	path = os/awesome/lain
+	url = https://github.com/copycat-killer/lain.git
+[submodule "os/awesome/net_widgets"]
+	path = os/awesome/net_widgets
+	url = git@github.com:plotnikovanton/net_widgets.git
