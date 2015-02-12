@@ -43,6 +43,9 @@ theme.mouse_finder_color            = "#CC9393"
 theme.menu_height                   = "16"
 theme.menu_width                    = "140"
 
+theme.fg_warning                    = "#D8D782"
+theme.fg_panic                      = "#bd4e5d"
+
 theme.submenu_icon                  = themes_dir .. "/icons/submenu.png"
 theme.taglist_squares_sel           = themes_dir .. "/icons/square_sel_d.png"
 theme.taglist_squares_unsel         = themes_dir .. "/icons/square_unsel_d_1.png"

@@ -21,9 +21,11 @@ local beautiful = require("beautiful")
 local naughty   = require("naughty")
 local lain      = require("lain")
 
+
 local net_widgets = require("net_widgets")
 
 -- Other
+local common    = require("modules.common")
 local keydoc      = require("modules.keydoc")
 local volume      = require("modules.volume")
 
@@ -159,7 +161,7 @@ separators = lain.util.separators
 
 -- Textclock
 clockicon = wibox.widget.imagebox(beautiful.widget_clock)
-mytextclock = awful.widget.textclock(" %H:%M")
+mytextclock = awful.widget.textclock(" %I:%M")
 
 -- calendar
 lain.widgets.calendar:attach(mytextclock, { font_size = 10 })
@@ -208,11 +210,32 @@ mailwidget = lain.widgets.imap({
 --     end
 -- })
 
+
+
 -- MEM
 memicon = wibox.widget.imagebox(beautiful.widget_mem)
 memwidget = lain.widgets.mem({
     settings = function()
-        widget:set_text(" " .. mem_now.used .. "MB ")
+        color = beautiful.fg_normal
+        if mem_now.used >= 5500 then
+            color = beautiful.fg_panic
+        elseif mem_now.used >= 4500 then
+            color = beautiful.fg_warning
+        end
+        widget:set_markup(" " .. common.colorize(color, mem_now.used.."mb "))
+    end
+})
+
+-- sysload
+sysload = lain.widgets.sysload({
+    settings = function()
+       color = beautiful.fg_normal
+       if tonumber(load_1) >= 4 then
+           color = beautiful.fg_panic
+       elseif tonumber(load_1) >= 2 then
+           color = beautiful.fg_warning
+       end
+       widget:set_markup(" " .. common.colorize(color, load_1..'/'..load_5) .." ")
     end
 })
 
@@ -220,7 +243,13 @@ memwidget = lain.widgets.mem({
 cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 cpuwidget = lain.widgets.cpu({
     settings = function()
-        widget:set_text(" " .. cpu_now.usage .. "% ")
+        color = beautiful.fg_normal
+        if tonumber(cpu_now.usage) >= 90 then
+            color = beautiful.fg_panic
+        elseif tonumber(cpu_now.usage) >= 70 then
+            color = beautiful.fg_warning
+        end
+        widget:set_markup(" " .. common.colorize(color, cpu_now.usage .. "% "))
     end
 })
 
@@ -228,7 +257,13 @@ cpuwidget = lain.widgets.cpu({
 tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 tempwidget = lain.widgets.temp({
     settings = function()
-        widget:set_text(" " .. coretemp_now .. "°C ")
+        color = beautiful.fg_normal
+        if coretemp_now >= 70 then
+            color = beautiful.fg_panic
+        elseif coretemp_now >= 60 then
+            color = beautiful.fg_warning
+        end
+        widget:set_markup(" " .. common.colorize(color, coretemp_now .. "°C "))
     end
 })
 
@@ -237,16 +272,17 @@ tempwidget = lain.widgets.temp({
 fsicon = wibox.widget.imagebox(beautiful.widget_hdd)
 fswidget = lain.widgets.fs({
     settings  = function()
-        widget:set_text(" " .. fs_now.used .. "% ")
+        color = beautiful.fg_normal
+        if fs_now.used >= 95 then
+            color = beautiful.fg_panic
+        elseif fs_now.used >= 80 then
+            color = beautiful.fg_warning
+        end
+        widget:set_markup(" " .. common.colorize(color, fs_now.used .. "% "))
     end
 })
 
--- sysload
-sysload = lain.widgets.sysload({
-    settings = function()
-       widget:set_text(" " .. load_1 .. "/" .. load_5 .. " ")
-    end
-})
+
 
 -- Battery
 baticon = wibox.widget.imagebox(beautiful.widget_battery)
@@ -269,21 +305,21 @@ batwidget = lain.widgets.bat({
 
 -- ALSA volume / disabled see volume.lua
 volicon = wibox.widget.imagebox(beautiful.widget_vol)
-volumewidget = lain.widgets.alsa({
-    settings = function()
-        if volume_now.status == "off" then
-            volicon:set_image(beautiful.widget_vol_mute)
-        elseif tonumber(volume_now.level) == 0 then
-            volicon:set_image(beautiful.widget_vol_no)
-        elseif tonumber(volume_now.level) <= 50 then
-            volicon:set_image(beautiful.widget_vol_low)
-        else
-            volicon:set_image(beautiful.widget_vol)
-        end
+-- volumewidget = lain.widgets.alsa({
+--     settings = function()
+--         if volume_now.status == "off" then
+--             volicon:set_image(beautiful.widget_vol_mute)
+--         elseif tonumber(volume_now.level) == 0 then
+--             volicon:set_image(beautiful.widget_vol_no)
+--         elseif tonumber(volume_now.level) <= 50 then
+--             volicon:set_image(beautiful.widget_vol_low)
+--         else
+--             volicon:set_image(beautiful.widget_vol)
+--         end
 
-        widget:set_text(" " .. volume_now.level .. "% ")
-    end
-})
+--         widget:set_text(" " .. volume_now.level .. "% ")
+--     end
+-- })
 
 -- Net
 neticon = wibox.widget.imagebox(beautiful.widget_net)
@@ -425,6 +461,7 @@ for s = 1, screen.count() do
     right_layout_add(nil, sysload)
     right_layout_add(cpuicon, cpuwidget)
     right_layout_add(tempicon, tempwidget)
+
     right_layout_add(fsicon, fswidget) -- JSOA
 
     right_layout_add(baticon, batwidget)
