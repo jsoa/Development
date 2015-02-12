@@ -1,3 +1,4 @@
+
 -- Document key bindings
 
 local awful     = require("awful")
@@ -15,7 +16,7 @@ local capi      = {
    client = client
 }
 
-module("modules.keydoc")
+module("lib.keydoc")
 
 local doc = { }
 local currentgroup = "Misc"
@@ -70,7 +71,7 @@ local function unilen(str)
 end
 
 -- Start a new group
-function group(name)
+local function group(name)
    currentgroup = name
    return {}
 end
@@ -106,7 +107,7 @@ end
 
 -- Customize version of standard function pairs that sort keys
 -- (from Michal Kottman on Stackoverflow)
-function spairs(t, order)
+local function spairs(t, order)
   -- collect the keys
   local keys = {}
   for k in pairs(t) do keys[#keys+1] = k end
@@ -131,7 +132,7 @@ end
 
 -- Display help in a naughty notification
 local nid = nil
-function display()
+local function display()
    local strings = markup(awful.util.table.join(
       capi.root.keys(),
       capi.client.focus and capi.client.focus:keys() or {}))
@@ -148,3 +149,10 @@ function display()
 			  hover_timeout = 0.1,
 			  timeout = 30 }).id
 end
+
+
+return {
+    group = group,
+    display = display,
+    spairs = spairs
+}

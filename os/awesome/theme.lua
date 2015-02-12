@@ -7,7 +7,7 @@
 
 theme                               = {}
 
-themes_dir                          = os.getenv("HOME") .. "/.config/awesome/theme/"
+themes_dir                          = os.getenv("HOME") .. "/.config/awesome/"
 theme.wallpaper                     = themes_dir .. "/wall.png"
 -- JSOA BG
 theme.wallpaper                     = "/home/jsoa/Pictures/Wallpaper/archlinux-wb.jpg"
