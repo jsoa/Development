@@ -10,7 +10,8 @@ local widgets = {
     vol     = require("widgets.vol"),
     fs      = require("widgets.fs"),
     bat     = require("widgets.bat"),
-    net     = require("widgets.net")
+    net     = require("widgets.net"),
+    lb      = require("widgets.lb")
 }
 
 return widgets

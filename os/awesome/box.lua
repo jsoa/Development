@@ -1,12 +1,13 @@
 
 -- Wibox
 
-local awful = require("awful")
+local awful     = require("awful")
 local beautiful = require("beautiful")
-local lain = require("lain")
-local layouts = require("layouts")
-local wibox = require("wibox")
-local widgets = require("widgets")
+local lain      = require("lain")
+local layouts   = require("layouts")
+local naughty   = require("naughty")
+local wibox     = require("wibox")
+local widgets   = require("widgets")
 
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
@@ -77,7 +78,7 @@ for s = 1, screen.count() do
     promptbox[s] = awful.widget.prompt()
 
     -- We need one layoutbox per screen.
-    layoutbox[s] = awful.widget.layoutbox(s)
+    layoutbox[s] = widgets.lb.layoutbox(s)
     layoutbox[s]:buttons(
         awful.util.table.join(
             awful.button({ }, 1, function () awful.layout.inc(layouts, 1) end),
@@ -105,8 +106,6 @@ for s = 1, screen.count() do
     left_layout:add(spr)
     left_layout:add(taglist[s])
     left_layout:add(promptbox[s])
-    left_layout:add(spr)
-
     left_layout:add(arrl)
 
     -- Widgets that are aligned to the upper right
