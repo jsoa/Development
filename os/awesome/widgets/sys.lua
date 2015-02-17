@@ -12,13 +12,8 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 -- Sysload
 local sysload = lain.widgets.sysload({
     settings = function()
-       color = beautiful.fg_normal
-       if tonumber(load_1) >= 4 then
-           color = beautiful.fg_panic
-       elseif tonumber(load_1) >= 2 then
-           color = beautiful.fg_warning
-       end
-       widget:set_markup(" " .. utils.colorize(color, load_1..'/'..load_5) .." ")
+       color = utils.color_values(load_1, 2, 4)
+       widget:set_markup(" " .. utils.colorize(color, load_1) .." ")
     end
 })
 
@@ -26,12 +21,7 @@ local sysload = lain.widgets.sysload({
 local cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 local cpuwidget = lain.widgets.cpu({
     settings = function()
-        color = beautiful.fg_normal
-        if tonumber(cpu_now.usage) >= 90 then
-            color = beautiful.fg_panic
-        elseif tonumber(cpu_now.usage) >= 70 then
-            color = beautiful.fg_warning
-        end
+        color = utils.color_values(cpu_now.usage, 70, 90)
         widget:set_markup(" " .. utils.colorize(color, cpu_now.usage .. "% "))
     end
 })
@@ -40,12 +30,7 @@ local cpuwidget = lain.widgets.cpu({
 local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 local tempwidget = lain.widgets.temp({
     settings = function()
-        color = beautiful.fg_normal
-        if coretemp_now >= 75 then
-            color = beautiful.fg_panic
-        elseif coretemp_now >= 60 then
-            color = beautiful.fg_warning
-        end
+        color = utils.color_values(coretemp_now, 60, 70)
         widget:set_markup(" " .. utils.colorize(color, coretemp_now .. "°C "))
     end
 })

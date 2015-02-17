@@ -6,7 +6,7 @@ local layouts = require("layouts")
 
 
 local tags = {
-   names = { "www", "dev", "term", "file", "==" },
+   names = { "www", "dev", "term", "file", "misc"},
    layout = { layouts[2], layouts[10], layouts[8], layouts[5], layouts[1] }
 }
 

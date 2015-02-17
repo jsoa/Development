@@ -1,11 +1,15 @@
 
 -- Utils
-
-local awful = require("awful")
-local lain  = require("lain")
+local os         = os
+local tonumber   = tonumber
+local awful      = require("awful")
+local beautiful  = require("beautiful")
+local lain       = require("lain")
 
 
 module("lib.utils")
+
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
 
 -- Simple colorize function
@@ -23,7 +27,19 @@ local function run_once(cmd)
     awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end
 
+-- Color for values
+local function color_values(value, warning, panic)
+    value = tonumber(value)
+    if value >= panic then
+        return beautiful.fg_panic
+    elseif value >= warning then
+        return beautiful.fg_warning
+    end
+    return beautiful.fg_normal
+end
+
 return {
     colorize = colorize,
-    run_once = run_once
+    run_once = run_once,
+    color_values = color_values
 }
