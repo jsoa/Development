@@ -1,6 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
@@ -24,6 +23,7 @@
 (load "jsoa/smooth-scroll")
 (load "jsoa/yasnippet")
 
+
 ;; Social
 (load "jsoa/erc")
 (load "jsoa/jabber")
@@ -39,7 +39,7 @@
 (load "jsoa/go-mode")
 
 ;; Other Modes
-(load "jsoa/lua-mode")
+(load "jsoa/yaml")
 (load "jsoa/coffee-mode")
 (load "jsoa/css-mode")
 (load "jsoa/jade-mode")

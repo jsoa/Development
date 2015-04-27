@@ -18,6 +18,7 @@
 (depends-on "ag")
 (depends-on "go-mode")
 (depends-on "go-errcheck")
+(depends-on "yaml-mode")
 
 (depends-on "python-mode")
 (depends-on "python-pep8")
