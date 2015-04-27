@@ -3,7 +3,7 @@
 
 local modkey     = "Mod4"
 local altkey     = "Mod1"
-local terminal   = "urxvtc" or "xterm"
+local terminal   = "gnome-terminal"
 local editor     = "emacs"
 local editor_cmd = terminal .. " -e " .. editor
 

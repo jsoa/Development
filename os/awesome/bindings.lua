@@ -2,11 +2,13 @@
 -- Global key bindings
 
 local awful     = require("awful")
+local completion = require("awful.completion")
 local lain      = require("lain")
 local keydoc    = require("lib.keydoc")
 local menu      = require("menu")
 local box       = require("box")
 local settings  = require("settings")
+local naughty   = require("naughty")
 local widgets   = require("widgets")
 local utils     = require("lib.utils")
 
@@ -21,7 +23,6 @@ local keys = awful.util.table.join(
 
     -- TODO: fix printscreen
     -- awful.key({ altkey }, "p", function() os.execute("screenshot") end, "Take Screenshot"),
-
 
     -- Tag browsing
     -- keydoc.group("Tag Browsing"),
@@ -187,7 +188,6 @@ local keys = awful.util.table.join(
     awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
 
     -- Prompt
-    -- awful.key({ modkey }, "r", function () promptbox[mouse.screen]:run() end, "Prompt"),
     -- awful.key({ modkey }, "x",
     --           function ()
     --               awful.prompt.run({ prompt = "Run Lua code: " },
@@ -200,7 +200,7 @@ local keys = awful.util.table.join(
 
 -- Mouse Keys
 local mouse_keys = awful.util.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 3, function () menu.mainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 )

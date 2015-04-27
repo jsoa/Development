@@ -3,11 +3,11 @@
 
 local awful   = require("awful")
 local layouts = require("layouts")
-
+local wibox   = require("wibox")
 
 local tags = {
-   names = { "www", "dev", "term", "file", "misc"},
-   layout = { layouts[2], layouts[10], layouts[8], layouts[5], layouts[1] }
+   names = { 1, 2, 3, 4, 5},
+   layout = { layouts[2], layouts[10], layouts[8], layouts[5], layouts[2] }
 }
 
 for s = 1, screen.count() do

@@ -6,6 +6,7 @@ local beautiful = require("beautiful")
 local lain      = require("lain")
 local layouts   = require("layouts")
 local naughty   = require("naughty")
+local tags      = require("tags")
 local wibox     = require("wibox")
 local widgets   = require("widgets")
 
@@ -20,13 +21,17 @@ local separators = lain.util.separators
 local spr = wibox.widget.textbox(' ')
 local arrl = wibox.widget.imagebox()
 arrl:set_image(beautiful.arrl)
-local arrl_dl = separators.arrow_left(beautiful.bg_focus, "alpha")
-local arrl_ld = separators.arrow_left("alpha", beautiful.bg_focus)
+-- local arrl_dl = separators.arrow_left(beautiful.bg_focus, "alpha")
+-- local arrl_ld = separators.arrow_left("alpha", beautiful.bg_focus)
+local arrl_dl = wibox.widget.imagebox()
+local arrl_ld = wibox.widget.imagebox()
+arrl_dl:set_image(beautiful.arrl_dl)
+arrl_ld:set_image(beautiful.arrl_ld)
+
 
 -- Create a wibox for each screen and add it
 local box = {}
 local statusbox = {}
-local promptbox = {}
 local layoutbox = {}
 local taglist = {}
 taglist.buttons = awful.util.table.join(
@@ -74,9 +79,6 @@ end))
 
 for s = 1, screen.count() do
 
-    -- Create a promptbox for each screen
-    promptbox[s] = awful.widget.prompt()
-
     -- We need one layoutbox per screen.
     layoutbox[s] = widgets.lb.layoutbox(s)
     layoutbox[s]:buttons(
@@ -96,16 +98,13 @@ for s = 1, screen.count() do
 
     -- Create the wibox
     box[s] = awful.wibox(
-        { position = "top", screen = s, height = 18 })
-
-    -- Create a status box
-    -- mystatusbox[s] = awful.wibox({ position = "right", screen = s, width = 18 })
+        { position = "top", screen = s, height = 18 }
+    )
 
     -- Widgets that are aligned to the upper left
     local left_layout = wibox.layout.fixed.horizontal()
     left_layout:add(spr)
     left_layout:add(taglist[s])
-    left_layout:add(promptbox[s])
     left_layout:add(arrl)
 
     -- Widgets that are aligned to the upper right
@@ -132,11 +131,9 @@ for s = 1, screen.count() do
     -- right_layout_add(mailicon, mailwidget)
 
     right_layout:add(spr)
-
     right_layout_add(widgets.vol.volicon, widgets.vol.volwidget)
     right_layout_add(widgets.mem.memicon, widgets.mem.memwidget)
-    right_layout_add(widgets.sys.sysload)
-    right_layout_add(widgets.sys.cpuicon, widgets.sys.cpuwidget)
+    right_layout_add(widgets.sys.cpuicon, widgets.sys.cpuwidget, widgets.sys.sysload)
     right_layout_add(widgets.sys.tempicon, widgets.sys.tempwidget)
     right_layout_add(widgets.fs.fsicon, widgets.fs.fswidget)
     right_layout_add(widgets.bat.baticon, widgets.bat.batwidget)
