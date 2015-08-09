@@ -31,8 +31,8 @@
 (global-set-key (kbd "C-c s") 'ispell-region)
 
 ;; magit bindings
-(global-set-key [(control f9)] (lambda () (interactive) (magit-status default-directory)))
-(global-set-key [(f9)]         (lambda () (interactive) (magit-status default-directory)))
+(global-set-key [(control f9)] (lambda () (interactive) (magit-status)))
+(global-set-key [(f9)]         (lambda () (interactive) (magit-status)))
 
 ;; Note: need to disable menu access keys and shortcuts in terminal
 
