@@ -25,6 +25,8 @@
 (depends-on "python-pylint")
 (depends-on "virtualenv")
 (depends-on "lua-mode")
+(depends-on "qml-mode")
+(depends-on "restclient")
 
 (depends-on "coffee-mode")
 (depends-on "js2-mode")
