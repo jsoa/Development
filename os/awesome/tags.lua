@@ -16,7 +16,7 @@ end
 
 -- {{{ The dev workspace should have its master window larger
 awful.tag.setproperty(tags[1][2], "nmaster", 1)
-awful.tag.setproperty(tags[1][2], "mwfact", 0.85)
+awful.tag.setproperty(tags[1][2], "mwfact", 0.90)
 --
 
 return {

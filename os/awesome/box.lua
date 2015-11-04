@@ -98,7 +98,7 @@ for s = 1, screen.count() do
 
     -- Create the wibox
     box[s] = awful.wibox(
-        { position = "top", screen = s, height = 18 }
+        { position = "top", screen = s, height = 22 }
     )
 
     -- Widgets that are aligned to the upper left
@@ -131,13 +131,14 @@ for s = 1, screen.count() do
     -- right_layout_add(mailicon, mailwidget)
 
     right_layout:add(spr)
-    right_layout_add(widgets.vol.volicon, widgets.vol.volwidget)
+
+    right_layout_add(widgets.sys.cpuicon, widgets.sys.cpuwidget, widgets.sys.sysload, widgets.fan.fanwidget)
     right_layout_add(widgets.mem.memicon, widgets.mem.memwidget)
-    right_layout_add(widgets.sys.cpuicon, widgets.sys.cpuwidget, widgets.sys.sysload)
     right_layout_add(widgets.sys.tempicon, widgets.sys.tempwidget)
     right_layout_add(widgets.fs.fsicon, widgets.fs.fswidget)
-    right_layout_add(widgets.bat.baticon, widgets.bat.batwidget)
     right_layout_add(widgets.net.netwireless, widgets.net.netwired)
+    right_layout_add(widgets.vol.volicon, widgets.vol.volwidget)
+    right_layout_add(widgets.bat.baticon, widgets.bat.batwidget)
     right_layout_add(widgets.clock.textclock, spr)
     right_layout_add(layoutbox[s])
 

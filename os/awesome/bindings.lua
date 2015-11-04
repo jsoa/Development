@@ -110,7 +110,7 @@ local keys = awful.util.table.join(
 
     -- Standard program
     keydoc.group("Misc"),
-    awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal)       end, "Spawn terminal"),
+    awful.key({ modkey,           }, "Return", function () awful.util.spawn("gnome-terminal")       end, "Spawn terminal"),
     awful.key({ modkey, "Control" }, "r",      awesome.restart                                 , "Restart awesome"),
     awful.key({ modkey, "Shift"   }, "q",      awesome.quit                                    , "Quit awesome (logout)"),
     awful.key({ altkey, "Control" }, "k",
