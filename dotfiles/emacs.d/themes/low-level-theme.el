@@ -111,6 +111,12 @@
    `(flycheck-error ((t (:foreground ,lowlevel-red :weight bold :underline nil))))
    `(flycheck-info ((t (:weight bold :underline nil))))
 
+   ;; flymake
+   `(flymake-errline ((t (:weight bold :underline nil))))
+
+   ;; Highlight indentation
+   `(highlight-indentation-face ((t (:background nil))))
+
    ;; css-mode
    `(css-property ((t (:foreground ,lowlevel-orange))))
    `(css-selector ((t (:foreground ,lowlevel-fg+1))))

@@ -23,7 +23,6 @@
 (load "jsoa/smooth-scroll")
 (load "jsoa/yasnippet")
 
-
 ;; Social
 (load "jsoa/erc")
 (load "jsoa/jabber")
@@ -57,4 +56,4 @@
 ;; Anything private goes in this file, which is not in the repo
 (load "jsoa/private.el")
 
-(totd)
+;; (totd)
