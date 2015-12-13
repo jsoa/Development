@@ -30,9 +30,9 @@ end
 -- Color for values
 local function color_values(value, warning, panic)
     value = tonumber(value)
-    if value >= panic then
+    if value and value >= panic then
         return beautiful.fg_panic
-    elseif value >= warning then
+    elseif value and value >= warning then
         return beautiful.fg_warning
     end
     return beautiful.fg_normal
