@@ -38,6 +38,7 @@
 (load "jsoa/go-mode")
 
 ;; Other Modes
+(load "jsoa/elisp")
 (load "jsoa/yaml")
 (load "jsoa/coffee-mode")
 (load "jsoa/css-mode")

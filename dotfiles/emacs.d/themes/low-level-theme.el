@@ -66,6 +66,10 @@
    `(markdown-inline-code-face ((t (:foreground ,lowlevel-fg+1))))
    `(markdown-pre-face ((t (:foreground ,lowlevel-orange))))
 
+   ;; apropos
+   `(apropos-symbol ((t (:weight bold :foreground ,lowlevel-fg+1 :underline nil))))
+   `(apropos-keybinding ((t (:foreground ,lowlevel-blue :underline t))))
+
    ;; mode-line
    `(mode-line ((t (:background ,lowlevel-blue :foreground ,lowlevel-bg :box nil))))
    '(mode-line-buffer-id ((t (:weight bold))))

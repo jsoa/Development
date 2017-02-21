@@ -19,7 +19,9 @@
 (depends-on "go-mode")
 (depends-on "go-errcheck")
 (depends-on "yaml-mode")
+(depends-on "cider")
 
+(depends-on "paredit")
 (depends-on "python-mode")
 (depends-on "python-pep8")
 (depends-on "python-pylint")
@@ -39,3 +41,5 @@
 (depends-on "markdown-mode")
 (depends-on "web-mode")
 (depends-on "rainbow-mode")
+
+(depends-on "csharp-mode")

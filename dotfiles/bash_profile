@@ -36,3 +36,6 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 # RUBY
 export PATH=/home/jsoa/.gem/ruby/2.1.0/bin:$PATH
+# Export the TZ env
+# https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
+export TZ=/usr/share/zoneinfo/US/Eastern

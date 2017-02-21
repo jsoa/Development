@@ -133,6 +133,18 @@ local keys = awful.util.table.join(
     awful.key({ }, "XF86AudioMute", function ()
        awful.util.spawn("amixer set Master toggle", false) end),
 
+    -- Brighness
+    -- keydoc.group("Screen Controls"),
+    awful.key({}, "XF86MonBrightnessUp",
+       function ()
+          awful.util.spawn("light -A 5")
+       end),
+
+    awful.key({}, "XF86MonBrightnessDown",
+       function ()
+          awful.util.spawn("light -U 5")
+       end),
+
     -- Alternate volume controls
     awful.key({ altkey }, "Up",
         function ()

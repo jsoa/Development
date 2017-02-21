@@ -28,6 +28,8 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'vertical-scroll-bar) (vertical-scroll-bar -1))
+(if (fboundp 'horizontal-scroll-bar) (horizontal-scroll-bar -1))
 
 ;; overwrite selection with typing
 (delete-selection-mode t)
@@ -113,3 +115,5 @@
 
 ;; The custom themes path
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+(setq magit-push-current-set-remote-if-missing t)
