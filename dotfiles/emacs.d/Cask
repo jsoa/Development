@@ -1,6 +1,6 @@
 (source gnu)
 (source melpa)
-(source "marmalade" "http://marmalade-repo.org/packages/")
+;; (source "marmalade" "http://marmalade-repo.org/packages/")
 
 
 (depends-on "jabber")
@@ -20,6 +20,10 @@
 (depends-on "go-errcheck")
 (depends-on "yaml-mode")
 (depends-on "cider")
+(depends-on "counsel")
+(depends-on "swiper")
+(depends-on "ivy")
+(depends-on "find-file-in-project")
 
 (depends-on "paredit")
 (depends-on "python-mode")

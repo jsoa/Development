@@ -22,6 +22,7 @@
 (load "jsoa/smart-tab")
 (load "jsoa/smooth-scroll")
 (load "jsoa/yasnippet")
+(load "jsoa/ffip")
 
 ;; Social
 (load "jsoa/erc")

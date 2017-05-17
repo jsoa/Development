@@ -99,8 +99,16 @@
 (setq delete-by-moving-to-trash t)
 
 ;; Enable ido mode
-(ido-mode t)
-(setq ido-enable-flex-matching t)
+;; (ido-mode t)
+;; (setq ido-enable-flex-matching t)
+
+;; Enable ivy mode
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq ivy-count-format "(%d/%d) ")
+(setq ivy-wrap t)
+(setq ivy-format-function (quote ivy-format-function-default))
+(setq ivy-height 15)
 
 (global-font-lock-mode 1)
 
