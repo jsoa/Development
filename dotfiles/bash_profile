@@ -11,10 +11,6 @@ export EDITOR='emacs -nw -q'
 
 # export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export PROJECT_HOME=$HOME/Development/python
-source /usr/bin/virtualenvwrapper.sh
 
 ### history
 export HISTCONTROL=ignoredups
