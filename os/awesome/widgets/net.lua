@@ -16,7 +16,7 @@ local net_wireless = net_widgets.wireless({
 })
 
 local net_wired = net_widgets.indicator({
-    interfaces  = {"enp0s25"},
+    interfaces  = {"enp0s25", "enp0s25"},
     timeout     = 5
 })
 

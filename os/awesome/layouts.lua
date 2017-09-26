@@ -24,13 +24,9 @@ local layouts = {
 
    -- Lain
    lain.layout.termfair,              -- 14
-   lain.layout.centerfair,            -- 15
    lain.layout.cascade,               -- 16
-   lain.layout.cascadetile,           -- 17
    lain.layout.centerwork,            -- 18
-   lain.layout.uselessfair,           -- 19
-   lain.layout.uselesspiral,          -- 20
-   lain.layout.uselesstile            -- 21
+
 }
 
 return layouts

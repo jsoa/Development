@@ -14,7 +14,9 @@ local clockicon = wibox.widget.imagebox(beautiful.widget_clock)
 local textclock = awful.widget.textclock(" %I:%M")
 
 -- Calendar
-lain.widgets.calendar:attach(textclock, { font_size = 10 })
+lain.widget.calendar({
+      attach_to = { textclock, }
+})
 
 return {
     textclock = textclock,

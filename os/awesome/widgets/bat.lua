@@ -14,7 +14,7 @@ local bat0 = nil
 local bat1 = nil
 
 local bat0icon = wibox.widget.imagebox(beautiful.widget_battery)
-local bat0widget = lain.widgets.bat({
+local bat0widget = lain.widget.bat({
     battery = 'BAT0',
     settings = function()
         if bat_now.perc == "N/A" then
@@ -26,7 +26,7 @@ local bat0widget = lain.widgets.bat({
 })
 
 local bat1icon = wibox.widget.imagebox(beautiful.widget_battery)
-local bat1widget = lain.widgets.bat({
+local bat1widget = lain.widget.bat({
     battery = 'BAT1',
     settings = function()
         if bat_now.perc == "N/A" then
@@ -38,7 +38,7 @@ local bat1widget = lain.widgets.bat({
 })
 
 local baticon = wibox.widget.imagebox(beautiful.widget_battery)
-local batwidget = lain.widgets.bat({
+local batwidget = lain.widget.bat({
     battery = 'BAT1',
     settings = function()
         bat = tonumber((tonumber(bat0.perc) + tonumber(bat1.perc)) / 2)

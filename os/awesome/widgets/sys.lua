@@ -10,7 +10,7 @@ local utils = require("lib.utils")
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
 -- Sysload
-local sysload = lain.widgets.sysload({
+local sysload = lain.widget.sysload({
     settings = function()
        color = utils.color_values(load_1, 2, 5)
        widget:set_markup(" " .. utils.colorize(color, load_1) .." ")
@@ -19,7 +19,7 @@ local sysload = lain.widgets.sysload({
 
 -- CPU
 local cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
-local cpuwidget = lain.widgets.cpu({
+local cpuwidget = lain.widget.cpu({
     settings = function()
         color = utils.color_values(cpu_now.usage, 70, 90)
         widget:set_markup(" " .. utils.colorize(color, cpu_now.usage .. "% "))
@@ -28,7 +28,7 @@ local cpuwidget = lain.widgets.cpu({
 
 -- Coretemp
 local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
-local tempwidget = lain.widgets.temp({
+local tempwidget = lain.widget.temp({
     settings = function()
         color = utils.color_values(coretemp_now, 70, 80)
         widget:set_markup(" " .. utils.colorize(color, coretemp_now .. "°C "))

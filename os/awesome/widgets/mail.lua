@@ -17,7 +17,7 @@ mailicon:buttons(awful.util.table.join(
     ))
 )
 
-local mailwidget = lain.widgets.imap({
+local mailwidget = lain.widget.imap({
     timeout  = 180,
     server   = "server",
     mail     = "email",

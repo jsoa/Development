@@ -132,13 +132,15 @@ for s = 1, screen.count() do
 
     right_layout:add(spr)
 
-    right_layout_add(widgets.sys.cpuicon, widgets.sys.cpuwidget, widgets.sys.sysload, widgets.fan.fanwidget)
-    right_layout_add(widgets.mem.memicon, widgets.mem.memwidget)
-    right_layout_add(widgets.sys.tempicon, widgets.sys.tempwidget)
-    right_layout_add(widgets.fs.fsicon, widgets.fs.fswidget)
-    right_layout_add(widgets.net.netwireless, widgets.net.netwired)
-    right_layout_add(widgets.vol.volicon, widgets.vol.volwidget)
-    right_layout_add(widgets.bat.baticon, widgets.bat.batwidget)
+    right_layout_add(
+       widgets.sys.cpuicon, widgets.sys.cpuwidget.widget,
+       widgets.sys.sysload.widget, widgets.fan.fanwidget.widget)
+    right_layout_add(widgets.mem.memicon, widgets.mem.memwidget.widget)
+    right_layout_add(widgets.sys.tempicon, widgets.sys.tempwidget.widget)
+    right_layout_add(widgets.fs.fsicon, widgets.fs.fswidget.widget)
+    right_layout_add(widgets.net.netwireless.widget, widgets.net.netwired.wiget)
+    right_layout_add(widgets.vol.volicon, widgets.vol.volwidget.widget)
+    right_layout_add(widgets.bat.baticon, widgets.bat.batwidget.widget)
     right_layout_add(widgets.clock.textclock, spr)
     right_layout_add(layoutbox[s])
 

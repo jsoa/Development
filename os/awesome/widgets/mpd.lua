@@ -20,7 +20,7 @@ mpdicon:buttons(awful.util.table.join(
     ))
 )
 
-local mpdwidget = lain.widgets.mpd({
+local mpdwidget = lain.widget.mpd({
     settings = function()
         if mpd_now.state == "play" then
             artist = " " .. mpd_now.artist .. " "
