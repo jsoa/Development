@@ -27,8 +27,8 @@
 
 (depends-on "paredit")
 (depends-on "python-mode")
-(depends-on "python-pep8")
-(depends-on "python-pylint")
+;;(depends-on "python-pep8")
+;;(depends-on "python-pylint")
 (depends-on "virtualenv")
 (depends-on "lua-mode")
 (depends-on "qml-mode")
