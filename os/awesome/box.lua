@@ -142,6 +142,7 @@ for s = 1, screen.count() do
     right_layout_add(widgets.vol.volicon, widgets.vol.volwidget)
     right_layout_add(widgets.bat.baticon, widgets.bat.batwidget.widget)
     right_layout_add(widgets.clock.textclock, spr)
+    right_layout_add(widgets.wea.weather.icon, widgets.wea.weather.widget)
     right_layout_add(layoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)

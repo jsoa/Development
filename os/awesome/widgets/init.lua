@@ -12,7 +12,8 @@ local widgets = {
     bat     = require("widgets.bat"),
     net     = require("widgets.net"),
     lb      = require("widgets.lb"),
-    fan     = require("widgets.fan")
+    fan     = require("widgets.fan"),
+    wea     = require("widgets.wea"),
 }
 
 return widgets
