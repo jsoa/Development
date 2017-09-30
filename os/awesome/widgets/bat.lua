@@ -1,60 +1,78 @@
 
 -- Battery
--- Note: Lenovo t450s has 2 batteries
 
 local awful     = require("awful")
 local beautiful = require("beautiful")
 local lain      = require("lain")
+local naughty   = require("naughty")
 local wibox     = require("wibox")
 local utils     = require("lib.utils")
 
-
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
-local bat0 = nil
-local bat1 = nil
 
-local bat0icon = wibox.widget.imagebox(beautiful.widget_battery)
-local bat0widget = lain.widget.bat({
-    battery = 'BAT0',
-    settings = function()
-        if bat_now.perc == "N/A" then
-           bat0 = nil
-        else
-           bat0 = bat_now
-        end
-    end
-})
-
-local bat1icon = wibox.widget.imagebox(beautiful.widget_battery)
-local bat1widget = lain.widget.bat({
-    battery = 'BAT1',
-    settings = function()
-        if bat_now.perc == "N/A" then
-           bat1 = nil
-        else
-           bat1 = bat_now
-        end
-    end
-})
+local has_notify = nil
+local notification = nil
+local popup = {}
 
 local baticon = wibox.widget.imagebox(beautiful.widget_battery)
 local batwidget = lain.widget.bat({
-    battery = 'BAT1',
+    batteries = {'BAT0', 'BAT1'},
+    timeout = 2,
+    ac = 'ACAD',
     settings = function()
-        bat = tonumber((tonumber(bat0.perc) + tonumber(bat1.perc)) / 2)
+        local bat = tonumber(bat_now.perc)
         if tonumber(bat) <= 5 then
             baticon:set_image(beautiful.widget_battery_empty)
-        elseif tonumber(bat) <= 15 then
+        elseif tonumber(bat) <= 40 then
             baticon:set_image(beautiful.widget_battery_low)
         else
             baticon:set_image(beautiful.widget_battery)
         end
 
         color = beautiful.fg_normal
-        if bat1.status == 'Charging' or bat0.status == 'Charging' then
-          color = beautiful.fg_widget_clock
+        if bat_now.status == 'Charging' then
+           color = beautiful.fg_widget_clock
         end
-        widget:set_markup(" " .. utils.colorize(color, bat .. "% "))
+
+        -- Set the markup doing percentage
+        widget:set_markup(utils.colorize(color, bat .. '% '))
+
+        -- Popup extra information
+        function popup_text()
+           local text = ''
+           text = text .. ' Status .......... ' .. bat_now.status .. ' \n'
+           text = text .. ' Time ............ ' .. bat_now.time .. ' \n'
+           text = text .. ' AC Status ....... ' .. bat_now.ac_status .. ' \n'
+           text = text .. ' Watt ............ ' .. bat_now.watt
+           return text
+        end
+
+        -- Show popup handler
+        function popup.show(t_out)
+           popup.hide()
+           notification = naughty.notify({
+                 preset = fs_notification_preset,
+                 text = popup_text(),
+                 timeout = t_out,
+                 screen = mouse.screen,
+                 position = naughty.config.defaults.position
+           })
+        end
+
+        -- Hide popup handler
+        function popup.hide()
+           if notification ~= nil then
+              naughty.destroy(notification)
+              notification = nil
+           end
+        end
+
+        -- Set the mouse signals only when they have not already been connected
+        if has_notify == nil then
+           widget:connect_signal('mouse::enter', function () popup.show(0) end)
+           widget:connect_signal('mouse::leave', function () popup.hide() end)
+           has_notify = true
+        end
     end
 })
 
