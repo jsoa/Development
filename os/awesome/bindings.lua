@@ -133,16 +133,10 @@ local keys = awful.util.table.join(
     awful.key({ modkey,           }, "Return", function () awful.util.spawn("gnome-terminal")       end, "Spawn terminal"),
     awful.key({ modkey, "Control" }, "r",      awesome.restart                                 , "Restart awesome"),
     awful.key({ modkey, "Shift"   }, "q",      awesome.quit                                    , "Quit awesome (logout)"),
-    awful.key({ altkey, "Control" }, "k",
-       function ()
-           awful.util.spawn_with_shell("keychain -q --timeout 480 --agents ssh id_rsa")
-       end, "Keychain"),
 
     -- Widget popups
     keydoc.group("Widgets"),
-    awful.key({ altkey,           }, "c",      function () lain.widgets.calendar:show(7)    end, "Show Calendar"),
     awful.key({ altkey,           }, "h",      function () widgets.fs.fswidget.show(7)      end, "Show HDD"),
-    awful.key({ altkey,           }, "n",      function () widgets.net.netwireless.show(7)  end, "Show Net"),
 
     -- ALSA volume control (fn+vol)
     keydoc.group("Volume Controls"),
