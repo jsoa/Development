@@ -65,6 +65,26 @@ local keys = awful.util.table.join(
 
     -- Show Menu
     keydoc.group("Misc"),
+
+    -- toggle radio wifi on/off
+    awful.key({ altkey,}, "w",
+       function ()
+          awful.spawn.with_line_callback('nmcli radio wifi', {
+             stdout = function(line)
+                msg = ""
+                if line == 'disabled' then
+                   awful.util.spawn('nmcli radio wifi on')
+                   msg = 'enabled'
+                else
+                   awful.util.spawn('nmcli radio wifi off')
+                   msg = 'disabled'
+                end
+                naughty.notify {text = "Radio is " .. msg}
+             end,
+
+          })
+       end, "Toggle Radio"),
+
     awful.key({ modkey }, "w",
         function ()
             menu.mainmenu:show({ keygrabber = true })
