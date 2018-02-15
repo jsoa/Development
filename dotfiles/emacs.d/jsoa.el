@@ -30,7 +30,9 @@
 (load "jsoa/twittering-mode")
 
 ;; Python mode related
-(load "jsoa/python-mode")
+;; Current version of python mode auto loads a shell when using C-x C-f
+;; therefore python-mode is now disable in favor of python.el
+;; (load "jsoa/python-mode") -
 (load "jsoa/python-pep8")
 (load "jsoa/python-pylint")
 (load "jsoa/virtualenv")
@@ -55,7 +57,12 @@
 (load "jsoa/web-mode")
 (load "jsoa/qml-mode")
 
+(load "jsoa/visual-basic-mode")
+
 ;; Anything private goes in this file, which is not in the repo
 (load "jsoa/private.el")
 
 ;; (totd)
+ (autoload 'visual-basic-mode "visual-basic-mode" "Visual Basic mode." t)
+ (setq auto-mode-alist (append '(("\\.\\(frm\\|bas\\|cls\\|vb\\)$" .
+                                 visual-basic-mode)) auto-mode-alist))
