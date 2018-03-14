@@ -30,11 +30,8 @@
 (load "jsoa/twittering-mode")
 
 ;; Python mode related
-;; Current version of python mode auto loads a shell when using C-x C-f
-;; therefore python-mode is now disable in favor of python.el
-;; (load "jsoa/python-mode") -
-(load "jsoa/python-pep8")
-(load "jsoa/python-pylint")
+(elpy-enable)
+(load "jsoa/elpy-mode")
 (load "jsoa/virtualenv")
 
 ;; Go mode related
