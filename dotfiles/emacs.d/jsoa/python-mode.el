@@ -3,7 +3,7 @@
 ;; (require 'highlight-indentation)
 
 ;; Default python command is python2
-(setq py-python-command "python2")
+(setq py-python-command "python3")
 
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))

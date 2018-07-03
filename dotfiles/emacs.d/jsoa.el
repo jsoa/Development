@@ -60,6 +60,6 @@
 (load "jsoa/private.el")
 
 ;; (totd)
- (autoload 'visual-basic-mode "visual-basic-mode" "Visual Basic mode." t)
- (setq auto-mode-alist (append '(("\\.\\(frm\\|bas\\|cls\\|vb\\)$" .
-                                 visual-basic-mode)) auto-mode-alist))
+ ;; (autoload 'visual-basic-mode "visual-basic-mode" "Visual Basic mode." t)
+ ;; (setq auto-mode-alist (append '(("\\.\\(frm\\|bas\\|cls\\|vb\\)$" .
+ ;;                                 visual-basic-mode)) auto-mode-alist))

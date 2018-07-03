@@ -26,8 +26,6 @@
 (depends-on "find-file-in-project")
 
 (depends-on "paredit")
-;; Current version of python-mode is broken when using C-x C-f, disabled for now
-;; (depends-on "python-mode")
 (depends-on "elpy")
 (depends-on "virtualenv")
 (depends-on "lua-mode")
@@ -47,7 +45,7 @@
 (depends-on "rainbow-mode")
 
 ;; Other less used modes
-(depends-on "csharp-mode")
-(depends-on "php-mode")
+;; (depends-on "csharp-mode")
+;; (depends-on "php-mode")
 (depends-on "nginx-mode")
 (depends-on "dockerfile-mode")

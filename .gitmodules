@@ -1,66 +1,9 @@
-[submodule "python/apps/django-renderit"]
-	path = python/apps/django-renderit
-	url = git@github.com:jsoa/django-renderit.git
-[submodule "python/apps/django-genericadmin"]
-	path = python/apps/django-genericadmin
-	url = git@github.com:jsoa/django-genericadmin.git
-[submodule "python/apps/django-formfield"]
-	path = python/apps/django-formfield
-	url = git@github.com:jsoa/django-formfield.git
-[submodule "python/apps/django-podcast"]
-	path = python/apps/django-podcast
-	url = git@github.com:jsoa/django-podcast.git
-[submodule "python/apps/django-categories"]
-	path = python/apps/django-categories
-	url = git@github.com:callowayproject/django-categories.git
-[submodule "python/apps/django-app-skeleton"]
-	path = python/apps/django-app-skeleton
-	url = git@github.com:callowayproject/django-app-skeleton.git
-[submodule "python/apps/django-viewpoint"]
-	path = python/apps/django-viewpoint
-	url = git@github.com:callowayproject/django-viewpoint.git
-[submodule "python/apps/django-pollit"]
-	path = python/apps/django-pollit
-	url = git@github.com:callowayproject/django-pollit.git
-[submodule "python/apps/Calloway"]
-	path = python/apps/Calloway
-	url = git@github.com:callowayproject/Calloway.git
-[submodule "python/apps/django-supertagging"]
-	path = python/apps/django-supertagging
-	url = git@github.com:callowayproject/django-supertagging.git
-[submodule "python/apps/django-staff"]
-	path = python/apps/django-staff
-	url = git@github.com:callowayproject/django-staff.git
-[submodule "python/apps/django-massmedia"]
-	path = python/apps/django-massmedia
-	url = git@github.com:callowayproject/django-massmedia.git
-[submodule "python/apps/django-kamasutra"]
-	path = python/apps/django-kamasutra
-	url = git@github.com:callowayproject/django-kamasutra.git
-[submodule "python/apps/django-hiermenu"]
-	path = python/apps/django-hiermenu
-	url = git@github.com:callowayproject/django-hiermenu.git
-[submodule "python/apps/django-stories"]
-	path = python/apps/django-stories
-	url = git@github.com:callowayproject/django-stories.git
-[submodule "python/apps/dashboardmods"]
-	path = python/apps/dashboardmods
-	url = git@github.com:callowayproject/dashboardmods.git
-[submodule "scripts/git-scripts"]
-	path = scripts/git-scripts
-	url = git@github.com:coordt/git-scripts.git
-[submodule "coffee/apps/jquery.isotope.coffee"]
-	path = coffee/apps/jquery.isotope.coffee
-	url = git@github.com:jsoa/jquery.isotope.coffee.git
-[submodule "python/apps/django-critic"]
-	path = python/apps/django-critic
-	url = git@github.com:callowayproject/django-critic.git
-[submodule "python/apps/pkgbin"]
-	path = python/apps/pkgbin
-	url = git@github.com:coordt/pkgbin.git
 [submodule "os/awesome/net_widgets"]
 	path = os/awesome/net_widgets
 	url = git@github.com:plotnikovanton/net_widgets.git
 [submodule "os/awesome/lain"]
     path = os/awesome/lain
     url = git@github.com:copycat-killer/lain.git
+[submodule "os/awesome/volume-control"]
+	path = os/awesome/volume-control
+	url = git@github.com:deficient/volume-control.git
