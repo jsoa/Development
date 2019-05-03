@@ -64,3 +64,6 @@
 (global-set-key (kbd "C-c j") 'counsel-git-grep)
 (global-set-key (kbd "C-x l") 'counsel-locate)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
+
+
+(global-set-key (kbd "C-c d") 'file-info)

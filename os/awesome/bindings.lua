@@ -67,7 +67,7 @@ local keys = awful.util.table.join(
     keydoc.group("Misc"),
 
     -- toggle radio wifi on/off
-    awful.key({ altkey,}, "w",
+    awful.key({ modkey,}, "r",
        function ()
           awful.spawn.with_line_callback('nmcli radio wifi', {
              stdout = function(line)
@@ -141,11 +141,11 @@ local keys = awful.util.table.join(
     -- ALSA volume control (fn+vol)
     keydoc.group("Volume Controls"),
     awful.key({ }, "XF86AudioRaiseVolume", function ()
-       awful.util.spawn("amixer set Master 5%+", false) end),
+       awful.util.spawn("amixer -c 1 set Master 5%+", false) end),
     awful.key({ }, "XF86AudioLowerVolume", function ()
-       awful.util.spawn("amixer set Master 5%-", false) end),
+       awful.util.spawn("amixer -c 1 set Master 5%-", false) end),
     awful.key({ }, "XF86AudioMute", function ()
-       awful.util.spawn("amixer set Master toggle", false) end),
+       awful.util.spawn("amixer -c 1 set Master toggle", false) end),
 
     -- Brighness
     -- keydoc.group("Screen Controls"),
@@ -256,9 +256,10 @@ local clientkeys = awful.util.table.join(
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it works on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
-for i = 1, 9 do
+-- We only have 5 tags
+for i = 1, 5 do
     keys = awful.util.table.join(keys,
-        -- keydoc.group("Key Numbers"),
+        keydoc.group("Key Numbers"),
         awful.key({ modkey }, "#" .. i + 9,
                   function ()
                         local screen = mouse.screen
@@ -279,9 +280,11 @@ for i = 1, 9 do
                   function ()
                       local tag = awful.tag.gettags(client.focus.screen)[i]
                       if client.focus and tag then
-                          awful.client.movetotag(tag)
+                         -- Move client to tag + view tag automatically
+                         awful.client.movetotag(tag)
+                         awful.tag.viewonly(tag)
                      end
-                  end),
+                  end, 'Move Client to ' .. i),
         awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
                       local tag = awful.tag.gettags(client.focus.screen)[i]

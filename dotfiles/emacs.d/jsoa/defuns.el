@@ -75,3 +75,9 @@
                (with-temp-buffer
                  (where-is command t)
                  (buffer-string)))))))
+
+
+(defun file-info ()
+  (interactive)
+  (let ((dired-listing-switches "-alh"))
+    (dired-other-window buffer-file-name)))

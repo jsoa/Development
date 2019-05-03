@@ -31,6 +31,8 @@
 (depends-on "lua-mode")
 (depends-on "qml-mode")
 (depends-on "restclient")
+(depends-on "tide")
+(depends-on "typescript")
 
 (depends-on "coffee-mode")
 (depends-on "js2-mode")
