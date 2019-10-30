@@ -2,6 +2,7 @@
 -- Initial startup
 
                   require("awful.autofocus")
+local awful     = require("awful")
 local beautiful = require("beautiful")
 local bindings  = require("bindings")
 local gears     = require("gears")
@@ -39,6 +40,8 @@ end
 -- Run these commands
 utils.run_once("synapse -s")
 
+-- Start locker (xautolock)
+utils.run_once('~/.config/awesome/locker')
 
 -- beautiful init
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")

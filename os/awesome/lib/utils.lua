@@ -7,7 +7,7 @@ local beautiful  = require("beautiful")
 local lain       = require("lain")
 
 
-module("lib.utils")
+-- module("lib.utils")
 
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 

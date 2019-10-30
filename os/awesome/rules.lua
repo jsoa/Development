@@ -7,6 +7,7 @@ awful.rules      = require("awful.rules")
 local beautiful = require("beautiful")
 local bindings  = require("bindings")
 local tags      = require("tags").tags
+local screen    = screen
 
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
@@ -38,7 +39,31 @@ awful.rules.rules = {
           properties = { tag = tags[1][4] } },
 
     { rule = { class = "Emacs" },
-         properties = { tag = tags[1][2] } },
+      properties = {
+         tag = function() return screen.count() > 1 and tags[2][2] or tags[1][2] end
+      }
+    },
+
+    { rule = { class = "XTerm" },
+      properties = {
+         tag = function() return screen.count() > 1 and tags[2][3] or tags[1][3] end
+      }
+    },
+
+    { rule = { class = "Soffice" },
+      properties = {
+         tag = function() return screen.count() > 1 and tags[2][4] or tags[1][4] end,
+         fullscreen = true,
+         skip_taskbar = true,
+         focus = true
+      }
+    },
+
+    { rule = { class = "Nautilus" },
+      properties = {
+         tag = function() return screen.count() > 1 and tags[2][4] or tags[1][4] end
+      }
+    },
 
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized_horizontal = true,
