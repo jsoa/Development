@@ -3,7 +3,7 @@
 	url = git@github.com:plotnikovanton/net_widgets.git
 [submodule "os/awesome/lain"]
     path = os/awesome/lain
-    url = git@github.com:copycat-killer/lain.git
+    url = git@github.com:lcpz/lain.git
 [submodule "os/awesome/volume-control"]
 	path = os/awesome/volume-control
 	url = git@github.com:deficient/volume-control.git

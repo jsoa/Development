@@ -3,11 +3,8 @@
 ;; (source "marmalade" "http://marmalade-repo.org/packages/")
 
 
-(depends-on "jabber")
-(depends-on "twittering-mode")
-(depends-on "erc")
+;; General
 (depends-on "powerline")
-(depends-on "flycheck")
 (depends-on "smooth-scroll")
 (depends-on "fill-column-indicator")
 (depends-on "smart-tab")
@@ -15,39 +12,59 @@
 (depends-on "magit")
 (depends-on "git-gutter")
 (depends-on "yasnippet")
+(depends-on "yasnippet-snippets")
 (depends-on "ag")
-(depends-on "go-mode")
-(depends-on "go-errcheck")
-(depends-on "yaml-mode")
-(depends-on "cider")
 (depends-on "counsel")
 (depends-on "swiper")
 (depends-on "ivy")
 (depends-on "find-file-in-project")
-
+(depends-on "default-text-scale")
+(depends-on "rainbow-mode")
 (depends-on "paredit")
-(depends-on "elpy")
-(depends-on "virtualenv")
-(depends-on "lua-mode")
-(depends-on "qml-mode")
-(depends-on "restclient")
-(depends-on "tide")
-(depends-on "typescript")
 
-(depends-on "coffee-mode")
+
+;; Language modes
+(depends-on "elpy")
+(depends-on "lua-mode")
+
+(depends-on "tide")
+;; (depends-on "typescript")
+(depends-on "yaml-mode")
 (depends-on "js2-mode")
-(depends-on "jade-mode")
-(depends-on "stylus-mode")
 (depends-on "css-mode")
 (depends-on "scss-mode")
 (depends-on "sass-mode")
 (depends-on "json-mode")
 (depends-on "markdown-mode")
 (depends-on "web-mode")
-(depends-on "rainbow-mode")
+(depends-on "nginx-mode")
+(depends-on "dockerfile-mode")
+;; (depends-on "cider") ;; Clojure Interactive Dev Enviromnent
+;; (depends-on "go-mode")
+;; (depends-on "go-errcheck")
+;; (depends-on "qml-mode") ;; editing Qt Declarative (QML) code.
 
+
+;; Programming
+(depends-on "flycheck")
+;; (depends-on "pyenv")
+(depends-on "py-autopep8")
+(depends-on "restclient")
+;; (depends-on "python-docstring")
+
+
+;; Media
+;; (depends-on "jabber")
+;; (depends-on "twittering-mode")
+;; (depends-on "erc")
+
+
+;; Other / Removed
+;; (depends-on "virtualenvwrapper")
+;; (depends-on "virtualenv")
+;; (depends-on "coffee-mode")
+;; (depends-on "jade-mode")
+;; (depends-on "stylus-mode")
 ;; Other less used modes
 ;; (depends-on "csharp-mode")
 ;; (depends-on "php-mode")
-(depends-on "nginx-mode")
-(depends-on "dockerfile-mode")

@@ -125,3 +125,18 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (setq magit-push-current-set-remote-if-missing t)
+
+(default-text-scale-mode 1)
+
+;; Make ibuffer file name column slightly larger
+(setq ibuffer-formats
+      '((mark modified read-only " "
+              (name 30 30 :left :elide) ; change: 30s were originally 18s
+              " "
+              (size 9 -1 :right)
+              " "
+              (mode 16 16 :left :elide)
+              " " filename-and-process)
+        (mark " "
+              (name 16 -1)
+              " " filename)))

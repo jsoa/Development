@@ -111,12 +111,12 @@
    `(bookmark-menu-heading ((t (:foreground ,lowlevel-orange :weight bold))))
 
    ;; flycheck
-   `(flycheck-warning ((t (:weight bold :underline nil))))
-   `(flycheck-error ((t (:foreground ,lowlevel-red :weight bold :underline nil))))
-   `(flycheck-info ((t (:weight bold :underline nil))))
+   ;; `(flycheck-warning ((t (:weight bold :underline nil))))
+   ;; `(flycheck-error ((t (:foreground ,lowlevel-red :weight bold :underline nil))))
+   ;; `(flycheck-info ((t (:weight bold :underline nil))))
 
    ;; flymake
-   `(flymake-errline ((t (:weight bold :underline nil))))
+   ;; `(flymake-errline ((t (:weight bold :underline nil))))
 
    ;; Highlight indentation
    `(highlight-indentation-face ((t (:background nil))))

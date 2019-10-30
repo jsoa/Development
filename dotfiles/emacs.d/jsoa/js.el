@@ -1,3 +1,3 @@
 
 ;; Standard js-mode
-(setq js-indent-level 2)
+(setq js-indent-level 4)

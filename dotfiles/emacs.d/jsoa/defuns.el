@@ -81,3 +81,17 @@
   (interactive)
   (let ((dired-listing-switches "-alh"))
     (dired-other-window buffer-file-name)))
+
+
+;; https://stackoverflow.com/questions/1292936/line-wrapping-within-emacs-compilation-buffer
+(defun my-compilation-mode-hook ()
+  (setq truncate-lines nil) ;; automatically becomes buffer local
+  (set (make-local-variable 'truncate-partial-width-windows) nil))
+
+
+;; https://emacs.stackexchange.com/questions/13080/reloading-directory-local-variables
+(defun my-reload-dir-locals-for-current-buffer ()
+  "reload dir locals for the current buffer"
+  (interactive)
+  (let ((enable-local-variables :all))
+    (hack-dir-local-variables-non-file-buffer)))

@@ -25,17 +25,17 @@
 (load "jsoa/ffip")
 
 ;; Social
-(load "jsoa/erc")
-(load "jsoa/jabber")
-(load "jsoa/twittering-mode")
+;; (load "jsoa/erc")
+;; (load "jsoa/jabber")
+;; (load "jsoa/twittering-mode")
 
 ;; Python mode related
 (elpy-enable)
 (load "jsoa/elpy-mode")
-(load "jsoa/virtualenv")
+;; (load "jsoa/virtualenv")
 
 ;; Go mode related
-(load "jsoa/go-mode")
+;; (load "jsoa/go-mode")
 
 ;; Other Modes
 (load "jsoa/elisp")
@@ -52,9 +52,12 @@
 (load "jsoa/sass-mode")
 (load "jsoa/shell-mode")
 (load "jsoa/web-mode")
-(load "jsoa/qml-mode")
+;; (load "jsoa/qml-mode")
+(load "jsoa/org-mode")
+(load "jsoa/tide-mode")
+(load "jsoa/compilation-mode")
 
-(load "jsoa/visual-basic-mode")
+;; (load "jsoa/visual-basic-mode")
 
 ;; Anything private goes in this file, which is not in the repo
 (load "jsoa/private.el")
