@@ -8,17 +8,19 @@
 theme                               = {}
 
 themes_dir                          = os.getenv("HOME") .. "/.config/awesome/"
-theme.wallpaper                     = themes_dir .. "/wall.png"
+theme.wallpaper                     = themes_dir .. "/wall.jpg"
 -- JSOA BG
-theme.wallpaper                     = "/home/jsoa/Pictures/UBeWVaL.png"
+-- theme.wallpaper                     = "/home/jsoa/Pictures/UBeWVaL.png"
 
 theme.font                          = "Monospace 9"
 theme.fg_normal                     = "#DDDDFF"
 theme.fg_focus                      = "#F0DFAF"
 theme.fg_urgent                     = "#CC9393"
+theme.fg_widget                     = "#F0DFAF"
 theme.fg_widget_clock               = "#5BA1CF"--"#E0E0D1"
 theme.fg_widget_value               = "#E0E0D1"
 theme.fg_widget_value_important     = "#F0DFAF"
+theme.fg_end_widget                 = "#E0E0D1"
 theme.bg_normal                     = "#1A1A1A"
 theme.bg_focus                      = "#313131"
 theme.bg_urgent                     = "#1A1A1A"

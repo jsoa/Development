@@ -143,7 +143,8 @@ for s = 1, screen.count() do
     right_layout_add(widgets.net.netwireless, widgets.net.netwired)
     right_layout_add(widgets.bat.baticon, widgets.bat.batwidget.widget)
     right_layout_add(widgets.clock.textclock, spr)
-    right_layout_add(layoutbox[s])
+    -- Disable the layout toggle
+    -- right_layout_add(layoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
     local layout = wibox.layout.align.horizontal()
